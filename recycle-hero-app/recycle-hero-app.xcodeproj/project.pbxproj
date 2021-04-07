@@ -14,6 +14,7 @@
 		5FBD6DE2261DB26A00EB0322 /* recycle_hero_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5FBD6DE0261DB26A00EB0322 /* recycle_hero_app.xcdatamodeld */; };
 		5FBD6DE4261DB26B00EB0322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FBD6DE3261DB26B00EB0322 /* Assets.xcassets */; };
 		5FBD6DE7261DB26B00EB0322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FBD6DE5261DB26B00EB0322 /* LaunchScreen.storyboard */; };
+		6A942815261DBC9500A73B2D /* StoryScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A942814261DBC9500A73B2D /* StoryScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5FBD6DE3261DB26B00EB0322 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FBD6DE6261DB26B00EB0322 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5FBD6DE8261DB26B00EB0322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A942814261DBC9500A73B2D /* StoryScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				5FBD6DDD261DB26A00EB0322 /* Main.storyboard */,
 				5FBD6DE3261DB26B00EB0322 /* Assets.xcassets */,
 				5FBD6DE5261DB26B00EB0322 /* LaunchScreen.storyboard */,
+				6A942814261DBC9500A73B2D /* StoryScreen.storyboard */,
 				5FBD6DE8261DB26B00EB0322 /* Info.plist */,
 				5FBD6DE0261DB26A00EB0322 /* recycle_hero_app.xcdatamodeld */,
 			);
@@ -129,6 +132,7 @@
 			files = (
 				5FBD6DE7261DB26B00EB0322 /* LaunchScreen.storyboard in Resources */,
 				5FBD6DE4261DB26B00EB0322 /* Assets.xcassets in Resources */,
+				6A942815261DBC9500A73B2D /* StoryScreen.storyboard in Resources */,
 				5FBD6DDF261DB26A00EB0322 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
