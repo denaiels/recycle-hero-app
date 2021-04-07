@@ -31,6 +31,10 @@
                                 <rect key="frame" x="325" y="281" width="194" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="playButton"/>
+                                <connections>
+                                    <action selector="playButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BXa-Cv-JUr"/>
+                                    <segue destination="8ay-vI-mY3" kind="show" id="4Jt-kE-8Nn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -46,6 +50,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="96.682464454976298" y="93.84615384615384"/>
+        </scene>
+        <!--StoryPage-->
+        <scene sceneID="PV4-nl-J18">
+            <objects>
+                <viewControllerPlaceholder storyboardName="StoryPage" id="8ay-vI-mY3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Lmq-as-DUo"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pqO-bI-SvH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="758" y="94"/>
         </scene>
     </scenes>
     <resources>
