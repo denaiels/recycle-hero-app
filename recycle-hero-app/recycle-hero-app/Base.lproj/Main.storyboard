@@ -15,16 +15,37 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="titleBackground" translatesAutoresizingMaskIntoConstraints="NO" id="nMY-xX-RAY">
+                                <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="ASu-bg-59z">
+                                <rect key="frame" x="-602" y="32" width="2048" height="190"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGm-rz-7rj">
+                                <rect key="frame" x="407" y="261" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="nMY-xX-RAY" secondAttribute="trailing" id="Rhz-V2-hS1"/>
+                            <constraint firstItem="nMY-xX-RAY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SoW-E1-KoE"/>
+                            <constraint firstItem="ASu-bg-59z" firstAttribute="centerX" secondItem="nMY-xX-RAY" secondAttribute="centerX" id="Yfx-OH-RCh"/>
+                            <constraint firstItem="nMY-xX-RAY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YzR-8F-AMA"/>
+                            <constraint firstAttribute="bottom" secondItem="nMY-xX-RAY" secondAttribute="bottom" id="eVt-rG-TsE"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="97" y="94"/>
+            <point key="canvasLocation" x="96.682464454976298" y="93.84615384615384"/>
         </scene>
     </scenes>
     <resources>
+        <image name="logo" width="2048" height="2048"/>
+        <image name="titleBackground" width="2048" height="2048"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
