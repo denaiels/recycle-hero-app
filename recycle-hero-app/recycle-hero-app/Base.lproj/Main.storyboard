@@ -19,12 +19,18 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="titleBackground" translatesAutoresizingMaskIntoConstraints="NO" id="nMY-xX-RAY">
                                 <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="ASu-bg-59z">
-                                <rect key="frame" x="-602" y="32" width="2048" height="190"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGm-rz-7rj">
                                 <rect key="frame" x="407" y="261" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Vwb-B6-06A">
+                                <rect key="frame" x="300" y="46" width="244" height="245"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJP-0s-0jG">
+                                <rect key="frame" x="325" y="281" width="194" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="playButton"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -32,7 +38,6 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="nMY-xX-RAY" secondAttribute="trailing" id="Rhz-V2-hS1"/>
                             <constraint firstItem="nMY-xX-RAY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SoW-E1-KoE"/>
-                            <constraint firstItem="ASu-bg-59z" firstAttribute="centerX" secondItem="nMY-xX-RAY" secondAttribute="centerX" id="Yfx-OH-RCh"/>
                             <constraint firstItem="nMY-xX-RAY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YzR-8F-AMA"/>
                             <constraint firstAttribute="bottom" secondItem="nMY-xX-RAY" secondAttribute="bottom" id="eVt-rG-TsE"/>
                         </constraints>
@@ -45,6 +50,7 @@
     </scenes>
     <resources>
         <image name="logo" width="2048" height="2048"/>
+        <image name="playButton" width="230" height="86"/>
         <image name="titleBackground" width="2048" height="2048"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
