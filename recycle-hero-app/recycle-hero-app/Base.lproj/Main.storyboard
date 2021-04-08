@@ -33,7 +33,7 @@
                                 <state key="normal" image="playButton"/>
                                 <connections>
                                     <action selector="playButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BXa-Cv-JUr"/>
-                                    <segue destination="8ay-vI-mY3" kind="show" id="4Jt-kE-8Nn"/>
+                                    <segue destination="8ay-vI-mY3" kind="show" id="mqx-T7-cla"/>
                                 </connections>
                             </button>
                         </subviews>
