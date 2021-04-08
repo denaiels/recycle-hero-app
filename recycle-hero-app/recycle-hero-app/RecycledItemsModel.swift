@@ -8,5 +8,5 @@
 import Foundation
 
 struct RecycledItemsModel {
-    item_name: String
+    //
 }
