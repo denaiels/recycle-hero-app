@@ -45,10 +45,10 @@ class ViewController: UIViewController {
         for i in 0...recycledItemNames.count-1 {
 //            print(i)
             print("\(i) | Item Name: \(recycledItems[i].item_name)")
-            print("Item Icon Color: \(recycledItems[i].item_icon_color)")
-            print("Item Icon Black: \(recycledItems[i].item_icon_black)")
-            print("Item Description: \(recycledItems[i].item_description)")
-            print("Item Found: \(recycledItems[i].item_found)")
+            print("--> Item Icon Color: \(recycledItems[i].item_icon_color)")
+            print("--> Item Icon Black: \(recycledItems[i].item_icon_black)")
+            print("--> Item Description: \(recycledItems[i].item_description)")
+            print("--> Item Found: \(recycledItems[i].item_found)")
         }
         
     }
