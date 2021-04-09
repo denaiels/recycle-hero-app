@@ -9,7 +9,7 @@ import UIKit
 
 
 class StageMenuController: UIViewController {
-    static var currentStage : Int? = nil
+    static var currentStage : Int? = 1
 
     @IBOutlet weak var bedroomView: UIView!
     
