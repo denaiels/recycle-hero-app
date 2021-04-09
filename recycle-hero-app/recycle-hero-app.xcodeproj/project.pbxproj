@@ -174,11 +174,8 @@
 				5F0A896C261EF1F7001E3FF2 /* UserProgress.swift in Sources */,
 				5F0A8975261EFF8E001E3FF2 /* NormalItemsModel.swift in Sources */,
 				5FBD6DDA261DB26A00EB0322 /* SceneDelegate.swift in Sources */,
-<<<<<<< HEAD
 				60184859261E0319008F6063 /* StageMenuController.swift in Sources */,
-=======
 				5F0A8972261EF69E001E3FF2 /* Playground1ViewController.swift in Sources */,
->>>>>>> staging
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
