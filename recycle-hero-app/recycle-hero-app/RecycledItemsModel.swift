@@ -37,18 +37,18 @@ var recycledItemIconColor =
      "bottleBoat",
      "paperWindmill"]
 var recycledItemDescription =
-    ["Compost is organic material that can be added to soil to help plants grow.",
-     "A recycled product from Plastic Bottle and Light Bulb. You can use this to light up your bedroom ",
-     "Wool is the textile fiber. You can use wool for knitting",
-     "A recycled product from Plastic Bottle to contain your small plant",
-     "A simple recycled product from Paint Can. You can fill this with seeds, and the birds will come",
-     "A recycled product from Milk Jug to water your seeds or plants at home",
-     "Banana fertilizer is fertilizer composed from Banana Peels, can be added to soil to help plants grow.",
-     "A recycled product from Plastic Bottle and Water Sprayer. You can use this to water your plants",
-     "A recycled product from Styrofoam. You can use this to play on the beach.",
-     "A kite made of old newspapers that you can play in the backyard of your home.",
-     "A recycled product from Piles of Water Bottles. You can make this to play at beach when in a holiday!",
-     "A recycled product from Plastic Straw and  old Newspaper. You can use this to play in a breezy day."]
+    ["A recycled product from Food Scrap and Newspaper. You can make this at home with your Parents!",
+     "A recycled product from Plastic Bottle and Light Bulb. You can make this at home with your Parents!",
+     "A recycled product from Used Cloth. You can make this using scissors at home with your Parents guidance!",
+     "A recycled product from Plastic Bottle and Small Plant. You can make this at home with your Parents!",
+     "A recycled product from Paint Can and Ribbon. You can make this at home with your Parents!",
+     "A recycled product from Milk Jug. You can make this using Needle at home with your Parents guidance!",
+     "A recycled product from Banana Peels and Water. You can make this at home with your Parents!",
+     "A recycled product from Plastic Bottle and Water Sprayer. You can make this at home with your Parents!",
+     "A recycled product from Styrofoam. You can make this using saw at home with your Parents guidance!",
+     "A recycled product from Newspaper and Fallen Branches. You can make this at home with your Parents!",
+     "A recycled product from Piler of Water Bottle. You can make this using Tape at home with your Parents guidance!",
+     "A recycled product from Plastic Straw and Newspaper. You can make this at home with your Parents!"]
 var recycledItemLink =
     ["https://www.youtube.com/watch?v=kA3q07paNbE",
      "https://www.youtube.com/watch?v=Z_nySChubms",
