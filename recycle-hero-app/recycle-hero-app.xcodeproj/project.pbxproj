@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F0A896C261EF1F7001E3FF2 /* UserProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0A896B261EF1F7001E3FF2 /* UserProgress.swift */; };
+		5F0A896F261EF610001E3FF2 /* Playground1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F0A896E261EF610001E3FF2 /* Playground1.storyboard */; };
+		5F0A8972261EF69E001E3FF2 /* Playground1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0A8971261EF69E001E3FF2 /* Playground1ViewController.swift */; };
+		5F0A8975261EFF8E001E3FF2 /* NormalItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0A8974261EFF8E001E3FF2 /* NormalItemsModel.swift */; };
 		5FBD6DD8261DB26A00EB0322 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBD6DD7261DB26A00EB0322 /* AppDelegate.swift */; };
 		5FBD6DDA261DB26A00EB0322 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBD6DD9261DB26A00EB0322 /* SceneDelegate.swift */; };
 		5FBD6DDC261DB26A00EB0322 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBD6DDB261DB26A00EB0322 /* ViewController.swift */; };
@@ -21,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F0A896B261EF1F7001E3FF2 /* UserProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProgress.swift; sourceTree = "<group>"; };
+		5F0A896E261EF610001E3FF2 /* Playground1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Playground1.storyboard; sourceTree = "<group>"; };
+		5F0A8971261EF69E001E3FF2 /* Playground1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playground1ViewController.swift; sourceTree = "<group>"; };
+		5F0A8974261EFF8E001E3FF2 /* NormalItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalItemsModel.swift; sourceTree = "<group>"; };
 		5FBD6DD4261DB26A00EB0322 /* recycle-hero-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "recycle-hero-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FBD6DD7261DB26A00EB0322 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FBD6DD9261DB26A00EB0322 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,11 +77,15 @@
 				5FBD6DD7261DB26A00EB0322 /* AppDelegate.swift */,
 				5FBD6DD9261DB26A00EB0322 /* SceneDelegate.swift */,
 				5FBD6DDB261DB26A00EB0322 /* ViewController.swift */,
+				5F0A8971261EF69E001E3FF2 /* Playground1ViewController.swift */,
 				5FBD6DF3261DB68200EB0322 /* RecycledItemsModel.swift */,
+				5F0A8974261EFF8E001E3FF2 /* NormalItemsModel.swift */,
+				5F0A896B261EF1F7001E3FF2 /* UserProgress.swift */,
 				5FBD6DDD261DB26A00EB0322 /* Main.storyboard */,
 				60184855261DF010008F6063 /* StageMenu.storyboard */,
 				60184858261E0319008F6063 /* StageMenuController.swift */,
 				5FBD6DF0261DB4FD00EB0322 /* StoryPage.storyboard */,
+				5F0A896E261EF610001E3FF2 /* Playground1.storyboard */,
 				5FBD6DE3261DB26B00EB0322 /* Assets.xcassets */,
 				5FBD6DE5261DB26B00EB0322 /* LaunchScreen.storyboard */,
 				5FBD6DE8261DB26B00EB0322 /* Info.plist */,
@@ -140,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FBD6DE7261DB26B00EB0322 /* LaunchScreen.storyboard in Resources */,
+				5F0A896F261EF610001E3FF2 /* Playground1.storyboard in Resources */,
 				5FBD6DF1261DB4FD00EB0322 /* StoryPage.storyboard in Resources */,
 				5FBD6DE4261DB26B00EB0322 /* Assets.xcassets in Resources */,
 				5FBD6DDF261DB26A00EB0322 /* Main.storyboard in Resources */,
@@ -158,8 +171,14 @@
 				5FBD6DE2261DB26A00EB0322 /* recycle_hero_app.xcdatamodeld in Sources */,
 				5FBD6DF4261DB68200EB0322 /* RecycledItemsModel.swift in Sources */,
 				5FBD6DD8261DB26A00EB0322 /* AppDelegate.swift in Sources */,
+				5F0A896C261EF1F7001E3FF2 /* UserProgress.swift in Sources */,
+				5F0A8975261EFF8E001E3FF2 /* NormalItemsModel.swift in Sources */,
 				5FBD6DDA261DB26A00EB0322 /* SceneDelegate.swift in Sources */,
+<<<<<<< HEAD
 				60184859261E0319008F6063 /* StageMenuController.swift in Sources */,
+=======
+				5F0A8972261EF69E001E3FF2 /* Playground1ViewController.swift in Sources */,
+>>>>>>> staging
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
