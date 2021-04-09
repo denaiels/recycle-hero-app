@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Story Page View Controller-->
         <scene sceneID="plm-xh-nMj">
             <objects>
-                <viewController id="ntR-yD-1Lb" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Story1" id="ntR-yD-1Lb" customClass="StoryPageViewController" customModule="recycle_hero_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hF1-an-ycT">
                         <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,7 +34,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="nextButton"/>
                                 <connections>
-                                    <segue destination="md8-d6-g1t" kind="show" id="fDw-6v-zfH"/>
+                                    <segue destination="md8-d6-g1t" kind="custom" customClass="SlideLeftSegue" customModule="recycle_hero_app" customModuleProvider="target" id="veb-It-kn3"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="0li-fj-q0V">
@@ -50,10 +50,10 @@
             </objects>
             <point key="canvasLocation" x="-766.07142857142856" y="524.63768115942037"/>
         </scene>
-        <!--View Controller-->
+        <!--Story Page View Controller-->
         <scene sceneID="Ep6-xA-54q">
             <objects>
-                <viewController id="md8-d6-g1t" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Story2" id="md8-d6-g1t" customClass="StoryPageViewController" customModule="recycle_hero_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NUm-S1-b5L">
                         <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,7 +67,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="nextButton"/>
                                 <connections>
-                                    <segue destination="iMD-bf-eJV" kind="show" id="7O3-Ah-MU6"/>
+                                    <segue destination="iMD-bf-eJV" kind="custom" customClass="SlideLeftSegue" customModule="recycle_hero_app" customModuleProvider="target" id="mup-He-Hv9"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="But, People keep on producing trash and throw them everywhere" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sD4-5h-eV4">
@@ -93,10 +93,10 @@
             </objects>
             <point key="canvasLocation" x="-82.464454976303315" y="527.69230769230762"/>
         </scene>
-        <!--View Controller-->
+        <!--Story Page View Controller-->
         <scene sceneID="Qd8-8W-1Za">
             <objects>
-                <viewController id="iMD-bf-eJV" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Story3" id="iMD-bf-eJV" customClass="StoryPageViewController" customModule="recycle_hero_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KYT-ac-rAm">
                         <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,7 +110,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="nextButton"/>
                                 <connections>
-                                    <segue destination="Giw-al-kJh" kind="show" id="0i3-NQ-4SR"/>
+                                    <segue destination="Giw-al-kJh" kind="custom" customClass="SlideLeftSegue" customModule="recycle_hero_app" customModuleProvider="target" id="DLa-1B-wTt"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Now, The Earth is full of trash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2R8-fT-AgO">
@@ -134,10 +134,10 @@
             </objects>
             <point key="canvasLocation" x="593.60189573459718" y="524.61538461538464"/>
         </scene>
-        <!--View Controller-->
+        <!--Story Page View Controller-->
         <scene sceneID="v9J-jf-wMw">
             <objects>
-                <viewController id="Giw-al-kJh" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Story4" id="Giw-al-kJh" customClass="StoryPageViewController" customModule="recycle_hero_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2hH-Xq-jny">
                         <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

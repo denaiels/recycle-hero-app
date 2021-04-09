@@ -16,6 +16,9 @@
 		5FBD6DE7261DB26B00EB0322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FBD6DE5261DB26B00EB0322 /* LaunchScreen.storyboard */; };
 		5FBD6DF1261DB4FD00EB0322 /* StoryPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FBD6DF0261DB4FD00EB0322 /* StoryPage.storyboard */; };
 		5FBD6DF4261DB68200EB0322 /* RecycledItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBD6DF3261DB68200EB0322 /* RecycledItemsModel.swift */; };
+		5FECDADC262050D70076FC08 /* SlideLeftSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECDADB262050D70076FC08 /* SlideLeftSegue.swift */; };
+		5FECDAE1262059620076FC08 /* SlideLeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECDAE0262059620076FC08 /* SlideLeftViewController.swift */; };
+		5FECDAFB26205B430076FC08 /* StoryPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECDAFA26205B430076FC08 /* StoryPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		5FBD6DE8261DB26B00EB0322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FBD6DF0261DB4FD00EB0322 /* StoryPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryPage.storyboard; sourceTree = "<group>"; };
 		5FBD6DF3261DB68200EB0322 /* RecycledItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycledItemsModel.swift; sourceTree = "<group>"; };
+		5FECDADB262050D70076FC08 /* SlideLeftSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideLeftSegue.swift; sourceTree = "<group>"; };
+		5FECDAE0262059620076FC08 /* SlideLeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideLeftViewController.swift; sourceTree = "<group>"; };
+		5FECDAFA26205B430076FC08 /* StoryPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,19 +68,29 @@
 		5FBD6DD6261DB26A00EB0322 /* recycle-hero-app */ = {
 			isa = PBXGroup;
 			children = (
+				5FECDADA262050B70076FC08 /* CustomSegue */,
 				5FBD6DD7261DB26A00EB0322 /* AppDelegate.swift */,
 				5FBD6DD9261DB26A00EB0322 /* SceneDelegate.swift */,
 				5FBD6DDB261DB26A00EB0322 /* ViewController.swift */,
+				5FECDAFA26205B430076FC08 /* StoryPageViewController.swift */,
 				5FBD6DF3261DB68200EB0322 /* RecycledItemsModel.swift */,
 				5FBD6DDD261DB26A00EB0322 /* Main.storyboard */,
 				5FBD6DF0261DB4FD00EB0322 /* StoryPage.storyboard */,
 				5FBD6DE3261DB26B00EB0322 /* Assets.xcassets */,
 				5FBD6DE5261DB26B00EB0322 /* LaunchScreen.storyboard */,
-				6A942814261DBC9500A73B2D /* StoryScreen.storyboard */,
 				5FBD6DE8261DB26B00EB0322 /* Info.plist */,
 				5FBD6DE0261DB26A00EB0322 /* recycle_hero_app.xcdatamodeld */,
 			);
 			path = "recycle-hero-app";
+			sourceTree = "<group>";
+		};
+		5FECDADA262050B70076FC08 /* CustomSegue */ = {
+			isa = PBXGroup;
+			children = (
+				5FECDADB262050D70076FC08 /* SlideLeftSegue.swift */,
+				5FECDAE0262059620076FC08 /* SlideLeftViewController.swift */,
+			);
+			path = CustomSegue;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +153,6 @@
 				5FBD6DE7261DB26B00EB0322 /* LaunchScreen.storyboard in Resources */,
 				5FBD6DF1261DB4FD00EB0322 /* StoryPage.storyboard in Resources */,
 				5FBD6DE4261DB26B00EB0322 /* Assets.xcassets in Resources */,
-				6A942815261DBC9500A73B2D /* StoryScreen.storyboard in Resources */,
 				5FBD6DDF261DB26A00EB0322 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,9 +164,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FECDADC262050D70076FC08 /* SlideLeftSegue.swift in Sources */,
 				5FBD6DDC261DB26A00EB0322 /* ViewController.swift in Sources */,
+				5FECDAE1262059620076FC08 /* SlideLeftViewController.swift in Sources */,
 				5FBD6DE2261DB26A00EB0322 /* recycle_hero_app.xcdatamodeld in Sources */,
 				5FBD6DF4261DB68200EB0322 /* RecycledItemsModel.swift in Sources */,
+				5FECDAFB26205B430076FC08 /* StoryPageViewController.swift in Sources */,
 				5FBD6DD8261DB26A00EB0322 /* AppDelegate.swift in Sources */,
 				5FBD6DDA261DB26A00EB0322 /* SceneDelegate.swift in Sources */,
 			);
