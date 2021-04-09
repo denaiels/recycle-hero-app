@@ -16,6 +16,7 @@
 		5FBD6DE7261DB26B00EB0322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FBD6DE5261DB26B00EB0322 /* LaunchScreen.storyboard */; };
 		5FBD6DF1261DB4FD00EB0322 /* StoryPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FBD6DF0261DB4FD00EB0322 /* StoryPage.storyboard */; };
 		5FBD6DF4261DB68200EB0322 /* RecycledItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBD6DF3261DB68200EB0322 /* RecycledItemsModel.swift */; };
+		60D8CAF0261FFF4900155F41 /* Workshop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60D8CAEF261FFF4900155F41 /* Workshop.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		5FBD6DE8261DB26B00EB0322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FBD6DF0261DB4FD00EB0322 /* StoryPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryPage.storyboard; sourceTree = "<group>"; };
 		5FBD6DF3261DB68200EB0322 /* RecycledItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycledItemsModel.swift; sourceTree = "<group>"; };
+		60D8CAEF261FFF4900155F41 /* Workshop.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Workshop.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				5FBD6DDB261DB26A00EB0322 /* ViewController.swift */,
 				5FBD6DF3261DB68200EB0322 /* RecycledItemsModel.swift */,
 				5FBD6DDD261DB26A00EB0322 /* Main.storyboard */,
+				60D8CAEF261FFF4900155F41 /* Workshop.storyboard */,
 				5FBD6DF0261DB4FD00EB0322 /* StoryPage.storyboard */,
 				5FBD6DE3261DB26B00EB0322 /* Assets.xcassets */,
 				5FBD6DE5261DB26B00EB0322 /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			files = (
 				5FBD6DE7261DB26B00EB0322 /* LaunchScreen.storyboard in Resources */,
 				5FBD6DF1261DB4FD00EB0322 /* StoryPage.storyboard in Resources */,
+				60D8CAF0261FFF4900155F41 /* Workshop.storyboard in Resources */,
 				5FBD6DE4261DB26B00EB0322 /* Assets.xcassets in Resources */,
 				5FBD6DDF261DB26A00EB0322 /* Main.storyboard in Resources */,
 			);
