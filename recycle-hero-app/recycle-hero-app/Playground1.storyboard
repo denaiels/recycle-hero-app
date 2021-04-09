@@ -91,6 +91,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="lightBulb"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3r-Z6-QVB">
+                                <rect key="frame" x="424" y="175" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="usedCloth"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Cqv-0g-Zmv"/>
                         <color key="backgroundColor" red="0.99747151136398315" green="0.99761420488357544" blue="0.99744027853012085" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -109,6 +114,7 @@
         <image name="newspaper" width="6589" height="5546"/>
         <image name="recycleBin" width="2048" height="2048"/>
         <image name="scissors" width="1824" height="3634"/>
+        <image name="usedCloth" width="2048" height="2048"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
