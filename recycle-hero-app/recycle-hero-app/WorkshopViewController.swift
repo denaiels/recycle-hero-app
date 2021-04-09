@@ -7,19 +7,16 @@
 
 import UIKit
 
-var items = [RecycledItemsModel]()
 
-class WorkshopViewController: UIViewController {
-    
+
+class WorkshopViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var collectionView: UICollectionView!
-    
+    var items = [RecycledItemsModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
-        
         //Di dalam viewDidLoad() kita delegasikan collection view & data source nya ke view controller saat ini:
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -34,16 +31,48 @@ class WorkshopViewController: UIViewController {
         let compost = RecycledItemsModel(item_name: "compost", imageName: "compost.png")
         let newspaper = RecycledItemsModel(item_name: "newspaper", imageName: "newspaper.png")
         
+        let milkJug = RecycledItemsModel(item_name: "milkjug", imageName: "milkJug.png")
+        
+        let needle = RecycledItemsModel(item_name: "needle", imageName: "needle.png")
+        
         items.append(bottle)
         items.append(banana)
         items.append(compost)
         items.append(newspaper)
+        items.append(milkJug)
+        items.append(needle)
         
         //trigger refresh collection view
         collectionView.reloadData()
     }
     
-
+    
+    //MARK: Mengatur view cell
+        func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "viewCellItem", for: indexPath) as! RecycleCollectionViewCell
+    
+            // set nilai ke view dalam cell
+            let item = items[indexPath.row]
+            cell.imageViewItem.image = UIImage(named: item.imageName)
+    
+            return cell
+        }
+    
+        //MARK: Menentukan jumlah item yang akan ditampilkan
+        func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
+    
+            return items.count
+        }
+    
+        //MARK: mengatur layout view cell
+        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
+    
+            //Lebar dan tinggi cell(ini 1 cell 1 row)
+            //return CGSize(width: collectionView.frame.width, height: 120)
+            
+            return CGSize(width: 100, height: 120)
+        }
     /*
     // MARK: - Navigation
 
@@ -54,32 +83,4 @@ class WorkshopViewController: UIViewController {
     }
     */
 
-}
-
-extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
-    
-    //MARK: Mengatur view cell
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "viewCellItem", for: indexPath) as! RecycleCollectionViewCell
-        
-        // set nilai ke view dalam cell
-        let item = items[indexPath.row]
-        cell.imageViewItem.image = UIImage(named: item.imageName)
-        
-        return cell
-    }
-    
-    //MARK: Menentukan jumlah item yang akan ditampilkan
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
-        
-        return items.count
-    }
-    
-    //MARK: mengatur layout view cell
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
-        
-        //Lebar dan tinggi cell
-        return CGSize(width: collectionView.frame.width, height: 120)
-    }
 }
