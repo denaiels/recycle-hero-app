@@ -23,6 +23,7 @@
 		60D8CAF0261FFF4900155F41 /* Workshop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60D8CAEF261FFF4900155F41 /* Workshop.storyboard */; };
 		60D8CAF7262007D300155F41 /* RecycleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D8CAF6262007D300155F41 /* RecycleCollectionViewCell.swift */; };
 		60D8CAFA26200C4A00155F41 /* WorkshopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D8CAF926200C4A00155F41 /* WorkshopViewController.swift */; };
+		60E58A552621526C00F96A21 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E58A542621526C00F96A21 /* ItemDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		60D8CAEF261FFF4900155F41 /* Workshop.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Workshop.storyboard; sourceTree = "<group>"; };
 		60D8CAF6262007D300155F41 /* RecycleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycleCollectionViewCell.swift; sourceTree = "<group>"; };
 		60D8CAF926200C4A00155F41 /* WorkshopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopViewController.swift; sourceTree = "<group>"; };
+		60E58A542621526C00F96A21 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				5F0A896B261EF1F7001E3FF2 /* UserProgress.swift */,
 				5FBD6DDD261DB26A00EB0322 /* Main.storyboard */,
 				60D8CAEF261FFF4900155F41 /* Workshop.storyboard */,
+				60E58A542621526C00F96A21 /* ItemDetailViewController.swift */,
 				60D8CAF926200C4A00155F41 /* WorkshopViewController.swift */,
 				60D8CAF6262007D300155F41 /* RecycleCollectionViewCell.swift */,
 				5FBD6DF0261DB4FD00EB0322 /* StoryPage.storyboard */,
@@ -178,6 +181,7 @@
 				60D8CAFA26200C4A00155F41 /* WorkshopViewController.swift in Sources */,
 				5F0A896C261EF1F7001E3FF2 /* UserProgress.swift in Sources */,
 				5F0A8975261EFF8E001E3FF2 /* NormalItemsModel.swift in Sources */,
+				60E58A552621526C00F96A21 /* ItemDetailViewController.swift in Sources */,
 				5FBD6DDA261DB26A00EB0322 /* SceneDelegate.swift in Sources */,
 				5F0A8972261EF69E001E3FF2 /* Playground1ViewController.swift in Sources */,
 			);
