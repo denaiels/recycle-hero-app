@@ -19,6 +19,16 @@ class RecycledItem : Item{
         self.link = link
         
         super.init(name: name, itemStage: itemStage, image: image, description: description, itemFound: itemFound)
+        
+        self.type = "recycled"
     }
         
 }
+
+//contoh
+let item = Item(name: "lol", itemStage: 1, image: "str", description: "str", itemFound: false)
+
+let recycle = RecycledItem(name: "test", itemStage: 12, image: "str", description: "str", itemFound: true, ingredient1Id: 12, ingredient2Id: 12, link: "str")
+
+//bisa kegabung
+var list = [item, recycle]
