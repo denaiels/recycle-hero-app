@@ -12,9 +12,8 @@ import UIKit
 class WorkshopViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var collectionView: UICollectionView!
-    var items = [RecycledItemsModel]()
-    var normalItems = [NormalItemsModel()]
-    
+    var items = [Item]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -29,12 +28,14 @@ class WorkshopViewController: UIViewController, UICollectionViewDelegate, UIColl
     func initDataItems(){
         for index in 1...3{
             let num = index-1
-            items.append(RecycledItemsModel(item_name: recycledItemNames[num], item_stage: 1, item_ingredient_1_id: recycledItemIngredient1[num], item_ingredient_2_id: recycledItemIngredient2[num], item_icon_color: recycledItemIconColor[num], item_icon_black: recycledItemIconColor[num], item_description: recycledItemDescription[num], item_link: recycledItemLink[num], item_found: recycledItemFound[num]))
+            items.append(RecycledItem(name: recycledItemNames[num], itemStage: recycledItemStage[num], image: recycledItemIconColor[num], description: "lol", itemFound: true, ingredient1Id: recycledItemIngredient1[num], ingredient2Id: recycledItemIngredient2[num], link: recycledItemLink[num]))
         }
+        
+        items.append(RecycledItem(name: "shit", itemStage: 1, image: recycledItemIconColor[10], description: "this is shit", itemFound: false, ingredient1Id: recycledItemIngredient1[10], ingredient2Id: recycledItemIngredient2[11], link: "https://www.google.com"))
         
         for index in 1...3{
             let num = index-1
-            normalItems.append(NormalItemsModel(item_name: normalItemNames[num], item_icon_color: normalItemIconColor[num], item_icon_black: "\(normalItemIconColor)Black.png", item_description: normalItemDescription[num], item_found: normalItemFound[num]))
+            items.append(Item(name: normalItemNames[num], itemStage: 1, image: normalItemIconColor[num], description: normalItemDescription[num], itemFound: true))
         }
         //trigger refresh collection view
         collectionView.reloadData()
@@ -49,9 +50,14 @@ class WorkshopViewController: UIViewController, UICollectionViewDelegate, UIColl
             cell.backgroundColor = UIColor.red
             // set nilai ke view dalam cell
             let item = items[indexPath.row]
-            let itemImageName = "\(item.item_icon_color).png"
-            cell.imageViewItem.image = UIImage(named: itemImageName)
-
+            
+            if item.itemFound{
+                let itemImageName = "\(item.image).png"
+                cell.imageViewItem.image = UIImage(named: itemImageName)
+            }else{
+                cell.imageViewItem.image = UIImage(named: item.imageBlack)
+            }
+            
             return cell
         }
 
@@ -67,18 +73,14 @@ class WorkshopViewController: UIViewController, UICollectionViewDelegate, UIColl
             //Lebar dan tinggi cell(ini 1 cell 1 row)
             //return CGSize(width: collectionView.frame.width, height: 120)
             
-            return CGSize(width: 100, height: 120)
+            return CGSize(width: 150, height: 150)
         }
-    
-        func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-            
-            //MARK: perintah ketika item dipilih
-            performSegue(withIdentifier: "showItemDetail", sender: indexPath.row)
-        }
-    
-    func addNormalItem(){
-        
-    }
+//
+//        func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//
+//            //MARK: perintah ketika item dipilih
+//            performSegue(withIdentifier: "showItemDetail", sender: indexPath.row)
+//        }
     
         
     
@@ -87,14 +89,14 @@ class WorkshopViewController: UIViewController, UICollectionViewDelegate, UIColl
     // MARK: - Navigation
 
      //In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-        let destination = segue.destination as! ItemDetailViewController
-        let selectedRow = sender as! Int
-        let selectedItem = items[selectedRow]
-        destination.item = selectedItem
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        // Get the new view controller using segue.destination.
+//        // Pass the selected object to the new view controller.
+//        let destination = segue.destination as! ItemDetailViewController
+//        let selectedRow = sender as! Int
+//        let selectedItem = items[selectedRow]
+//        destination.item = selectedItem
+//    }
     
 
 }
