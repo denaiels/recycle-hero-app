@@ -24,8 +24,6 @@
 		60D8CAF7262007D300155F41 /* RecycleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D8CAF6262007D300155F41 /* RecycleCollectionViewCell.swift */; };
 		60D8CAFA26200C4A00155F41 /* WorkshopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D8CAF926200C4A00155F41 /* WorkshopViewController.swift */; };
 		60E58A552621526C00F96A21 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E58A542621526C00F96A21 /* ItemDetailViewController.swift */; };
-		6000AC6B2621CFA000698B4A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000AC6A2621CFA000698B4A /* Item.swift */; };
-		6000AC6E2621D67200698B4A /* RecycledItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000AC6D2621D67200698B4A /* RecycledItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,8 +46,6 @@
 		60D8CAF6262007D300155F41 /* RecycleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycleCollectionViewCell.swift; sourceTree = "<group>"; };
 		60D8CAF926200C4A00155F41 /* WorkshopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopViewController.swift; sourceTree = "<group>"; };
 		60E58A542621526C00F96A21 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
-		6000AC6A2621CFA000698B4A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		6000AC6D2621D67200698B4A /* RecycledItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycledItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +83,6 @@
 				5FBD6DDB261DB26A00EB0322 /* ViewController.swift */,
 				5F0A8971261EF69E001E3FF2 /* Playground1ViewController.swift */,
 				5FBD6DF3261DB68200EB0322 /* RecycledItemsModel.swift */,
-				6000AC6A2621CFA000698B4A /* Item.swift */,
-				6000AC6D2621D67200698B4A /* RecycledItem.swift */,
 				5F0A8974261EFF8E001E3FF2 /* NormalItemsModel.swift */,
 				5F0A896B261EF1F7001E3FF2 /* UserProgress.swift */,
 				5FBD6DDD261DB26A00EB0322 /* Main.storyboard */,
@@ -181,7 +175,6 @@
 			files = (
 				60D8CAF7262007D300155F41 /* RecycleCollectionViewCell.swift in Sources */,
 				5FBD6DDC261DB26A00EB0322 /* ViewController.swift in Sources */,
-				6000AC6B2621CFA000698B4A /* Item.swift in Sources */,
 				5FBD6DE2261DB26A00EB0322 /* recycle_hero_app.xcdatamodeld in Sources */,
 				5FBD6DF4261DB68200EB0322 /* RecycledItemsModel.swift in Sources */,
 				5FBD6DD8261DB26A00EB0322 /* AppDelegate.swift in Sources */,
@@ -189,7 +182,6 @@
 				5F0A896C261EF1F7001E3FF2 /* UserProgress.swift in Sources */,
 				5F0A8975261EFF8E001E3FF2 /* NormalItemsModel.swift in Sources */,
 				60E58A552621526C00F96A21 /* ItemDetailViewController.swift in Sources */,
-				6000AC6E2621D67200698B4A /* RecycledItem.swift in Sources */,
 				5FBD6DDA261DB26A00EB0322 /* SceneDelegate.swift in Sources */,
 				5F0A8972261EF69E001E3FF2 /* Playground1ViewController.swift in Sources */,
 			);
