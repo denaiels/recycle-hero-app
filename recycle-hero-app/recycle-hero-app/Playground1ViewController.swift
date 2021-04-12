@@ -8,11 +8,22 @@
 import UIKit
 
 class Playground1ViewController: UIViewController {
+    
+    var counter = 0
+    var item_list = ["mango","apple"]
 
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if counter == 0{
+            print(item_list[0])
+        }
+        else{
+            print("counter is 1")
+        }
+        
 
         // Do any additional setup after loading the view.
     }
