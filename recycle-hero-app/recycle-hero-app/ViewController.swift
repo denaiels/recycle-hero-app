@@ -13,11 +13,11 @@ class ViewController: UIViewController {
     var normalItems = [NormalItemsModel]()
     var userProgress = UserProgress()
     
-    
+    var userTouchBool = false
     var counter = 0
     var item_list: [NormalItemsModel] = [NormalItemsModel(item_name: "item1", item_icon_color: "item1", item_icon_black: "item1", item_description: "item1", item_found: false),NormalItemsModel(item_name: "item1", item_icon_color: "item1", item_icon_black: "item1", item_description: "item1", item_found: false)]
     
-    //var item_list = ["item1","item2"]
+    
     var image_0 = "empty"
     var image_1 = "empty"
     
@@ -50,56 +50,75 @@ class ViewController: UIViewController {
     @IBOutlet weak var usedClothButton: UIButton!
     @IBOutlet weak var scissorsButton: UIButton!
     @IBOutlet weak var plasticBottleButton: UIButton!
+    var tempItemButton:[UIButton] = [UIButton]()
+    
+    //back button
+    @IBOutlet weak var backButton: UIButton!
+    @IBAction func clickBackButton(_ sender: UIButton) {
+    }
+    
     
     
     //action for each item button
     @IBAction func clickFoodScrap(_ sender: UIButton) {
         item_list[counter] = normalItems[0]
+        tempItemButton[counter] = foodScrapButton
+        userTouchBool = true
     }
-    
     @IBAction func clickNewspaper(_ sender: UIButton) {
         item_list[counter] = normalItems[1]
+        tempItemButton[counter] = newsPaperButton
+        userTouchBool = true
     }
-    
     @IBAction func clickLightBulb(_ sender: UIButton) {
         item_list[counter] = normalItems[2]
+        tempItemButton[counter] = lightBulbButton
+        userTouchBool = true
     }
-    
     @IBAction func clickUsedCloth(_ sender: UIButton) {
         item_list[counter] = normalItems[3]
+        tempItemButton[counter] = usedClothButton
+        userTouchBool = true
     }
-    
     @IBAction func clickScissors(_ sender: UIButton) {
         item_list[counter] = normalItems[4]
+        tempItemButton[counter] = scissorsButton
+        userTouchBool = true
     }
-    
     @IBAction func clickPlasticBottle(_ sender: UIButton) {
         item_list[counter] = normalItems[5]
+        tempItemButton[counter] = plasticBottleButton
+        userTouchBool = true
     }
     
     //recycle bin evaluator
     @IBAction func clickRecycleBin(_ sender: UIButton) {
-        if counter < 2{
-            if counter == 0{
-                image0.image = UIImage(named: item_list[0].item_icon_color)
-                print("image_0 is" + item_list[0].item_name)
-                counter+=1
-            } else if counter == 1{
-                image1.image = UIImage(named: item_list[1].item_icon_color)
-                print("image_1 is" + item_list[1].item_name)
-                
-                compute_item()
-                
-                //image0.image = nil
-                //image1.image = nil
-                
-                counter = 0
+        if userTouchBool{
+            if counter < 2{
+                if counter == 0{
+                    image0.image = UIImage(named: item_list[0].item_icon_color)
+                    print("image_0 is" + item_list[0].item_name)
+                    tempItemButton[counter].isHidden = true
+                    counter+=1
+                } else if counter == 1{
+                    image1.image = UIImage(named: item_list[1].item_icon_color)
+                    print("image_1 is" + item_list[1].item_name)
+                    tempItemButton[counter].isHidden = true
+                    compute_item()
+                    counter = 0
+                    userTouchBool = false
+                } else{
+                    print("pass")
+                }
             } else{
-                print("pass")
+                print("nevermind")
             }
-        } else{
-            print("nevermind")
         }
+        else{
+            print("pass")
+            
+        }
+        //remove image from bin with delay
         if image0.image != nil && image1.image != nil{
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { // Change `2.0` to the desired number of seconds.
                // Code you want to be delayed
@@ -114,18 +133,19 @@ class ViewController: UIViewController {
         if item_list[0].item_name == "Food Scrap" && item_list[1].item_name == "Newspaper" || item_list[0].item_name == "Newspaper" && item_list[1].item_name == "Food Scrap"{
             print("Succeess! Compost is found")
             do{
+                backButton.isHidden = true
                 itemNameLabel.text = recycledItems[0].item_name
                 itemImage.image = UIImage(named: recycledItems[0].item_icon_color)
                 popupView.isHidden = false
                 logoMascot.isHidden = false
                 popupCloseLabel.isHidden = false
-                
             }
             foodScrapButton.isHidden = true
             newsPaperButton.isHidden = true
         
         }else if item_list[0].item_name == "Plastic Bottle" && item_list[1].item_name == "Light Bulb" || item_list[0].item_name == "Light Bulb" && item_list[1].item_name == "Plastic Bottle"{ print("Succeess! Bottle Lamp is found")
             do{
+                backButton.isHidden = true
                 itemNameLabel.text = recycledItems[1].item_name
                 itemImage.image = UIImage(named: recycledItems[1].item_icon_color)
                 popupView.isHidden = false
@@ -138,6 +158,7 @@ class ViewController: UIViewController {
             
         }else if item_list[0].item_name == "Used Cloth" && item_list[1].item_name == "Scissors" || item_list[0].item_name == "Scissors" && item_list[1].item_name == "Used Cloth"{ print("Succeess! Wool Fiber is found")
             do{
+                backButton.isHidden = true
                 itemNameLabel.text = recycledItems[2].item_name
                 itemImage.image = UIImage(named: recycledItems[2].item_icon_color)
                 popupView.isHidden = false
@@ -150,6 +171,12 @@ class ViewController: UIViewController {
             
         } else{
             print("failed to recycle try again")
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { // Change `2.0` to the desired number of seconds.
+               // Code you want to be delayed
+                self.tempItemButton[0].isHidden = false
+                self.tempItemButton[1].isHidden = false
+            }
+            
         }
     }
     
@@ -163,6 +190,7 @@ class ViewController: UIViewController {
         guard let location = touch?.location(in: self.view) else { return }
         if !popupView.frame.contains(location) {
             print("Tapped outside the view")
+            backButton.isHidden = false
             popupView.isHidden = true
             logoMascot.isHidden = true
             popupCloseLabel.isHidden = true
@@ -175,6 +203,7 @@ class ViewController: UIViewController {
         logoMascot.isHidden = true
         popupView.isHidden = true
         popupCloseLabel.isHidden = true
+        tempItemButton = [foodScrapButton,newsPaperButton]
         
         
         for i in 0...normalItemNames.count-1 {
