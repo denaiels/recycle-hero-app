@@ -88,7 +88,6 @@
 		5F0BC49526242AF0005F9416 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				5FBD6DDB261DB26A00EB0322 /* ViewController.swift */,
 				60184858261E0319008F6063 /* StageMenuController.swift */,
 				5F0A8971261EF69E001E3FF2 /* Playground1ViewController.swift */,
 				5F0BC47626242233005F9416 /* Playground2ViewController.swift */,
@@ -100,8 +99,6 @@
 		5F0BC49726242B38005F9416 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				5FBD6DDD261DB26A00EB0322 /* Main.storyboard */,
-				5FBD6DF0261DB4FD00EB0322 /* StoryPage.storyboard */,
 				60184855261DF010008F6063 /* StageMenu.storyboard */,
 				5F0A896E261EF610001E3FF2 /* Playground1.storyboard */,
 				5F0BC4732624221F005F9416 /* Playground2.storyboard */,
@@ -136,6 +133,9 @@
 				5FBD6DD7261DB26A00EB0322 /* AppDelegate.swift */,
 				5FBD6DD9261DB26A00EB0322 /* SceneDelegate.swift */,
 				5F0A896B261EF1F7001E3FF2 /* UserProgress.swift */,
+				5FBD6DDB261DB26A00EB0322 /* ViewController.swift */,
+				5FBD6DDD261DB26A00EB0322 /* Main.storyboard */,
+				5FBD6DF0261DB4FD00EB0322 /* StoryPage.storyboard */,
 				5FBD6DE3261DB26B00EB0322 /* Assets.xcassets */,
 				5FBD6DE5261DB26B00EB0322 /* LaunchScreen.storyboard */,
 				5FBD6DE8261DB26B00EB0322 /* Info.plist */,
