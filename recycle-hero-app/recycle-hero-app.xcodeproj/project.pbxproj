@@ -20,12 +20,13 @@
 		5FBD6DE7261DB26B00EB0322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FBD6DE5261DB26B00EB0322 /* LaunchScreen.storyboard */; };
 		5FBD6DF1261DB4FD00EB0322 /* StoryPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FBD6DF0261DB4FD00EB0322 /* StoryPage.storyboard */; };
 		5FBD6DF4261DB68200EB0322 /* RecycledItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBD6DF3261DB68200EB0322 /* RecycledItemsModel.swift */; };
+		6000AC6B2621CFA000698B4A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000AC6A2621CFA000698B4A /* Item.swift */; };
+		6000AC6E2621D67200698B4A /* RecycledItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000AC6D2621D67200698B4A /* RecycledItem.swift */; };
+		600398B82623FB5200430AB9 /* NormalItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600398B72623FB5200430AB9 /* NormalItemDetailViewController.swift */; };
 		60D8CAF0261FFF4900155F41 /* Workshop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60D8CAEF261FFF4900155F41 /* Workshop.storyboard */; };
 		60D8CAF7262007D300155F41 /* RecycleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D8CAF6262007D300155F41 /* RecycleCollectionViewCell.swift */; };
 		60D8CAFA26200C4A00155F41 /* WorkshopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D8CAF926200C4A00155F41 /* WorkshopViewController.swift */; };
 		60E58A552621526C00F96A21 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E58A542621526C00F96A21 /* ItemDetailViewController.swift */; };
-		6000AC6B2621CFA000698B4A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000AC6A2621CFA000698B4A /* Item.swift */; };
-		6000AC6E2621D67200698B4A /* RecycledItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000AC6D2621D67200698B4A /* RecycledItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,12 +45,13 @@
 		5FBD6DE8261DB26B00EB0322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FBD6DF0261DB4FD00EB0322 /* StoryPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryPage.storyboard; sourceTree = "<group>"; };
 		5FBD6DF3261DB68200EB0322 /* RecycledItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycledItemsModel.swift; sourceTree = "<group>"; };
+		6000AC6A2621CFA000698B4A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		6000AC6D2621D67200698B4A /* RecycledItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycledItem.swift; sourceTree = "<group>"; };
+		600398B72623FB5200430AB9 /* NormalItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalItemDetailViewController.swift; sourceTree = "<group>"; };
 		60D8CAEF261FFF4900155F41 /* Workshop.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Workshop.storyboard; sourceTree = "<group>"; };
 		60D8CAF6262007D300155F41 /* RecycleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycleCollectionViewCell.swift; sourceTree = "<group>"; };
 		60D8CAF926200C4A00155F41 /* WorkshopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopViewController.swift; sourceTree = "<group>"; };
 		60E58A542621526C00F96A21 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
-		6000AC6A2621CFA000698B4A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		6000AC6D2621D67200698B4A /* RecycledItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycledItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				5FBD6DDD261DB26A00EB0322 /* Main.storyboard */,
 				60D8CAEF261FFF4900155F41 /* Workshop.storyboard */,
 				60E58A542621526C00F96A21 /* ItemDetailViewController.swift */,
+				600398B72623FB5200430AB9 /* NormalItemDetailViewController.swift */,
 				60D8CAF926200C4A00155F41 /* WorkshopViewController.swift */,
 				60D8CAF6262007D300155F41 /* RecycleCollectionViewCell.swift */,
 				5FBD6DF0261DB4FD00EB0322 /* StoryPage.storyboard */,
@@ -184,6 +187,7 @@
 				6000AC6B2621CFA000698B4A /* Item.swift in Sources */,
 				5FBD6DE2261DB26A00EB0322 /* recycle_hero_app.xcdatamodeld in Sources */,
 				5FBD6DF4261DB68200EB0322 /* RecycledItemsModel.swift in Sources */,
+				600398B82623FB5200430AB9 /* NormalItemDetailViewController.swift in Sources */,
 				5FBD6DD8261DB26A00EB0322 /* AppDelegate.swift in Sources */,
 				60D8CAFA26200C4A00155F41 /* WorkshopViewController.swift in Sources */,
 				5F0A896C261EF1F7001E3FF2 /* UserProgress.swift in Sources */,

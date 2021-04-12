@@ -14,22 +14,11 @@ class ItemDetailViewController: UIViewController {
     
     @IBOutlet weak var itemImage: UIImageView!
     
-    
     @IBOutlet weak var ingredient1Image: UIImageView!
-    
     
     @IBOutlet weak var ingredient2Image: UIImageView!
     
-    @IBOutlet weak var ingredient1Placeholder: UIImageView!
-    
-    
-    @IBOutlet weak var ingredient2Placeholder: UIImageView!
-    
-    @IBOutlet weak var plusSymbol: UIImageView!
-    
-    
     @IBOutlet weak var ingredient1Label: UILabel!
-    
     
     @IBOutlet weak var ingredient2Label: UILabel!
     

@@ -47,6 +47,7 @@ class WorkshopViewController: UIViewController, UICollectionViewDelegate, UIColl
 
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "viewCellItem", for: indexPath) as! RecycleCollectionViewCell
             
+            cell.contentView.layer.cornerRadius = 10.0
             cell.backgroundColor = UIColor.red
             // set nilai ke view dalam cell
             let item = items[indexPath.row]
@@ -57,6 +58,7 @@ class WorkshopViewController: UIViewController, UICollectionViewDelegate, UIColl
             }else{
                 cell.imageViewItem.image = UIImage(named: item.imageBlack)
             }
+            
             
             return cell
         }
@@ -75,12 +77,19 @@ class WorkshopViewController: UIViewController, UICollectionViewDelegate, UIColl
             
             return CGSize(width: 150, height: 150)
         }
-//
-//        func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//
-//            //MARK: perintah ketika item dipilih
-//            performSegue(withIdentifier: "showItemDetail", sender: indexPath.row)
-//        }
+
+        func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+
+            //MARK: perintah ketika item dipilih
+            let item = items[indexPath.row]
+            if item.itemFound{
+                let segueIdentifier = item.type == "recycled" ? "showItemDetail" : "showNormalItemDetail"
+                
+                performSegue(withIdentifier: segueIdentifier, sender: item)
+            }else{
+                return
+            }
+        }
     
         
     
@@ -89,14 +98,22 @@ class WorkshopViewController: UIViewController, UICollectionViewDelegate, UIColl
     // MARK: - Navigation
 
      //In a storyboard-based application, you will often want to do a little preparation before navigation
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        // Get the new view controller using segue.destination.
-//        // Pass the selected object to the new view controller.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
 //        let destination = segue.destination as! ItemDetailViewController
 //        let selectedRow = sender as! Int
 //        let selectedItem = items[selectedRow]
 //        destination.item = selectedItem
-//    }
+        
+        if segue.identifier == "showItemDetail"{
+            let destination = segue.destination as! ItemDetailViewController
+            destination.item = sender as? RecycledItem
+        }else{
+            let destination = segue.destination as! NormalItemDetailViewController
+            destination.item = sender as? Item
+        }
+    }
     
 
 }
