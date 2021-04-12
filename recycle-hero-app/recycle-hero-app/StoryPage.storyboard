@@ -1,8 +1,310 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ntR-yD-1Lb">
+    <device id="retina6_0" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Page View Controller-->
+        <scene sceneID="JKg-iA-x9r">
+            <objects>
+                <pageViewController storyboardIdentifier="StageMenuController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Psf-b0-8aX" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JZ4-EL-hBr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-231" y="-1200"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="g5B-dK-RTD">
+            <objects>
+                <viewController id="KST-ld-ejO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j6z-Z9-zw5">
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="267"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="GSJ-Nr-YXb">
+                                <rect key="frame" x="7" y="49" width="830" height="168"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qsh-99-y3k">
+                                        <rect key="frame" x="295" y="0.0" width="240" height="128"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jF-Tk-RrD">
+                                        <rect key="frame" x="0.0" y="144" width="830" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="830" id="RM8-jb-QgA"/>
+                                            <constraint firstAttribute="height" constant="24" id="wGl-z5-VZw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7Rl-lA-bf1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="GSJ-Nr-YXb" secondAttribute="trailing" constant="7" id="7gF-FK-Njc"/>
+                            <constraint firstItem="7Rl-lA-bf1" firstAttribute="bottom" secondItem="GSJ-Nr-YXb" secondAttribute="bottom" constant="50" id="Mli-aQ-HLK"/>
+                            <constraint firstItem="GSJ-Nr-YXb" firstAttribute="top" secondItem="7Rl-lA-bf1" secondAttribute="top" constant="49" id="P4S-an-FVb"/>
+                            <constraint firstItem="GSJ-Nr-YXb" firstAttribute="leading" secondItem="j6z-Z9-zw5" secondAttribute="leading" constant="7" id="fwc-Yq-cZ0"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="844" height="267"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hji-gy-W4a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="444" y="-1228"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Hlj-Yx-bFp">
+            <objects>
+                <viewController id="BGn-Pd-osV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CMs-Ah-Z0C">
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zo0-9t-3yo">
+                                <rect key="frame" x="0.0" y="0.0" width="844" height="267"/>
+                                <connections>
+                                    <segue destination="Psf-b0-8aX" kind="embed" id="gCP-sh-yOM"/>
+                                </connections>
+                            </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PAQ-V6-72n">
+                                <rect key="frame" x="0.0" y="267" width="844" height="123"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="TIM-B6-7db">
+                                        <rect key="frame" x="344" y="0.0" width="156" height="93.333333333333329"/>
+                                        <subviews>
+                                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="CVz-Nw-Tan">
+                                                <rect key="frame" x="8" y="0.0" width="140.33333333333334" height="27.333333333333332"/>
+                                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </pageControl>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypR-ph-ssx">
+                                                <rect key="frame" x="0.0" y="43.333333333333314" width="156" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="BSc-bb-Pw6"/>
+                                                    <constraint firstAttribute="width" constant="156" id="sB8-7m-ZZU"/>
+                                                </constraints>
+                                                <state key="normal" image="nextButton"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="ypR-ph-ssx" firstAttribute="top" secondItem="CVz-Nw-Tan" secondAttribute="bottom" constant="16" id="FGP-1s-s40"/>
+                                            <constraint firstAttribute="bottom" secondItem="ypR-ph-ssx" secondAttribute="bottom" id="H02-Tw-aL6"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96819895509999998" green="0.94583100080000004" blue="0.90587693449999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="TIM-B6-7db" firstAttribute="centerX" secondItem="PAQ-V6-72n" secondAttribute="centerX" id="Kzz-ZM-GYU"/>
+                                    <constraint firstItem="TIM-B6-7db" firstAttribute="top" secondItem="PAQ-V6-72n" secondAttribute="top" id="rq2-YX-NAI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7vB-N2-EDO"/>
+                        <color key="backgroundColor" red="0.96819895509999998" green="0.94583100080000004" blue="0.90587693449999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="PAQ-V6-72n" secondAttribute="bottom" id="0w3-IF-PJw"/>
+                            <constraint firstAttribute="trailing" secondItem="Zo0-9t-3yo" secondAttribute="trailing" id="6qq-VI-GSE"/>
+                            <constraint firstAttribute="trailing" secondItem="PAQ-V6-72n" secondAttribute="trailing" id="AE0-rG-8SW"/>
+                            <constraint firstAttribute="trailing" secondItem="PAQ-V6-72n" secondAttribute="trailing" id="EAb-6a-AQU"/>
+                            <constraint firstItem="PAQ-V6-72n" firstAttribute="height" secondItem="7vB-N2-EDO" secondAttribute="height" multiplier="1:3" id="KPa-Nj-7oA"/>
+                            <constraint firstItem="PAQ-V6-72n" firstAttribute="top" secondItem="Zo0-9t-3yo" secondAttribute="bottom" id="OZ4-DW-cz2"/>
+                            <constraint firstItem="PAQ-V6-72n" firstAttribute="leading" secondItem="CMs-Ah-Z0C" secondAttribute="leading" id="R16-P4-gqi"/>
+                            <constraint firstItem="Zo0-9t-3yo" firstAttribute="leading" secondItem="CMs-Ah-Z0C" secondAttribute="leading" id="SfV-4C-rVl"/>
+                            <constraint firstItem="PAQ-V6-72n" firstAttribute="leading" secondItem="CMs-Ah-Z0C" secondAttribute="leading" id="VrG-7P-xM9"/>
+                            <constraint firstItem="Zo0-9t-3yo" firstAttribute="top" secondItem="7vB-N2-EDO" secondAttribute="top" id="te5-CP-fsL"/>
+                            <constraint firstItem="PAQ-V6-72n" firstAttribute="top" secondItem="Zo0-9t-3yo" secondAttribute="bottom" id="wXy-dG-ly5"/>
+                            <constraint firstAttribute="bottom" secondItem="PAQ-V6-72n" secondAttribute="bottom" id="yFA-Ei-0Ib"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FPC-SH-D7b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-910.66350710900474" y="-1200"/>
+        </scene>
+        <!--Story Page View Controller-->
+        <scene sceneID="plm-xh-nMj">
+            <objects>
+                <viewController storyboardIdentifier="Story1" id="ntR-yD-1Lb" customClass="StoryPageViewController" customModule="recycle_hero_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hF1-an-ycT">
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A long time ago, the Earth was clean" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQI-Se-G0T">
+                                <rect key="frame" x="260" y="183" width="325" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="7ER-hq-4ha">
+                                <rect key="frame" x="351" y="214" width="143" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" red="0.67031961679999996" green="0.65933412309999995" blue="0.63136887549999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="currentPageIndicatorTintColor" systemColor="labelColor"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r77-bn-EgA">
+                                <rect key="frame" x="320" y="245" width="204" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nextButton"/>
+                                <connections>
+                                    <segue destination="md8-d6-g1t" kind="custom" customClass="SlideLeftSegue" customModule="recycle_hero_app" customModuleProvider="target" id="veb-It-kn3"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="0li-fj-q0V">
+                                <rect key="frame" x="302" y="47" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0og-6Y-vIh"/>
+                        <color key="backgroundColor" red="0.96432965989999997" green="0.94575756789999998" blue="0.90979915860000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ab2-df-dwb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-766.07142857142856" y="524.63768115942037"/>
+        </scene>
+        <!--Story Page View Controller-->
+        <scene sceneID="Ep6-xA-54q">
+            <objects>
+                <viewController storyboardIdentifier="Story2" id="md8-d6-g1t" customClass="StoryPageViewController" customModule="recycle_hero_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NUm-S1-b5L">
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="story2" translatesAutoresizingMaskIntoConstraints="NO" id="CEG-70-uuu">
+                                <rect key="frame" x="302" y="47" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gI-5e-eMi">
+                                <rect key="frame" x="320" y="253" width="204" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nextButton"/>
+                                <connections>
+                                    <segue destination="iMD-bf-eJV" kind="custom" customClass="SlideLeftSegue" customModule="recycle_hero_app" customModuleProvider="target" id="mup-He-Hv9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="But, People keep on producing trash and throw them everywhere" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sD4-5h-eV4">
+                                <rect key="frame" x="132" y="183" width="580" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="zuh-Ou-tZk">
+                                <rect key="frame" x="351" y="215" width="143" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" red="0.67031961679999996" green="0.65933412309999995" blue="0.63136887549999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="currentPageIndicatorTintColor" systemColor="labelColor"/>
+                            </pageControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aLw-Yu-ySD"/>
+                        <color key="backgroundColor" red="0.96432965989999997" green="0.94575756789999998" blue="0.90979915860000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="86N-dU-BPW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XGf-K5-eie" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-82.464454976303315" y="527.69230769230762"/>
+        </scene>
+        <!--Story Page View Controller-->
+        <scene sceneID="Qd8-8W-1Za">
+            <objects>
+                <viewController storyboardIdentifier="Story3" id="iMD-bf-eJV" customClass="StoryPageViewController" customModule="recycle_hero_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KYT-ac-rAm">
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="story3" translatesAutoresizingMaskIntoConstraints="NO" id="alT-WT-8uu">
+                                <rect key="frame" x="302" y="31" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1T5-OQ-jUT">
+                                <rect key="frame" x="320" y="247" width="204" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nextButton"/>
+                                <connections>
+                                    <segue destination="Giw-al-kJh" kind="custom" customClass="SlideLeftSegue" customModule="recycle_hero_app" customModuleProvider="target" id="DLa-1B-wTt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Now, The Earth is full of trash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2R8-fT-AgO">
+                                <rect key="frame" x="291" y="183" width="262" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4 Dots" translatesAutoresizingMaskIntoConstraints="NO" id="tDO-Ce-qWt">
+                                <rect key="frame" x="385" y="223" width="75" height="8"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="y1C-f9-epu"/>
+                        <color key="backgroundColor" red="0.96432965989999997" green="0.94575756789999998" blue="0.90979915860000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7eU-iG-zGI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2V0-37-5s9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="593.60189573459718" y="524.61538461538464"/>
+        </scene>
+        <!--Story Page View Controller-->
+        <scene sceneID="v9J-jf-wMw">
+            <objects>
+                <viewController storyboardIdentifier="Story4" id="Giw-al-kJh" customClass="StoryPageViewController" customModule="recycle_hero_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2hH-Xq-jny">
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="story4" translatesAutoresizingMaskIntoConstraints="NO" id="VhX-HW-G0A">
+                                <rect key="frame" x="302" y="36" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mix and Match the Trash and Find Recycled Trash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1a-O0-Zpg">
+                                <rect key="frame" x="200" y="183" width="444" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1s-8o-ZjG">
+                                <rect key="frame" x="320" y="252" width="204" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nextButton"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="4 Dots-1" translatesAutoresizingMaskIntoConstraints="NO" id="0Vv-hx-maJ">
+                                <rect key="frame" x="391" y="225" width="63" height="8"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZTw-3P-tOj"/>
+                        <color key="backgroundColor" red="0.96432965989999997" green="0.94575756789999998" blue="0.90979915860000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sDg-4w-kZG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gb0-dL-dHL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1281.7535545023695" y="524.61538461538464"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="4 Dots" width="62" height="10"/>
+        <image name="4 Dots-1" width="63" height="10"/>
+        <image name="Image" width="207" height="179"/>
+        <image name="nextButton" width="204" height="66"/>
+        <image name="story2" width="3943" height="2554"/>
+        <image name="story3" width="373" height="373"/>
+        <image name="story4" width="1351" height="1436"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
