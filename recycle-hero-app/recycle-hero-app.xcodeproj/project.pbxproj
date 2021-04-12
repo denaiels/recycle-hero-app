@@ -28,6 +28,9 @@
 		6000AC6E2621D67200698B4A /* RecycledItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000AC6D2621D67200698B4A /* RecycledItem.swift */; };
 		60184856261DF010008F6063 /* StageMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60184855261DF010008F6063 /* StageMenu.storyboard */; };
 		60184859261E0319008F6063 /* StageMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60184858261E0319008F6063 /* StageMenuController.swift */; };
+		5FECDADC262050D70076FC08 /* SlideLeftSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECDADB262050D70076FC08 /* SlideLeftSegue.swift */; };
+		5FECDAE1262059620076FC08 /* SlideLeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECDAE0262059620076FC08 /* SlideLeftViewController.swift */; };
+		5FECDAFB26205B430076FC08 /* StoryPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECDAFA26205B430076FC08 /* StoryPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		6000AC6D2621D67200698B4A /* RecycledItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycledItem.swift; sourceTree = "<group>"; };
 		60184855261DF010008F6063 /* StageMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StageMenu.storyboard; sourceTree = "<group>"; };
 		60184858261E0319008F6063 /* StageMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageMenuController.swift; sourceTree = "<group>"; };
+		5FECDADB262050D70076FC08 /* SlideLeftSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideLeftSegue.swift; sourceTree = "<group>"; };
+		5FECDAE0262059620076FC08 /* SlideLeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideLeftViewController.swift; sourceTree = "<group>"; };
+		5FECDAFA26205B430076FC08 /* StoryPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +140,7 @@
 				5FBD6DD9261DB26A00EB0322 /* SceneDelegate.swift */,
 				5F0A896B261EF1F7001E3FF2 /* UserProgress.swift */,
 				5FBD6DDB261DB26A00EB0322 /* ViewController.swift */,
+				5FECDAFA26205B430076FC08 /* StoryPageViewController.swift */,
 				5FBD6DDD261DB26A00EB0322 /* Main.storyboard */,
 				5FBD6DF0261DB4FD00EB0322 /* StoryPage.storyboard */,
 				5FBD6DE3261DB26B00EB0322 /* Assets.xcassets */,
@@ -223,6 +230,7 @@
 				6000AC6B2621CFA000698B4A /* Item.swift in Sources */,
 				5FBD6DE2261DB26A00EB0322 /* recycle_hero_app.xcdatamodeld in Sources */,
 				5F0BC48C26242A7C005F9416 /* RecycledItemsData.swift in Sources */,
+				5FECDAFB26205B430076FC08 /* StoryPageViewController.swift in Sources */,
 				5FBD6DD8261DB26A00EB0322 /* AppDelegate.swift in Sources */,
 				5F0BC47F26242276005F9416 /* Playground3ViewController.swift in Sources */,
 				5F0BC47726242233005F9416 /* Playground2ViewController.swift in Sources */,
