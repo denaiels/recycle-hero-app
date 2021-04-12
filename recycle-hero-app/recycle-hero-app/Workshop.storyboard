@@ -29,19 +29,24 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="viewCellItem" id="tfc-nd-YCg" customClass="RecycleCollectionViewCell" customModule="recycle_hero_app" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="158" height="168"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="srv-wu-bnP">
-                                            <rect key="frame" x="0.0" y="0.0" width="158" height="168"/>
-                                            <autoresizingMask key="autoresizingMask"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srv-wu-bnP">
+                                            <rect key="frame" x="0.0" y="0.0" width="250" height="150"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M6i-DU-tRu">
-                                                    <rect key="frame" x="0.0" y="23" width="158" height="122"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" id="M6i-DU-tRu">
+                                                    <rect key="frame" x="-0.6666666666666714" y="3" width="159.33333333333337" height="162"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="M6i-DU-tRu" firstAttribute="height" secondItem="srv-wu-bnP" secondAttribute="height" multiplier="0.964286" id="LnR-Ub-wS2"/>
+                                                <constraint firstItem="M6i-DU-tRu" firstAttribute="centerY" secondItem="srv-wu-bnP" secondAttribute="centerY" id="ViL-x8-tfw"/>
+                                                <constraint firstItem="M6i-DU-tRu" firstAttribute="width" secondItem="srv-wu-bnP" secondAttribute="width" multiplier="1.00633" id="iSn-MN-5Kh"/>
+                                                <constraint firstItem="M6i-DU-tRu" firstAttribute="centerX" secondItem="srv-wu-bnP" secondAttribute="centerX" id="jxx-BO-2Yl"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="158" height="168"/>
+                                        <size key="customSize" width="250" height="150"/>
                                         <connections>
                                             <outlet property="imageViewItem" destination="M6i-DU-tRu" id="N89-zm-eFL"/>
                                         </connections>

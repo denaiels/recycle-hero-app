@@ -20,6 +20,7 @@ class WorkshopViewController: UIViewController, UICollectionViewDelegate, UIColl
         //Di dalam viewDidLoad() kita delegasikan collection view & data source nya ke view controller saat ini:
         collectionView.delegate = self
         collectionView.dataSource = self
+        
 
         //init data items
         initDataItems()
@@ -45,9 +46,8 @@ class WorkshopViewController: UIViewController, UICollectionViewDelegate, UIColl
     //MARK: Mengatur view cell
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "viewCellItem", for: indexPath) as! RecycleCollectionViewCell
-            
-            cell.contentView.layer.cornerRadius = 10.0
+            var cell = collectionView.dequeueReusableCell(withReuseIdentifier: "viewCellItem", for: indexPath) as! RecycleCollectionViewCell
+           
             cell.backgroundColor = UIColor.red
             // set nilai ke view dalam cell
             let item = items[indexPath.row]
@@ -75,9 +75,15 @@ class WorkshopViewController: UIViewController, UICollectionViewDelegate, UIColl
             //Lebar dan tinggi cell(ini 1 cell 1 row)
             //return CGSize(width: collectionView.frame.width, height: 120)
             
-            return CGSize(width: 150, height: 150)
+            return CGSize(width: 250 , height: 150)
         }
-
+    
+        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        
+        
+        return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        }
+        
         func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 
             //MARK: perintah ketika item dipilih
