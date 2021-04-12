@@ -1,23 +1,11 @@
 //
-//  RecycledItemsModel.swift
+//  RecycledItemsData.swift
 //  recycle-hero-app
 //
-//  Created by Daniel Santoso on 07/04/21.
+//  Created by Daniel Santoso on 12/04/21.
 //
 
 import Foundation
-
-struct RecycledItemsModel {
-    var item_name = ""
-    var item_stage = 0
-    var item_ingredient_1_id = 0
-    var item_ingredient_2_id = 0
-    var item_icon_color = ""
-    var item_icon_black = ""
-    var item_description = ""
-    var item_link = ""
-    var item_found = false
-}
 
 var recycledItemNames = ["Compost", "Bottle Lamp", "Wool Fiber", "Plant Bottle", "Bird House", "Watering Jug", "Fertilizer", "Bottle Water Gun", "Surfboard", "Newspaper Kite", "Bottle Boat", "Paper Windmill"]
 var recycledItemStage = [1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3]
@@ -63,4 +51,3 @@ var recycledItemLink =
      "https://www.youtube.com/watch?v=AAESdIGouZs",
      "https://www.youtube.com/watch?v=sBLj1VP_stM"]
 var recycledItemFound = [false, false, false, false, false, false, false, false, false, false, false, false]
-
