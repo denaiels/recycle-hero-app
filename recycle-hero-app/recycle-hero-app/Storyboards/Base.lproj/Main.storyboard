@@ -32,11 +32,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="playButton"/>
                                 <connections>
-<<<<<<< HEAD:recycle-hero-app/recycle-hero-app/Storyboards/Base.lproj/Main.storyboard
                                     <segue destination="8ay-vI-mY3" kind="show" id="mqx-T7-cla"/>
-=======
-                                    <segue destination="GuI-Yn-B6l" kind="show" id="gzB-56-BzK"/>
->>>>>>> workshop:recycle-hero-app/recycle-hero-app/Base.lproj/Main.storyboard
                                 </connections>
                             </button>
                         </subviews>
@@ -54,15 +50,15 @@
             </objects>
             <point key="canvasLocation" x="96.682464454976298" y="93.84615384615384"/>
         </scene>
-        <!--Workshop-->
-        <scene sceneID="wAf-T2-VF4">
+        <!--StageMenu-->
+        <scene sceneID="PV4-nl-J18">
             <objects>
-                <viewControllerPlaceholder storyboardName="Workshop" id="GuI-Yn-B6l" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="Hdn-7h-Y6I"/>
+                <viewControllerPlaceholder storyboardName="StageMenu" id="8ay-vI-mY3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Lmq-as-DUo"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ilg-Dg-GJE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pqO-bI-SvH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="581" y="118"/>
+            <point key="canvasLocation" x="758" y="94"/>
         </scene>
     </scenes>
     <resources>
