@@ -96,9 +96,7 @@
 			children = (
 				5FBD6DDB261DB26A00EB0322 /* ViewController.swift */,
 				60184858261E0319008F6063 /* StageMenuController.swift */,
-				5FE3D9D626255F3C005C9C07 /* StoryViewController.swift */,
-				5FE3D9D326255B63005C9C07 /* StoryPageViewController.swift */,
-				5FE3D9DF26256AA2005C9C07 /* StoryContentViewController.swift */,
+				5FE3D9E326256FEE005C9C07 /* Story */,
 				5F0A8971261EF69E001E3FF2 /* Playground1ViewController.swift */,
 				5F0BC47626242233005F9416 /* Playground2ViewController.swift */,
 				5F0BC47E26242276005F9416 /* Playground3ViewController.swift */,
@@ -151,6 +149,16 @@
 				5FBD6DE0261DB26A00EB0322 /* recycle_hero_app.xcdatamodeld */,
 			);
 			path = "recycle-hero-app";
+			sourceTree = "<group>";
+		};
+		5FE3D9E326256FEE005C9C07 /* Story */ = {
+			isa = PBXGroup;
+			children = (
+				5FE3D9D626255F3C005C9C07 /* StoryViewController.swift */,
+				5FE3D9D326255B63005C9C07 /* StoryPageViewController.swift */,
+				5FE3D9DF26256AA2005C9C07 /* StoryContentViewController.swift */,
+			);
+			path = Story;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
