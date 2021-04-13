@@ -7,6 +7,7 @@
 
 import Foundation
 
+var recycledItemsCountStage1 = 3
 var recycledItemNames = ["Compost", "Bottle Lamp", "Wool Fiber", "Plant Bottle", "Bird House", "Watering Jug", "Fertilizer", "Bottle Water Gun", "Surfboard", "Newspaper Kite", "Bottle Boat", "Paper Windmill"]
 var recycledItemStage = [1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3]
 var recycledItemIngredient1 = [0, 5, 3, 5, 7, 9, 11, 5, 14, 1, 17, 19]

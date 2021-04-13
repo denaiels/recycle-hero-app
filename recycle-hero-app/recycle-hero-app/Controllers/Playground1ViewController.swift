@@ -106,31 +106,43 @@ class Playground1ViewController: UIViewController {
         item_list[counter] = normalItems[0]
         tempItemButton[counter] = foodScrapButton
         userTouchBool = true
+        
+        itemDidTapped(itemIndex: 0)
     }
     @IBAction func clickNewspaper(_ sender: UIButton) {
         item_list[counter] = normalItems[1]
         tempItemButton[counter] = newsPaperButton
         userTouchBool = true
+        
+        itemDidTapped(itemIndex: 1)
     }
     @IBAction func clickLightBulb(_ sender: UIButton) {
         item_list[counter] = normalItems[2]
         tempItemButton[counter] = lightBulbButton
         userTouchBool = true
+        
+        itemDidTapped(itemIndex: 2)
     }
     @IBAction func clickUsedCloth(_ sender: UIButton) {
         item_list[counter] = normalItems[3]
         tempItemButton[counter] = usedClothButton
         userTouchBool = true
+        
+        itemDidTapped(itemIndex: 3)
     }
     @IBAction func clickScissors(_ sender: UIButton) {
         item_list[counter] = normalItems[4]
         tempItemButton[counter] = scissorsButton
         userTouchBool = true
+        
+        itemDidTapped(itemIndex: 4)
     }
     @IBAction func clickPlasticBottle(_ sender: UIButton) {
         item_list[counter] = normalItems[5]
         tempItemButton[counter] = plasticBottleButton
         userTouchBool = true
+        
+        itemDidTapped(itemIndex: 5)
     }
 
     //recycle bin evaluator
@@ -170,7 +182,11 @@ class Playground1ViewController: UIViewController {
             }
         }
     }
-
+    
+    func itemDidTapped(itemIndex: Int) {
+        
+    }
+    
     func checkItemProgress(){
         if firstItemRecycled == false && itemCountRecycled == 1{
             bedroomIntro3.isHidden = false
@@ -360,13 +376,13 @@ class Playground1ViewController: UIViewController {
             normalItems.append(Item(name: normalItemNames[i], itemStage: 1, image: normalItemIconColor[i], description: normalItemDescription[i], itemFound: normalItemFound[i]))
         }
 
-        for i in 0...2 {
+        for i in 0...recycledItemsCountStage1-1 {
             recycledItems.append(RecycledItem(name: recycledItemNames[i], itemStage: recycledItemStage[i], image: recycledItemIconColor[i], description: recycledItemDescription[i], itemFound: recycledItemFound[i], ingredient1Id: recycledItemIngredient1[i], ingredient2Id: recycledItemIngredient2[i], link: recycledItemLink[i]))
         }
 
-       /* print("-----NORMAL ITEMS-----")
+        print("-----NORMAL ITEMS-----")
 
-        for i in 0...normalItemNames.count-1 {
+        for i in 0...normalItemsCountStage1-1 {
 //            print(i)
             print("\(i) | Item Name: \(normalItems[i].name)")
 //            print("Item Icon Color: \(normalItems[i].image)")
@@ -377,14 +393,14 @@ class Playground1ViewController: UIViewController {
 
         print("\n-----RECYCLED ITEMS-----")
 
-        for i in 0...recycledItemNames.count-1 {
+        for i in 0...recycledItemsCountStage1-1 {
 //            print(i)
             print("\(i) | Item Name: \(recycledItems[i].name)")
-            print("--> Item Icon Color: \(recycledItems[i].image)")
-            print("--> Item Icon Black: \(recycledItems[i].item_icon_black)")
-            print("--> Item Description: \(recycledItems[i].item_description)")
-            print("--> Item Found: \(recycledItems[i].item_found)")
-        }*/
+//            print("--> Item Icon Color: \(recycledItems[i].image)")
+//            print("--> Item Icon Black: \(recycledItems[i].item_icon_black)")
+//            print("--> Item Description: \(recycledItems[i].item_description)")
+//            print("--> Item Found: \(recycledItems[i].item_found)")
+        }
 
     }
 
