@@ -29,8 +29,11 @@
 		5FE3D9E026256AA2005C9C07 /* StoryContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE3D9DF26256AA2005C9C07 /* StoryContentViewController.swift */; };
 		6000AC6B2621CFA000698B4A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000AC6A2621CFA000698B4A /* Item.swift */; };
 		6000AC6E2621D67200698B4A /* RecycledItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000AC6D2621D67200698B4A /* RecycledItem.swift */; };
-		60184856261DF010008F6063 /* StageMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60184855261DF010008F6063 /* StageMenu.storyboard */; };
-		60184859261E0319008F6063 /* StageMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60184858261E0319008F6063 /* StageMenuController.swift */; };
+		600398B82623FB5200430AB9 /* NormalItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600398B72623FB5200430AB9 /* NormalItemDetailViewController.swift */; };
+		60D8CAF0261FFF4900155F41 /* Workshop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60D8CAEF261FFF4900155F41 /* Workshop.storyboard */; };
+		60D8CAF7262007D300155F41 /* RecycleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D8CAF6262007D300155F41 /* RecycleCollectionViewCell.swift */; };
+		60D8CAFA26200C4A00155F41 /* WorkshopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D8CAF926200C4A00155F41 /* WorkshopViewController.swift */; };
+		60E58A552621526C00F96A21 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E58A542621526C00F96A21 /* ItemDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,8 +61,11 @@
 		5FE3D9DF26256AA2005C9C07 /* StoryContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryContentViewController.swift; sourceTree = "<group>"; };
 		6000AC6A2621CFA000698B4A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		6000AC6D2621D67200698B4A /* RecycledItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycledItem.swift; sourceTree = "<group>"; };
-		60184855261DF010008F6063 /* StageMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StageMenu.storyboard; sourceTree = "<group>"; };
-		60184858261E0319008F6063 /* StageMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageMenuController.swift; sourceTree = "<group>"; };
+		600398B72623FB5200430AB9 /* NormalItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalItemDetailViewController.swift; sourceTree = "<group>"; };
+		60D8CAEF261FFF4900155F41 /* Workshop.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Workshop.storyboard; sourceTree = "<group>"; };
+		60D8CAF6262007D300155F41 /* RecycleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycleCollectionViewCell.swift; sourceTree = "<group>"; };
+		60D8CAF926200C4A00155F41 /* WorkshopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopViewController.swift; sourceTree = "<group>"; };
+		60E58A542621526C00F96A21 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +149,11 @@
 				5FBD6DD7261DB26A00EB0322 /* AppDelegate.swift */,
 				5FBD6DD9261DB26A00EB0322 /* SceneDelegate.swift */,
 				5F0A896B261EF1F7001E3FF2 /* UserProgress.swift */,
+				60D8CAEF261FFF4900155F41 /* Workshop.storyboard */,
+				60E58A542621526C00F96A21 /* ItemDetailViewController.swift */,
+				600398B72623FB5200430AB9 /* NormalItemDetailViewController.swift */,
+				60D8CAF926200C4A00155F41 /* WorkshopViewController.swift */,
+				60D8CAF6262007D300155F41 /* RecycleCollectionViewCell.swift */,
 				5FBD6DE3261DB26B00EB0322 /* Assets.xcassets */,
 				5FBD6DE5261DB26B00EB0322 /* LaunchScreen.storyboard */,
 				5FBD6DE8261DB26B00EB0322 /* Info.plist */,
@@ -218,14 +229,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F0BC47C2624225F005F9416 /* Playground3.storyboard in Resources */,
 				5FBD6DE7261DB26B00EB0322 /* LaunchScreen.storyboard in Resources */,
 				5F0A896F261EF610001E3FF2 /* Playground1.storyboard in Resources */,
-				5F0BC4742624221F005F9416 /* Playground2.storyboard in Resources */,
 				5FBD6DF1261DB4FD00EB0322 /* StoryPage.storyboard in Resources */,
+				60D8CAF0261FFF4900155F41 /* Workshop.storyboard in Resources */,
 				5FBD6DE4261DB26B00EB0322 /* Assets.xcassets in Resources */,
 				5FBD6DDF261DB26A00EB0322 /* Main.storyboard in Resources */,
-				60184856261DF010008F6063 /* StageMenu.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60D8CAF7262007D300155F41 /* RecycleCollectionViewCell.swift in Sources */,
 				5FBD6DDC261DB26A00EB0322 /* ViewController.swift in Sources */,
 				6000AC6B2621CFA000698B4A /* Item.swift in Sources */,
 				5FBD6DE2261DB26A00EB0322 /* recycle_hero_app.xcdatamodeld in Sources */,
@@ -246,11 +256,13 @@
 				5F0BC47F26242276005F9416 /* Playground3ViewController.swift in Sources */,
 				5FE3D9D426255B63005C9C07 /* StoryPageViewController.swift in Sources */,
 				5F0BC47726242233005F9416 /* Playground2ViewController.swift in Sources */,
+				600398B82623FB5200430AB9 /* NormalItemDetailViewController.swift in Sources */,
+				60D8CAFA26200C4A00155F41 /* WorkshopViewController.swift in Sources */,
 				5F0A896C261EF1F7001E3FF2 /* UserProgress.swift in Sources */,
-				5F0BC48F26242A85005F9416 /* ItemData.swift in Sources */,
+				5F0A8975261EFF8E001E3FF2 /* NormalItemsModel.swift in Sources */,
+				60E58A552621526C00F96A21 /* ItemDetailViewController.swift in Sources */,
 				6000AC6E2621D67200698B4A /* RecycledItem.swift in Sources */,
 				5FBD6DDA261DB26A00EB0322 /* SceneDelegate.swift in Sources */,
-				60184859261E0319008F6063 /* StageMenuController.swift in Sources */,
 				5F0A8972261EF69E001E3FF2 /* Playground1ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
