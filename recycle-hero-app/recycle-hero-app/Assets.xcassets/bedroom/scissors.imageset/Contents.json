@@ -1,12 +1,6 @@
 {
   "images" : [
     {
-      "alignment-insets" : {
-        "bottom" : 0,
-        "left" : 1,
-        "right" : 0,
-        "top" : 0
-      },
       "filename" : "scissors.png",
       "idiom" : "universal",
       "scale" : "1x"
@@ -23,8 +17,5 @@
   "info" : {
     "author" : "xcode",
     "version" : 1
-  },
-  "properties" : {
-    "preserves-vector-representation" : true
   }
 }

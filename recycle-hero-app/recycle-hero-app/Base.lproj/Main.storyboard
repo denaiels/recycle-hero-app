@@ -50,11 +50,11 @@
             </objects>
             <point key="canvasLocation" x="96.682464454976298" y="93.84615384615384"/>
         </scene>
-        <!--StageMenu-->
-        <scene sceneID="PV4-nl-J18">
+        <!--Workshop-->
+        <scene sceneID="wAf-T2-VF4">
             <objects>
-                <viewControllerPlaceholder storyboardName="StageMenu" id="8ay-vI-mY3" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="Lmq-as-DUo"/>
+                <viewControllerPlaceholder storyboardName="Workshop" id="GuI-Yn-B6l" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Hdn-7h-Y6I"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ilg-Dg-GJE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
