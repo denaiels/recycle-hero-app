@@ -21,7 +21,6 @@ class Playground1ViewController: UIViewController {
     var userTouchBool = false
     var counter = 0
     var introAt = 1
-//    var item_lis: [Item] = [Item(name: "item1", image: "item1", item_icon_black: "item1", item_description: "item1", item_found: false), Item(name: "item1", image: "item1", item_icon_black: "item1", item_description: "item1", item_found: false)]
     var item_list: [Item] = [Item(name: "item1", itemStage: 1, image: "item1", description: "item1", itemFound: true), Item(name: "item1", itemStage: 1, image: "item1", description: "item1", itemFound: true)]
 
 
@@ -354,7 +353,7 @@ class Playground1ViewController: UIViewController {
         woolFiber.isHidden = true
 
         //placeholder for button object in array
-        tempItemButton = [foodScrapButton,newsPaperButton]
+        tempItemButton = [foodScrapButton, newsPaperButton]
 
 
         for i in 0...normalItemsCountStage1-1 {
