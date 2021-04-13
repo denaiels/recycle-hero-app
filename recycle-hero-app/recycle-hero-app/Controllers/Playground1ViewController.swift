@@ -96,70 +96,82 @@ class Playground1ViewController: UIViewController {
        item_list[counter] = normalItems[0]
        tempItemButton[counter] = foodScrapButton
        userTouchBool = true
+        itemToBin()
+        
+        
     }
     @IBAction func clickNewspaper(_ sender: UIButton) {
        item_list[counter] = normalItems[1]
        tempItemButton[counter] = newsPaperButton
        userTouchBool = true
+        itemToBin()
     }
     @IBAction func clickLightBulb(_ sender: UIButton) {
        item_list[counter] = normalItems[2]
        tempItemButton[counter] = lightBulbButton
        userTouchBool = true
+        itemToBin()
     }
     @IBAction func clickUsedCloth(_ sender: UIButton) {
        item_list[counter] = normalItems[3]
        tempItemButton[counter] = usedClothButton
        userTouchBool = true
+        itemToBin()
     }
     @IBAction func clickScissors(_ sender: UIButton) {
        item_list[counter] = normalItems[4]
        tempItemButton[counter] = scissorsButton
        userTouchBool = true
+        itemToBin()
     }
     @IBAction func clickPlasticBottle(_ sender: UIButton) {
        item_list[counter] = normalItems[5]
        tempItemButton[counter] = plasticBottleButton
        userTouchBool = true
+        itemToBin()
     }
 
     //recycle bin evaluator
     @IBAction func clickRecycleBin(_ sender: UIButton) {
-       if userTouchBool{
-           if counter < 2{
-               if counter == 0{
-                   image0.image = UIImage(named: item_list[0].image)
-                   print("image_0 is" + item_list[0].name)
-                   tempItemButton[counter].isHidden = true
-                   counter+=1
+       //itemToBin()
+    }
+    
+    func itemToBin(){
+        if userTouchBool{
+            if counter < 2{
+                if counter == 0{
+                    image0.image = UIImage(named: item_list[0].image)
+                    print("image_0 is" + item_list[0].name)
+                    tempItemButton[counter].isHidden = true
+                    counter+=1
+                     userTouchBool = false
+                     
+                } else if counter == 1{
+                    image1.image = UIImage(named: item_list[1].image)
+                    print("image_1 is" + item_list[1].name)
+                    tempItemButton[counter].isHidden = true
+                    compute_item()
+                    counter = 0
                     userTouchBool = false
-                    
-               } else if counter == 1{
-                   image1.image = UIImage(named: item_list[1].image)
-                   print("image_1 is" + item_list[1].name)
-                   tempItemButton[counter].isHidden = true
-                   compute_item()
-                   counter = 0
-                   userTouchBool = false
-               } else{
-                   print("pass")
-               }
-           } else{
-               print("pass")
-           }
-       }
-       else{
-           print("pass")
-       }
-       
-       //remove image from bin with delay
-       if image0.image != nil && image1.image != nil{
-           DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { // Change `2.0` to the desired number of seconds.
-              // Code you want to be delayed
-               self.image0.image = nil
-               self.image1.image = nil
-           }
-       }
+                } else{
+                    print("pass")
+                }
+            } else{
+                print("pass")
+            }
+        }
+        else{
+            print("pass")
+        }
+        
+        //remove image from bin with delay
+        if image0.image != nil && image1.image != nil{
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { // Change `2.0` to the desired number of seconds.
+               // Code you want to be delayed
+                self.image0.image = nil
+                self.image1.image = nil
+            }
+        }
     }
 
     func checkItemProgress(){
@@ -177,63 +189,72 @@ class Playground1ViewController: UIViewController {
        if item_list[0].name == "Food Scrap" && item_list[1].name == "Newspaper" || item_list[0].name == "Newspaper" && item_list[1].name == "Food Scrap"{
            print("Succeess! Compost is found")
            itemCountRecycled += 1
-           do{
-               //set true if item is found
-               //to be used for workshop
-               recycledItems[0].itemFound = true
-               
-               compost.isHidden = false
-               itemDeck2.image = UIImage(named: recycledItems[0].image)
-               backButton.isHidden = true
-               workshopButton.isHidden = true
-               itemNameLabel.text = recycledItems[0].name
-               itemImage.image = UIImage(named: recycledItems[0].image)
-               popupView.isHidden = false
-               logoMascot.isHidden = false
-               popupCloseLabel.isHidden = false
-           }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { // Change `2.0` to the desired number of seconds.
+           // Code you want to be delayed
+            do{
+                //set true if item is found
+                //to be used for workshop
+                self.recycledItems[0].itemFound = true
+                
+                self.compost.isHidden = false
+                self.itemDeck2.image = UIImage(named: self.recycledItems[0].image)
+                self.backButton.isHidden = true
+                self.workshopButton.isHidden = true
+                self.itemNameLabel.text = self.recycledItems[0].name
+                self.itemImage.image = UIImage(named: self.recycledItems[0].image)
+                self.popupView.isHidden = false
+                self.logoMascot.isHidden = false
+                self.popupCloseLabel.isHidden = false
+            }
+        }
+           
            foodScrapButton.isHidden = true
            newsPaperButton.isHidden = true
        
        }else if item_list[0].name == "Plastic Bottle" && item_list[1].name == "Light Bulb" || item_list[0].name == "Light Bulb" && item_list[1].name == "Plastic Bottle"{ print("Succeess! Bottle Lamp is found")
            itemCountRecycled += 1
-           do{
-               //set true if item is found
-               //to be used for workshop
-               recycledItems[1].itemFound = true
-               
-               bottleLamp1.isHidden = false
-               bottleLamp2.isHidden = false
-               itemDeck1.image = UIImage(named: recycledItems[1].image)
-               backButton.isHidden = true
-               workshopButton.isHidden = true
-               itemNameLabel.text = recycledItems[1].name
-               itemImage.image = UIImage(named: recycledItems[1].image)
-               popupView.isHidden = false
-               logoMascot.isHidden = false
-               popupCloseLabel.isHidden = false
-           }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { // Change `2.0` to the desired number of seconds.
+           // Code you want to be delayed
+            do{
+                //set true if item is found
+                //to be used for workshop
+                self.recycledItems[1].itemFound = true
+                
+                self.bottleLamp1.isHidden = false
+                self.bottleLamp2.isHidden = false
+                self.itemDeck1.image = UIImage(named: self.recycledItems[1].image)
+                self.backButton.isHidden = true
+                self.workshopButton.isHidden = true
+                self.itemNameLabel.text = self.recycledItems[1].name
+                self.itemImage.image = UIImage(named: self.recycledItems[1].image)
+                self.popupView.isHidden = false
+                self.logoMascot.isHidden = false
+                self.popupCloseLabel.isHidden = false
+            }
+        }
            plasticBottleButton.isHidden = true
            lightBulbButton.isHidden = true
            
        }else if item_list[0].name == "Used Cloth" && item_list[1].name == "Scissors" || item_list[0].name == "Scissors" && item_list[1].name == "Used Cloth"{ print("Succeess! Wool Fiber is found")
            itemCountRecycled += 1
-           do{
-               //set true if item is found
-               //to be used for workshop
-               recycledItems[2].itemFound = true
-               
-               woolFiber.isHidden = false
-               itemDeck3.image = UIImage(named: recycledItems[2].image)
-               backButton.isHidden = true
-               workshopButton.isHidden = true
-               itemNameLabel.text = recycledItems[2].name
-               itemImage.image = UIImage(named: recycledItems[2].image)
-               popupView.isHidden = false
-               logoMascot.isHidden = false
-               popupCloseLabel.isHidden = false
-               
-           }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { // Change `2.0` to the desired number of seconds.
+           // Code you want to be delayed
+            do{
+                //set true if item is found
+                //to be used for workshop
+                self.recycledItems[2].itemFound = true
+                
+                self.woolFiber.isHidden = false
+                self.itemDeck3.image = UIImage(named: self.recycledItems[2].image)
+                self.backButton.isHidden = true
+                self.workshopButton.isHidden = true
+                self.itemNameLabel.text = self.recycledItems[2].name
+                self.itemImage.image = UIImage(named: self.recycledItems[2].image)
+                self.popupView.isHidden = false
+                self.logoMascot.isHidden = false
+                self.popupCloseLabel.isHidden = false
+            }
+        }
            usedClothButton.isHidden = true
            scissorsButton.isHidden = true
            
