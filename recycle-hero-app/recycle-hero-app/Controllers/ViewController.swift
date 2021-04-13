@@ -24,9 +24,9 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         
-        if UserDefaults.standard.bool(forKey: "hasViewedStory"){
-            return
-        }
+//        if UserDefaults.standard.bool(forKey: "hasViewedStory"){
+//            return
+//        }
         
         let storyboard = UIStoryboard(name: "StoryPage", bundle: nil)
         if let storyViewController = storyboard.instantiateViewController(identifier: "StoryViewController") as? StoryViewController {
