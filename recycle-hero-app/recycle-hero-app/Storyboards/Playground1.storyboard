@@ -99,6 +99,7 @@
                                 <state key="normal" image="backButton"/>
                                 <connections>
                                     <action selector="clickWorkshopButton:" destination="Tfl-7w-pus" eventType="touchUpInside" id="1dE-cb-Hrn"/>
+                                    <segue destination="H8B-Jb-oR2" kind="show" id="v2y-ov-Elf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCB-Lx-cc2" userLabel="backButton">
@@ -411,6 +412,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CD9-Bt-iNv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="959.71563981042652" y="-43.076923076923073"/>
+        </scene>
+        <!--Workshop-->
+        <scene sceneID="Cbd-3Y-CR2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Workshop" id="H8B-Jb-oR2" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="4Ly-Km-2PU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ufc-hG-hDf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1217" y="477"/>
         </scene>
         <!--StageMenu-->
         <scene sceneID="8nr-xP-PSU">

@@ -386,11 +386,11 @@ class Playground1ViewController: UIViewController {
        
        
         for i in 0...normalItemNames.count-1 {
-            normalItems.append(Item(name: normalItemNames[i], itemStage: 1, image: "\(normalItemIconColor[i]).png", description: normalItemDescription[i], itemFound: normalItemFound[i]))
+            normalItems.append(Item(name: normalItemNames[i], itemStage: 1, image: normalItemIconColor[i], description: normalItemDescription[i], itemFound: normalItemFound[i]))
         }
 
         for i in 0...recycledItemNames.count-1 {
-            recycledItems.append(RecycledItem(name:  recycledItemNames[i], itemStage: recycledItemStage[i], image: "\(recycledItemIconColor[i]).png", description: recycledItemDescription[i], itemFound: recycledItemFound[i], ingredient1Id: recycledItemIngredient1[i], ingredient2Id: recycledItemIngredient2[i], link: recycledItemLink[i]))
+            recycledItems.append(RecycledItem(name:  recycledItemNames[i], itemStage: recycledItemStage[i], image: recycledItemIconColor[i], description: recycledItemDescription[i], itemFound: recycledItemFound[i], ingredient1Id: recycledItemIngredient1[i], ingredient2Id: recycledItemIngredient2[i], link: recycledItemLink[i]))
         }
         
         workshopItems.append(contentsOf: normalItems)
@@ -422,14 +422,16 @@ class Playground1ViewController: UIViewController {
         }
     }
     
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let destinationVC = segue.destination as? WorkshopViewController {
+            destinationVC.items = workshopItems
+            destinationVC.message = "Ini dari Playground 1"
+        }
     }
-    */
+    
 
 }
