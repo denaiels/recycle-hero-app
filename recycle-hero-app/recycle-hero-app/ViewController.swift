@@ -32,6 +32,18 @@ class ViewController: UIViewController {
         initiateDefault()
     }
     
+    //for item in deck
+    @IBOutlet weak var itemDeck1: UIImageView!
+    @IBOutlet weak var itemDeck2: UIImageView!
+    @IBOutlet weak var itemDeck3: UIImageView!
+    
+    //for recycled item image
+    @IBOutlet weak var bottleLamp1: UIImageView!
+    @IBOutlet weak var bottleLamp2: UIImageView!
+    @IBOutlet weak var woolFiber: UIImageView!
+    @IBOutlet weak var compost: UIImageView!
+    
+    
     //for the popup
     @IBOutlet weak var logoMascot: UIImageView!
     @IBOutlet weak var popupView: UIView!
@@ -55,8 +67,13 @@ class ViewController: UIViewController {
     //back button
     @IBOutlet weak var backButton: UIButton!
     @IBAction func clickBackButton(_ sender: UIButton) {
+        //go back to stage
     }
-    
+    //workshop button
+    @IBOutlet weak var workshopButton: UIButton!
+    @IBAction func clickWorkshopButton(_ sender: UIButton) {
+        //go to workshop
+    }
     
     
     //action for each item button
@@ -133,7 +150,14 @@ class ViewController: UIViewController {
         if item_list[0].item_name == "Food Scrap" && item_list[1].item_name == "Newspaper" || item_list[0].item_name == "Newspaper" && item_list[1].item_name == "Food Scrap"{
             print("Succeess! Compost is found")
             do{
+                //set true if item is found
+                //to be used for workshop
+                recycledItems[0].item_found = true
+                
+                compost.isHidden = false
+                itemDeck2.image = UIImage(named: recycledItems[0].item_icon_color)
                 backButton.isHidden = true
+                workshopButton.isHidden = true
                 itemNameLabel.text = recycledItems[0].item_name
                 itemImage.image = UIImage(named: recycledItems[0].item_icon_color)
                 popupView.isHidden = false
@@ -145,20 +169,34 @@ class ViewController: UIViewController {
         
         }else if item_list[0].item_name == "Plastic Bottle" && item_list[1].item_name == "Light Bulb" || item_list[0].item_name == "Light Bulb" && item_list[1].item_name == "Plastic Bottle"{ print("Succeess! Bottle Lamp is found")
             do{
+                //set true if item is found
+                //to be used for workshop
+                recycledItems[1].item_found = true
+                
+                bottleLamp1.isHidden = false
+                bottleLamp2.isHidden = false
+                itemDeck1.image = UIImage(named: recycledItems[1].item_icon_color)
                 backButton.isHidden = true
+                workshopButton.isHidden = true
                 itemNameLabel.text = recycledItems[1].item_name
                 itemImage.image = UIImage(named: recycledItems[1].item_icon_color)
                 popupView.isHidden = false
                 logoMascot.isHidden = false
                 popupCloseLabel.isHidden = false
-                
             }
             plasticBottleButton.isHidden = true
             lightBulbButton.isHidden = true
             
         }else if item_list[0].item_name == "Used Cloth" && item_list[1].item_name == "Scissors" || item_list[0].item_name == "Scissors" && item_list[1].item_name == "Used Cloth"{ print("Succeess! Wool Fiber is found")
             do{
+                //set true if item is found
+                //to be used for workshop
+                recycledItems[2].item_found = true
+                
+                woolFiber.isHidden = false
+                itemDeck3.image = UIImage(named: recycledItems[2].item_icon_color)
                 backButton.isHidden = true
+                workshopButton.isHidden = true
                 itemNameLabel.text = recycledItems[2].item_name
                 itemImage.image = UIImage(named: recycledItems[2].item_icon_color)
                 popupView.isHidden = false
@@ -191,6 +229,7 @@ class ViewController: UIViewController {
         if !popupView.frame.contains(location) {
             print("Tapped outside the view")
             backButton.isHidden = false
+            workshopButton.isHidden = false
             popupView.isHidden = true
             logoMascot.isHidden = true
             popupCloseLabel.isHidden = true
@@ -200,9 +239,18 @@ class ViewController: UIViewController {
     }
     
     func initiateDefault() {
+        //hide popup
         logoMascot.isHidden = true
         popupView.isHidden = true
         popupCloseLabel.isHidden = true
+        
+        //hide recycled item
+        bottleLamp1.isHidden = true
+        bottleLamp2.isHidden = true
+        compost.isHidden = true
+        woolFiber.isHidden = true
+        
+        //placeholder for button object in array
         tempItemButton = [foodScrapButton,newsPaperButton]
         
         
