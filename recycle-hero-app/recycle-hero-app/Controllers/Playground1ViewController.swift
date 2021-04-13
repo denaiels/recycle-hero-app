@@ -13,8 +13,10 @@ class Playground1ViewController: UIViewController {
     
     var recycledItems = [RecycledItem]()
     var normalItems = [Item]()
-    var userProgress = UserProgress()
+//    var userProgress = UserProgress()
+    var workshopItems = [Item]()
     var tempItemButton:[UIButton] = [UIButton]()
+    var stageProgress = 1
 
     var itemCountRecycled = 0
     var firstItemRecycled = false
@@ -226,9 +228,8 @@ class Playground1ViewController: UIViewController {
             }
         
            
-           foodScrapButton.isHidden = true
-           newsPaperButton.isHidden = true
-       
+            foodScrapButton.isHidden = true
+            newsPaperButton.isHidden = true
         } else if item_list[0].name == "Plastic Bottle" && item_list[1].name == "Light Bulb" || item_list[0].name == "Light Bulb" && item_list[1].name == "Plastic Bottle"{ print("Succeess! Bottle Lamp is found")
             itemCountRecycled += 1
             // Change `2.0` to the desired number of seconds.
@@ -249,8 +250,8 @@ class Playground1ViewController: UIViewController {
                     self.popupView.isHidden = false
                     self.logoMascot.isHidden = false
                     self.popupCloseLabel.isHidden = false
+                }
             }
-        }
             plasticBottleButton.isHidden = true
             lightBulbButton.isHidden = true
            
@@ -285,7 +286,10 @@ class Playground1ViewController: UIViewController {
                 self.tempItemButton[0].isHidden = false
                 self.tempItemButton[1].isHidden = false
             }
+            
+            return
         }
+        
         if itemCountRecycled == 3{
             allItemsRecycled = true
         }
@@ -382,13 +386,15 @@ class Playground1ViewController: UIViewController {
        
        
         for i in 0...normalItemNames.count-1 {
-           
-        normalItems.append(Item(name: normalItemNames[i], itemStage: 1, image: "\(normalItemIconColor[i]).png", description: normalItemDescription[i], itemFound: normalItemFound[i]))
+            normalItems.append(Item(name: normalItemNames[i], itemStage: 1, image: "\(normalItemIconColor[i]).png", description: normalItemDescription[i], itemFound: normalItemFound[i]))
         }
 
         for i in 0...recycledItemNames.count-1 {
             recycledItems.append(RecycledItem(name:  recycledItemNames[i], itemStage: recycledItemStage[i], image: "\(recycledItemIconColor[i]).png", description: recycledItemDescription[i], itemFound: recycledItemFound[i], ingredient1Id: recycledItemIngredient1[i], ingredient2Id: recycledItemIngredient2[i], link: recycledItemLink[i]))
         }
+        
+        workshopItems.append(contentsOf: normalItems)
+        workshopItems.append(contentsOf: recycledItems)
         
         // Print items
         printItems()
