@@ -1,22 +1,30 @@
 //
-//  StoryPageViewController.swift
+//  StoryViewController.swift
 //  recycle-hero-app
 //
-//  Created by Daniel Santoso on 09/04/21.
+//  Created by Daniel Santoso on 13/04/21.
 //
 
 import UIKit
 
-class StoryPageViewController: UIViewController {
+class StoryViewController: UIViewController {
 
-//    var presentedVC: UIViewController?
+    // MARK: - Outlets
+    
+    @IBOutlet var pageControl: UIPageControl!
+    @IBOutlet var nextButton: UIButton! {
+        didSet {
+            nextButton.layer.masksToBounds = true
+        }
+    }
+    @IBOutlet var skipButton: UIButton
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
     
 
     /*
@@ -28,10 +36,5 @@ class StoryPageViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-//    @IBAction func didTapNext1(_ sender: UIButton) {
-//        let presentedVC = self.storyboard!.instantiateViewController(withIdentifier: "Story2")
-//        let nvc = UINavigationController(rootViewController: presentedVC)
-//
-//    }
-    
+
 }
