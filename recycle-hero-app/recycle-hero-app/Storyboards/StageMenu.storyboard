@@ -19,14 +19,6 @@
                                 <rect key="frame" x="60" y="28" width="229" height="341"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bedroomStageRound" translatesAutoresizingMaskIntoConstraints="NO" id="Mns-vf-fB6">
-                                        <rect key="frame" x="2" y="-2" width="220" height="309"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <gestureRecognizers/>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="mYC-2b-U60" appends="YES" id="CH6-6c-hsU"/>
-                                        </connections>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bedroom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ray-9t-m0R">
                                         <rect key="frame" x="57" y="32" width="111" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -34,10 +26,18 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IA7-Vc-3cF">
+                                        <rect key="frame" x="3" y="0.0" width="223" height="305"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="bedroomStageRound"/>
+                                        <connections>
+                                            <segue destination="bhE-Fn-xDn" kind="show" id="Bjy-Ra-zYZ"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose Your Stage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wy-2M-AT9">
-                                <rect key="frame" x="302" y="338" width="240" height="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose Your Stage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wy-2M-AT9">
+                                <rect key="frame" x="60" y="338" width="724" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                 <nil key="textColor"/>
@@ -114,6 +114,32 @@
                 <tapGestureRecognizer id="TGM-3I-bb5" userLabel="beach Gesture Recognizer"/>
             </objects>
             <point key="canvasLocation" x="28.436018957345969" y="186.15384615384616"/>
+        </scene>
+        <!--Playground1-->
+        <scene sceneID="wSJ-EA-IQe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Playground1" id="bhE-Fn-xDn" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dRD-p2-WxL"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8DF-Ni-YGA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-157" y="768"/>
+        </scene>
+        <!--Playground2-->
+        <scene sceneID="0eE-Kg-tZf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Playground2" id="Mwv-jR-IHL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CdZ-dP-ex5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28" y="780"/>
+        </scene>
+        <!--Playground3-->
+        <scene sceneID="tOE-va-lsI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Playground3" id="CyC-Gx-e3M" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RrX-jq-Bsd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="213" y="738"/>
         </scene>
     </scenes>
     <resources>

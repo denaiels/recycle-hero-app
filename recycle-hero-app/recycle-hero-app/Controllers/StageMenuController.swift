@@ -11,22 +11,15 @@ import UIKit
 class StageMenuController: UIViewController {
     static var currentStage : Int? = 1
 
+    // MARK: - Outlets
+    
     @IBOutlet weak var bedroomView: UIView!
-    
-    
     @IBOutlet weak var gardenView: UIView!
-    
     @IBOutlet weak var beachView: UIView!
-    
-    
     @IBOutlet weak var chooseStageLabel: UILabel!
-    
     @IBOutlet weak var gardenLabel: UILabel!
-    
     @IBOutlet weak var beachLabel: UILabel!
-    
     @IBOutlet weak var gardenMask: UIImageView!
-    
     @IBOutlet weak var beachMask: UIImageView!
     
     override func viewDidLoad() {

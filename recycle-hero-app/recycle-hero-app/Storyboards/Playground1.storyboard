@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="175.59241706161137" y="876.92307692307691"/>
         </scene>
-        <!--View Controller-->
+        <!--Playground1 View Controller-->
         <scene sceneID="Uyb-iE-7sM">
             <objects>
-                <viewController id="Tfl-7w-pus" customClass="ViewController" customModule="recycle_hero_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Tfl-7w-pus" customClass="Playground1ViewController" customModule="recycle_hero_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fpc-kh-W2C">
                         <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
