@@ -50,10 +50,10 @@
             </objects>
             <point key="canvasLocation" x="96.682464454976298" y="93.84615384615384"/>
         </scene>
-        <!--StoryPage-->
+        <!--StageMenu-->
         <scene sceneID="PV4-nl-J18">
             <objects>
-                <viewControllerPlaceholder storyboardName="StoryPage" id="8ay-vI-mY3" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="StageMenu" id="8ay-vI-mY3" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Lmq-as-DUo"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pqO-bI-SvH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
