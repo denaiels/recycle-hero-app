@@ -13,8 +13,15 @@ class ViewController: UIViewController {
     var normalItems = [NormalItemsModel]()
     var userProgress = UserProgress()
     
+    
+    var itemCountRecycled = 0
+    var firstItemRecycled = false
+    var allItemsRecycled = false
+    var playground1Finished = false
+    
     var userTouchBool = false
     var counter = 0
+    var introAt = 1
     var item_list: [NormalItemsModel] = [NormalItemsModel(item_name: "item1", item_icon_color: "item1", item_icon_black: "item1", item_description: "item1", item_found: false),NormalItemsModel(item_name: "item1", item_icon_color: "item1", item_icon_black: "item1", item_description: "item1", item_found: false)]
     
     
@@ -31,6 +38,25 @@ class ViewController: UIViewController {
         
         initiateDefault()
     }
+    //intro 1
+    @IBOutlet weak var bedroomIntro1: UIView!
+    
+    //intro 2
+    @IBOutlet weak var bedroomIntro2: UIView!
+    
+    //intro 3
+    @IBOutlet weak var bedroomIntro3: UIView!
+    
+    //intro 4
+    @IBOutlet weak var bedroomIntro4: UIView!
+    
+    //intro 5
+    @IBOutlet weak var bedroomIntro5: UIView!
+    
+    
+    
+    
+    
     
     //for item in deck
     @IBOutlet weak var itemDeck1: UIImageView!
@@ -128,13 +154,14 @@ class ViewController: UIViewController {
                     print("pass")
                 }
             } else{
-                print("nevermind")
+                print("pass")
             }
         }
         else{
             print("pass")
             
         }
+        
         //remove image from bin with delay
         if image0.image != nil && image1.image != nil{
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { // Change `2.0` to the desired number of seconds.
@@ -145,10 +172,22 @@ class ViewController: UIViewController {
         }
     }
     
+    func checkItemProgress(){
+        if firstItemRecycled == false && itemCountRecycled == 1{
+            bedroomIntro3.isHidden = false
+            firstItemRecycled = true
+        } else if allItemsRecycled == true && itemCountRecycled == 3 && playground1Finished == false{
+            bedroomIntro5.isHidden = false
+            playground1Finished = true
+        }
+        
+    }
+    
     //check if item suitable for recycling
     func compute_item(){
         if item_list[0].item_name == "Food Scrap" && item_list[1].item_name == "Newspaper" || item_list[0].item_name == "Newspaper" && item_list[1].item_name == "Food Scrap"{
             print("Succeess! Compost is found")
+            itemCountRecycled += 1
             do{
                 //set true if item is found
                 //to be used for workshop
@@ -168,6 +207,7 @@ class ViewController: UIViewController {
             newsPaperButton.isHidden = true
         
         }else if item_list[0].item_name == "Plastic Bottle" && item_list[1].item_name == "Light Bulb" || item_list[0].item_name == "Light Bulb" && item_list[1].item_name == "Plastic Bottle"{ print("Succeess! Bottle Lamp is found")
+            itemCountRecycled += 1
             do{
                 //set true if item is found
                 //to be used for workshop
@@ -188,6 +228,7 @@ class ViewController: UIViewController {
             lightBulbButton.isHidden = true
             
         }else if item_list[0].item_name == "Used Cloth" && item_list[1].item_name == "Scissors" || item_list[0].item_name == "Scissors" && item_list[1].item_name == "Used Cloth"{ print("Succeess! Wool Fiber is found")
+            itemCountRecycled += 1
             do{
                 //set true if item is found
                 //to be used for workshop
@@ -216,6 +257,9 @@ class ViewController: UIViewController {
             }
             
         }
+        if itemCountRecycled == 3{
+            allItemsRecycled = true
+        }
     }
     
     
@@ -227,22 +271,81 @@ class ViewController: UIViewController {
         let touch = touches.first
         guard let location = touch?.location(in: self.view) else { return }
         if !popupView.frame.contains(location) {
+            if introAt == 1{
+                print("intro1")
+                introAt = 2
+                bedroomIntro1.isHidden = true
+                bedroomIntro2.isHidden = false
+            } else if introAt == 2 && bedroomIntro2.isHidden != true{
+                print("intro2")
+                introAt = 3
+                bedroomIntro2.isHidden = true
+            } else if introAt == 3 && bedroomIntro3.isHidden != true{
+                print("intro3")
+                introAt = 4
+                bedroomIntro3.isHidden = true
+                bedroomIntro4.isHidden = false
+            } else if introAt == 4 && bedroomIntro4.isHidden != true{
+                print("intro4")
+                introAt = 5
+                bedroomIntro4.isHidden = true
+            } else if introAt == 5 && bedroomIntro5.isHidden != true{
+                print("intro5")
+                introAt = 0
+                bedroomIntro5.isHidden = true
+            }
             print("Tapped outside the view")
             backButton.isHidden = false
             workshopButton.isHidden = false
             popupView.isHidden = true
             logoMascot.isHidden = true
             popupCloseLabel.isHidden = true
-        } else {
+            checkItemProgress()
+        } else if bedroomIntro1.frame.contains(location){
+            if introAt == 1{
+                print("intro1")
+                introAt = 2
+                bedroomIntro1.isHidden = true
+                bedroomIntro2.isHidden = false
+            } else if introAt == 2 && bedroomIntro2.isHidden != true{
+                print("intro2")
+                introAt = 3
+                bedroomIntro2.isHidden = true
+            } else if introAt == 3 && bedroomIntro3.isHidden != true{
+                print("intro3")
+                introAt = 4
+                bedroomIntro3.isHidden = true
+                bedroomIntro4.isHidden = false
+            } else if introAt == 4 && bedroomIntro4.isHidden != true{
+                print("intro4")
+                introAt = 5
+                bedroomIntro4.isHidden = true
+            } else if introAt == 5 && bedroomIntro5.isHidden != true{
+                print("intro5")
+                introAt = 0
+                bedroomIntro5.isHidden = true
+            }
+            
+            
+            
+        }else {
             print("Tapped inside the view")
         }
+        print(introAt)
     }
+    
     
     func initiateDefault() {
         //hide popup
         logoMascot.isHidden = true
         popupView.isHidden = true
         popupCloseLabel.isHidden = true
+        
+        //hide intro 2,3,4,5
+        bedroomIntro2.isHidden = true
+        bedroomIntro3.isHidden = true
+        bedroomIntro4.isHidden = true
+        bedroomIntro5.isHidden = true
         
         //hide recycled item
         bottleLamp1.isHidden = true
