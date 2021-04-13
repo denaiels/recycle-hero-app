@@ -83,7 +83,7 @@
         <!--Item Detail View Controller-->
         <scene sceneID="I9Q-iF-9LN">
             <objects>
-                <viewController id="pv2-Qg-Uaz" userLabel="Item Detail View Controller" customClass="ItemDetailViewController" customModule="recycle_hero_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ItemDetailViewController" id="pv2-Qg-Uaz" userLabel="Item Detail View Controller" customClass="ItemDetailViewController" customModule="recycle_hero_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wRv-GO-SFJ">
                         <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

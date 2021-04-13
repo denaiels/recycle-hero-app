@@ -73,6 +73,14 @@
                                 <rect key="frame" x="555" y="31" width="229" height="340"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48Z-P0-ZP7">
+                                        <rect key="frame" x="8" y="13" width="214" height="274"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="beachStageRound"/>
+                                        <connections>
+                                            <action selector="goToBeach:" destination="yob-c9-ZmL" eventType="touchUpInside" id="XQg-mo-I3M"/>
+                                        </connections>
+                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Beach" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPI-Ks-JaR">
                                         <rect key="frame" x="76" y="32" width="77" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -85,14 +93,6 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48Z-P0-ZP7">
-                                        <rect key="frame" x="8" y="13" width="214" height="274"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="beachStageRound"/>
-                                        <connections>
-                                            <action selector="goToBeach:" destination="yob-c9-ZmL" eventType="touchUpInside" id="XQg-mo-I3M"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                             </view>
                         </subviews>

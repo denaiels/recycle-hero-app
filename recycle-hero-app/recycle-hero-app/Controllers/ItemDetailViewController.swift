@@ -11,15 +11,10 @@ class ItemDetailViewController: UIViewController {
 
     @IBOutlet weak var itemName: UILabel!
     @IBOutlet weak var itemDescription: UILabel!
-    
     @IBOutlet weak var itemImage: UIImageView!
-    
     @IBOutlet weak var ingredient1Image: UIImageView!
-    
     @IBOutlet weak var ingredient2Image: UIImageView!
-    
     @IBOutlet weak var ingredient1Label: UILabel!
-    
     @IBOutlet weak var ingredient2Label: UILabel!
     
     var item : RecycledItem? = nil
