@@ -107,6 +107,7 @@
                                 <state key="normal" image="backButton"/>
                                 <connections>
                                     <action selector="clickBackButton:" destination="Tfl-7w-pus" eventType="touchUpInside" id="Nvi-kz-6Wn"/>
+                                    <segue destination="Jwn-uO-mI6" kind="show" id="lts-7R-Tp5"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gsw-N5-mDe" userLabel="recycleBin1">
@@ -410,6 +411,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CD9-Bt-iNv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="959.71563981042652" y="-43.076923076923073"/>
+        </scene>
+        <!--StageMenu-->
+        <scene sceneID="8nr-xP-PSU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="StageMenu" id="Jwn-uO-mI6" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="zTX-1D-3Xq"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JEa-8Z-PXt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="737" y="553"/>
         </scene>
     </scenes>
     <resources>
