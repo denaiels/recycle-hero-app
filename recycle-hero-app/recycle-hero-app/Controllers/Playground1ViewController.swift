@@ -8,11 +8,13 @@
 import UIKit
 
 class Playground1ViewController: UIViewController {
+    
+    // MARK: - Properties
+    
     var recycledItems = [RecycledItem]()
     var normalItems = [Item]()
-    var userProgress = UserProgress()
-
-
+//    var workshopItems = [Item, RecycledItem]()
+    
     var itemCountRecycled = 0
     var firstItemRecycled = false
     var allItemsRecycled = false
@@ -22,11 +24,61 @@ class Playground1ViewController: UIViewController {
     var counter = 0
     var introAt = 1
     var item_list: [Item] = [Item(name: "item1", itemStage: 1, image: "item1", description: "item1", itemFound: true), Item(name: "item1", itemStage: 1, image: "item1", description: "item1", itemFound: true)]
-
+    var itemInRecycleBin = [0, 0]
 
     var image_0 = "empty"
     var image_1 = "empty"
+    
+    
+    // MARK: - Outlets
+    
+    // Intro
+    @IBOutlet weak var bedroomIntro1: UIView!
+    @IBOutlet weak var bedroomIntro2: UIView!
+    @IBOutlet weak var bedroomIntro3: UIView!
+    @IBOutlet weak var bedroomIntro4: UIView!
+    @IBOutlet weak var bedroomIntro5: UIView!
 
+    // Item in deck
+    @IBOutlet weak var itemDeck1: UIImageView!
+    @IBOutlet weak var itemDeck2: UIImageView!
+    @IBOutlet weak var itemDeck3: UIImageView!
+
+    // Recycled item image
+    @IBOutlet weak var bottleLamp1: UIImageView!
+    @IBOutlet weak var bottleLamp2: UIImageView!
+    @IBOutlet weak var woolFiber: UIImageView!
+    @IBOutlet weak var compost: UIImageView!
+
+    // Popup
+    @IBOutlet weak var logoMascot: UIImageView!
+    @IBOutlet weak var popupView: UIView!
+    @IBOutlet weak var itemImage: UIImageView!
+    @IBOutlet weak var itemNameLabel: UILabel!
+    @IBOutlet weak var popupCloseLabel: UILabel!
+
+    // Image in recycle bin
+    @IBOutlet weak var image0: UIImageView!
+    @IBOutlet weak var image1: UIImageView!
+
+    // Item to recycle button
+    @IBOutlet weak var foodScrapButton: UIButton!
+    @IBOutlet weak var newsPaperButton: UIButton!
+    @IBOutlet weak var lightBulbButton: UIButton!
+    @IBOutlet weak var usedClothButton: UIButton!
+    @IBOutlet weak var scissorsButton: UIButton!
+    @IBOutlet weak var plasticBottleButton: UIButton!
+    var tempItemButton:[UIButton] = [UIButton]()
+
+    // Back button
+    @IBOutlet weak var backButton: UIButton!
+    
+    // Workshop button
+    @IBOutlet weak var workshopButton: UIButton!
+
+    
+    // MARK: - ViewDidLoad
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,65 +89,14 @@ class Playground1ViewController: UIViewController {
 
         initiateDefault()
     }
-    //intro 1
-    @IBOutlet weak var bedroomIntro1: UIView!
-
-    //intro 2
-    @IBOutlet weak var bedroomIntro2: UIView!
-
-    //intro 3
-    @IBOutlet weak var bedroomIntro3: UIView!
-
-    //intro 4
-    @IBOutlet weak var bedroomIntro4: UIView!
-
-    //intro 5
-    @IBOutlet weak var bedroomIntro5: UIView!
-
-
-
-
-
-
-    //for item in deck
-    @IBOutlet weak var itemDeck1: UIImageView!
-    @IBOutlet weak var itemDeck2: UIImageView!
-    @IBOutlet weak var itemDeck3: UIImageView!
-
-    //for recycled item image
-    @IBOutlet weak var bottleLamp1: UIImageView!
-    @IBOutlet weak var bottleLamp2: UIImageView!
-    @IBOutlet weak var woolFiber: UIImageView!
-    @IBOutlet weak var compost: UIImageView!
-
-
-    //for the popup
-    @IBOutlet weak var logoMascot: UIImageView!
-    @IBOutlet weak var popupView: UIView!
-    @IBOutlet weak var itemImage: UIImageView!
-    @IBOutlet weak var itemNameLabel: UILabel!
-    @IBOutlet weak var popupCloseLabel: UILabel!
-
-    //image in recycle bin
-    @IBOutlet weak var image0: UIImageView!
-    @IBOutlet weak var image1: UIImageView!
-
-    //item to recycle button
-    @IBOutlet weak var foodScrapButton: UIButton!
-    @IBOutlet weak var newsPaperButton: UIButton!
-    @IBOutlet weak var lightBulbButton: UIButton!
-    @IBOutlet weak var usedClothButton: UIButton!
-    @IBOutlet weak var scissorsButton: UIButton!
-    @IBOutlet weak var plasticBottleButton: UIButton!
-    var tempItemButton:[UIButton] = [UIButton]()
-
-    //back button
-    @IBOutlet weak var backButton: UIButton!
+    
+    
+    // MARK: - Actions
+    
     @IBAction func clickBackButton(_ sender: UIButton) {
         //go back to stage
     }
-    //workshop button
-    @IBOutlet weak var workshopButton: UIButton!
+    
     @IBAction func clickWorkshopButton(_ sender: UIButton) {
         //go to workshop
     }
@@ -108,6 +109,7 @@ class Playground1ViewController: UIViewController {
         userTouchBool = true
         
         itemDidTapped(itemIndex: 0)
+        foodScrapButton.isHidden = true
     }
     @IBAction func clickNewspaper(_ sender: UIButton) {
         item_list[counter] = normalItems[1]
@@ -115,6 +117,7 @@ class Playground1ViewController: UIViewController {
         userTouchBool = true
         
         itemDidTapped(itemIndex: 1)
+        newsPaperButton.isHidden = true
     }
     @IBAction func clickLightBulb(_ sender: UIButton) {
         item_list[counter] = normalItems[2]
@@ -122,6 +125,7 @@ class Playground1ViewController: UIViewController {
         userTouchBool = true
         
         itemDidTapped(itemIndex: 2)
+        lightBulbButton.isHidden = true
     }
     @IBAction func clickUsedCloth(_ sender: UIButton) {
         item_list[counter] = normalItems[3]
@@ -129,6 +133,7 @@ class Playground1ViewController: UIViewController {
         userTouchBool = true
         
         itemDidTapped(itemIndex: 3)
+        usedClothButton.isHidden = true
     }
     @IBAction func clickScissors(_ sender: UIButton) {
         item_list[counter] = normalItems[4]
@@ -136,6 +141,7 @@ class Playground1ViewController: UIViewController {
         userTouchBool = true
         
         itemDidTapped(itemIndex: 4)
+        scissorsButton.isHidden = true
     }
     @IBAction func clickPlasticBottle(_ sender: UIButton) {
         item_list[counter] = normalItems[5]
@@ -143,6 +149,7 @@ class Playground1ViewController: UIViewController {
         userTouchBool = true
         
         itemDidTapped(itemIndex: 5)
+        plasticBottleButton.isHidden = true
     }
 
     //recycle bin evaluator
@@ -152,12 +159,12 @@ class Playground1ViewController: UIViewController {
                 if counter == 0{
                     image0.image = UIImage(named: item_list[0].image)
                     print("image_0 is" + item_list[0].name)
-                    tempItemButton[counter].isHidden = true
+//                    tempItemButton[counter].isHidden = true
                     counter+=1
                 } else if counter == 1{
                     image1.image = UIImage(named: item_list[1].image)
                     print("image_1 is" + item_list[1].name)
-                    tempItemButton[counter].isHidden = true
+//                    tempItemButton[counter].isHidden = true
                     compute_item()
                     counter = 0
                     userTouchBool = false
@@ -184,7 +191,32 @@ class Playground1ViewController: UIViewController {
     }
     
     func itemDidTapped(itemIndex: Int) {
-        
+        if userTouchBool{
+            if counter < 2{
+                if counter == 0{
+                    image0.image = UIImage(named: normalItems[itemIndex].image)
+                    print("image_0 is " + normalItems[itemIndex].name)
+                    itemInRecycleBin[0] = itemIndex
+//                    tempItemButton[counter].isHidden = true
+                    counter = 1
+                } else if counter == 1{
+                    image1.image = UIImage(named: item_list[1].image)
+                    print("image_1 is " + item_list[1].name)
+                    itemInRecycleBin[1] = itemIndex
+//                    tempItemButton[counter].isHidden = true
+                    compute_item()
+                    counter = 0
+                    userTouchBool = false
+                } else{
+                    print("pass")
+                }
+            } else{
+                print("pass")
+            }
+        }
+        else{
+            print("pass")
+        }
     }
     
     func checkItemProgress(){
@@ -195,13 +227,15 @@ class Playground1ViewController: UIViewController {
             bedroomIntro5.isHidden = false
             playground1Finished = true
         }
-
     }
 
     //check if item suitable for recycling
-    func compute_item(){
-        if item_list[0].name == "Food Scrap" && item_list[1].name == "Newspaper" || item_list[0].name == "Newspaper" && item_list[1].name == "Food Scrap"{
-            print("Succeess! Compost is found")
+    func compute_item() {
+        // Recycled Item: Compost
+        if itemInRecycleBin[0] == 0 && itemInRecycleBin[1] == 1
+            || itemInRecycleBin[0] == 1 && itemInRecycleBin[1] == 0 {
+            
+            print("Success! Compost is found")
             itemCountRecycled += 1
             do{
                 //set true if item is found
@@ -221,7 +255,9 @@ class Playground1ViewController: UIViewController {
             foodScrapButton.isHidden = true
             newsPaperButton.isHidden = true
 
-        }else if item_list[0].name == "Plastic Bottle" && item_list[1].name == "Light Bulb" || item_list[0].name == "Light Bulb" && item_list[1].name == "Plastic Bottle"{ print("Succeess! Bottle Lamp is found")
+        }
+        // Recycled Item: Bottle Lamp
+        else if item_list[0].name == "Plastic Bottle" && item_list[1].name == "Light Bulb" || item_list[0].name == "Light Bulb" && item_list[1].name == "Plastic Bottle"{ print("Succeess! Bottle Lamp is found")
             itemCountRecycled += 1
             do{
                 //set true if item is found
@@ -242,7 +278,9 @@ class Playground1ViewController: UIViewController {
             plasticBottleButton.isHidden = true
             lightBulbButton.isHidden = true
 
-        }else if item_list[0].name == "Used Cloth" && item_list[1].name == "Scissors" || item_list[0].name == "Scissors" && item_list[1].name == "Used Cloth"{ print("Succeess! Wool Fiber is found")
+        }
+        // Recycled Item: Wool Fiber
+        else if item_list[0].name == "Used Cloth" && item_list[1].name == "Scissors" || item_list[0].name == "Scissors" && item_list[1].name == "Used Cloth"{ print("Succeess! Wool Fiber is found")
             itemCountRecycled += 1
             do{
                 //set true if item is found
@@ -386,9 +424,9 @@ class Playground1ViewController: UIViewController {
 //            print(i)
             print("\(i) | Item Name: \(normalItems[i].name)")
 //            print("Item Icon Color: \(normalItems[i].image)")
-//            print("Item Icon Black: \(normalItems[i].item_icon_black)")
-//            print("Item Description: \(normalItems[i].item_description)")
-//            print("Item Found: \(normalItems[i].item_found)")
+//            print("Item Icon Black: \(normalItems[i].imageBlack)")
+//            print("Item Description: \(normalItems[i].description)")
+//            print("Item Found: \(normalItems[i].itemFound)")
         }
 
         print("\n-----RECYCLED ITEMS-----")
@@ -396,10 +434,11 @@ class Playground1ViewController: UIViewController {
         for i in 0...recycledItemsCountStage1-1 {
 //            print(i)
             print("\(i) | Item Name: \(recycledItems[i].name)")
+            print("--> Item Ingredient: [\(recycledItems[i].ingredient1Id), \(recycledItems[i].ingredient2Id)]")
 //            print("--> Item Icon Color: \(recycledItems[i].image)")
-//            print("--> Item Icon Black: \(recycledItems[i].item_icon_black)")
-//            print("--> Item Description: \(recycledItems[i].item_description)")
-//            print("--> Item Found: \(recycledItems[i].item_found)")
+//            print("--> Item Icon Black: \(recycledItems[i].imageBlack)")
+//            print("--> Item Description: \(recycledItems[i].description)")
+//            print("--> Item Found: \(recycledItems[i].itemFound)")
         }
 
     }
