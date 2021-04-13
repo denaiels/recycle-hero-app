@@ -8,9 +8,10 @@
 import UIKit
 
 class Playground1ViewController: UIViewController {
+    
 
-   var recycledItems = [RecycledItemsModel]()
-   var normalItems = [NormalItemsModel]()
+   var recycledItems = [RecycledItem]()
+   var normalItems = [Item]()
    var userProgress = UserProgress()
    
    
@@ -22,8 +23,8 @@ class Playground1ViewController: UIViewController {
    var userTouchBool = false
    var counter = 0
    var introAt = 1
-   var item_list: [NormalItemsModel] = [NormalItemsModel(item_name: "item1", item_icon_color: "item1", item_icon_black: "item1", item_description: "item1", item_found: false),NormalItemsModel(item_name: "item1", item_icon_color: "item1", item_icon_black: "item1", item_description: "item1", item_found: false)]
-   
+    
+    var item_list: [Item] = [Item(name: "item1", itemStage: 1, image: "item1", description: "item1", itemFound: true),Item(name: "item1", itemStage: 1, image: "item1", description: "item1", itemFound: true)]
    
    var image_0 = "empty"
    var image_1 = "empty"
@@ -139,13 +140,13 @@ class Playground1ViewController: UIViewController {
        if userTouchBool{
            if counter < 2{
                if counter == 0{
-                   image0.image = UIImage(named: item_list[0].item_icon_color)
-                   print("image_0 is" + item_list[0].item_name)
+                   image0.image = UIImage(named: item_list[0].image)
+                   print("image_0 is" + item_list[0].name)
                    tempItemButton[counter].isHidden = true
                    counter+=1
                } else if counter == 1{
-                   image1.image = UIImage(named: item_list[1].item_icon_color)
-                   print("image_1 is" + item_list[1].item_name)
+                   image1.image = UIImage(named: item_list[1].image)
+                   print("image_1 is" + item_list[1].name)
                    tempItemButton[counter].isHidden = true
                    compute_item()
                    counter = 0
@@ -185,20 +186,20 @@ class Playground1ViewController: UIViewController {
    
    //check if item suitable for recycling
    func compute_item(){
-       if item_list[0].item_name == "Food Scrap" && item_list[1].item_name == "Newspaper" || item_list[0].item_name == "Newspaper" && item_list[1].item_name == "Food Scrap"{
+       if item_list[0].name == "Food Scrap" && item_list[1].name == "Newspaper" || item_list[0].name == "Newspaper" && item_list[1].name == "Food Scrap"{
            print("Succeess! Compost is found")
            itemCountRecycled += 1
            do{
                //set true if item is found
                //to be used for workshop
-               recycledItems[0].item_found = true
+               recycledItems[0].itemFound = true
                
                compost.isHidden = false
-               itemDeck2.image = UIImage(named: recycledItems[0].item_icon_color)
+               itemDeck2.image = UIImage(named: recycledItems[0].image)
                backButton.isHidden = true
                workshopButton.isHidden = true
-               itemNameLabel.text = recycledItems[0].item_name
-               itemImage.image = UIImage(named: recycledItems[0].item_icon_color)
+               itemNameLabel.text = recycledItems[0].name
+               itemImage.image = UIImage(named: recycledItems[0].image)
                popupView.isHidden = false
                logoMascot.isHidden = false
                popupCloseLabel.isHidden = false
@@ -206,20 +207,20 @@ class Playground1ViewController: UIViewController {
            foodScrapButton.isHidden = true
            newsPaperButton.isHidden = true
        
-       }else if item_list[0].item_name == "Plastic Bottle" && item_list[1].item_name == "Light Bulb" || item_list[0].item_name == "Light Bulb" && item_list[1].item_name == "Plastic Bottle"{ print("Succeess! Bottle Lamp is found")
+       }else if item_list[0].name == "Plastic Bottle" && item_list[1].name == "Light Bulb" || item_list[0].name == "Light Bulb" && item_list[1].name == "Plastic Bottle"{ print("Succeess! Bottle Lamp is found")
            itemCountRecycled += 1
            do{
                //set true if item is found
                //to be used for workshop
-               recycledItems[1].item_found = true
+               recycledItems[1].itemFound = true
                
                bottleLamp1.isHidden = false
                bottleLamp2.isHidden = false
-               itemDeck1.image = UIImage(named: recycledItems[1].item_icon_color)
+               itemDeck1.image = UIImage(named: recycledItems[1].image)
                backButton.isHidden = true
                workshopButton.isHidden = true
-               itemNameLabel.text = recycledItems[1].item_name
-               itemImage.image = UIImage(named: recycledItems[1].item_icon_color)
+               itemNameLabel.text = recycledItems[1].name
+               itemImage.image = UIImage(named: recycledItems[1].image)
                popupView.isHidden = false
                logoMascot.isHidden = false
                popupCloseLabel.isHidden = false
@@ -227,19 +228,19 @@ class Playground1ViewController: UIViewController {
            plasticBottleButton.isHidden = true
            lightBulbButton.isHidden = true
            
-       }else if item_list[0].item_name == "Used Cloth" && item_list[1].item_name == "Scissors" || item_list[0].item_name == "Scissors" && item_list[1].item_name == "Used Cloth"{ print("Succeess! Wool Fiber is found")
+       }else if item_list[0].name == "Used Cloth" && item_list[1].name == "Scissors" || item_list[0].name == "Scissors" && item_list[1].name == "Used Cloth"{ print("Succeess! Wool Fiber is found")
            itemCountRecycled += 1
            do{
                //set true if item is found
                //to be used for workshop
-               recycledItems[2].item_found = true
+               recycledItems[2].itemFound = true
                
                woolFiber.isHidden = false
-               itemDeck3.image = UIImage(named: recycledItems[2].item_icon_color)
+               itemDeck3.image = UIImage(named: recycledItems[2].image)
                backButton.isHidden = true
                workshopButton.isHidden = true
-               itemNameLabel.text = recycledItems[2].item_name
-               itemImage.image = UIImage(named: recycledItems[2].item_icon_color)
+               itemNameLabel.text = recycledItems[2].name
+               itemImage.image = UIImage(named: recycledItems[2].image)
                popupView.isHidden = false
                logoMascot.isHidden = false
                popupCloseLabel.isHidden = false
@@ -358,11 +359,14 @@ class Playground1ViewController: UIViewController {
        
        
        for i in 0...normalItemNames.count-1 {
-           normalItems.append(NormalItemsModel(item_name: normalItemNames[i], item_icon_color: "\(normalItemIconColor[i]).png", item_icon_black: "\(normalItemIconColor[i])Black.png", item_description: normalItemDescription[i], item_found: normalItemFound[i]))
+           
+        normalItems.append(Item(name: normalItemNames[i], itemStage: 1, image: "\(normalItemIconColor[i]).png", description: normalItemDescription[i], itemFound: normalItemFound[i]))
        }
+    
+
        
        for i in 0...recycledItemNames.count-1 {
-           recycledItems.append(RecycledItemsModel(item_name: recycledItemNames[i], item_stage: recycledItemStage[i], item_ingredient_1_id: recycledItemIngredient1[i], item_ingredient_2_id: recycledItemIngredient2[i], item_icon_color: "\(recycledItemIconColor[i]).png", item_icon_black: "\(recycledItemIconColor[i])Black.png", item_description: recycledItemDescription[i], item_link: recycledItemLink[i], item_found: recycledItemFound[i]))
+        recycledItems.append(RecycledItem(name:  recycledItemNames[i], itemStage: recycledItemStage[i], image: "\(recycledItemIconColor[i]).png", description: recycledItemDescription[i], itemFound: recycledItemFound[i], ingredient1Id: recycledItemIngredient1[i], ingredient2Id: recycledItemIngredient2[i], link: recycledItemLink[i]))
        }
        
        
@@ -372,22 +376,22 @@ class Playground1ViewController: UIViewController {
        
        for i in 0...normalItemNames.count-1 {
 //            print(i)
-           print("\(i) | Item Name: \(normalItems[i].item_name)")
-//            print("Item Icon Color: \(normalItems[i].item_icon_color)")
+           print("\(i) | Item Name: \(normalItems[i].name)")
+//            print("Item Icon Color: \(normalItems[i].image)")
 //            print("Item Icon Black: \(normalItems[i].item_icon_black)")
 //            print("Item Description: \(normalItems[i].item_description)")
-//            print("Item Found: \(normalItems[i].item_found)")
+//            print("Item Found: \(normalItems[i].itemFound)")
        }
        
        print("\n-----RECYCLED ITEMS-----")
        
        for i in 0...recycledItemNames.count-1 {
 //            print(i)
-           print("\(i) | Item Name: \(recycledItems[i].item_name)")
-           print("--> Item Icon Color: \(recycledItems[i].item_icon_color)")
+           print("\(i) | Item Name: \(recycledItems[i].name)")
+           print("--> Item Icon Color: \(recycledItems[i].image)")
            print("--> Item Icon Black: \(recycledItems[i].item_icon_black)")
            print("--> Item Description: \(recycledItems[i].item_description)")
-           print("--> Item Found: \(recycledItems[i].item_found)")
+           print("--> Item Found: \(recycledItems[i].itemFound)")
        }*/
        
    }
