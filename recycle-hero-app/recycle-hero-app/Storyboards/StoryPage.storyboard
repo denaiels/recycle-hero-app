@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ntR-yD-1Lb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BGn-Pd-osV">
     <device id="retina6_0" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -11,30 +11,30 @@
         <!--Story Page View Controller-->
         <scene sceneID="JKg-iA-x9r">
             <objects>
-                <pageViewController storyboardIdentifier="StoryPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Psf-b0-8aX" customClass="StoryPageViewController" customModule="recycle_hero_app" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="StoryPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="none" id="Psf-b0-8aX" customClass="StoryPageViewController" customModule="recycle_hero_app" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JZ4-EL-hBr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-231" y="-1200"/>
         </scene>
-        <!--Story Page Content View Controller-->
+        <!--Story Content View Controller-->
         <scene sceneID="g5B-dK-RTD">
             <objects>
-                <viewController storyboardIdentifier="StoryPageContentViewController" id="KST-ld-ejO" customClass="StoryPageContentViewController" customModule="recycle_hero_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StoryContentViewController" id="KST-ld-ejO" customClass="StoryContentViewController" customModule="recycle_hero_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j6z-Z9-zw5">
                         <rect key="frame" x="0.0" y="0.0" width="844" height="267"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="GSJ-Nr-YXb">
-                                <rect key="frame" x="7" y="49" width="830" height="168"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IZ8-DK-Gpt">
+                                <rect key="frame" x="7" y="57" width="830" height="190"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qsh-99-y3k">
-                                        <rect key="frame" x="295" y="0.0" width="240" height="128"/>
+                                        <rect key="frame" x="281" y="0.0" width="268" height="158"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="Qsh-99-y3k" secondAttribute="height" multiplier="15:8" id="pfg-5g-qDd"/>
+                                            <constraint firstAttribute="width" secondItem="Qsh-99-y3k" secondAttribute="height" multiplier="134:79" id="kgL-Rz-FLW"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jF-Tk-RrD">
-                                        <rect key="frame" x="0.0" y="144" width="830" height="24"/>
+                                        <rect key="frame" x="0.0" y="166" width="830" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="830" id="RM8-jb-QgA"/>
                                             <constraint firstAttribute="height" constant="24" id="wGl-z5-VZw"/>
@@ -47,23 +47,23 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7Rl-lA-bf1"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.96819895509999998" green="0.94583100080000004" blue="0.90587693449999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="GSJ-Nr-YXb" secondAttribute="trailing" constant="7" id="7gF-FK-Njc"/>
-                            <constraint firstItem="7Rl-lA-bf1" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="GSJ-Nr-YXb" secondAttribute="bottom" constant="50" id="Mli-aQ-HLK"/>
-                            <constraint firstItem="GSJ-Nr-YXb" firstAttribute="top" secondItem="7Rl-lA-bf1" secondAttribute="top" constant="49" id="P4S-an-FVb"/>
-                            <constraint firstItem="GSJ-Nr-YXb" firstAttribute="leading" secondItem="j6z-Z9-zw5" secondAttribute="leading" constant="7" id="fwc-Yq-cZ0"/>
+                            <constraint firstItem="IZ8-DK-Gpt" firstAttribute="leading" secondItem="j6z-Z9-zw5" secondAttribute="leading" constant="7" id="KTF-ZG-BhM"/>
+                            <constraint firstAttribute="trailing" secondItem="IZ8-DK-Gpt" secondAttribute="trailing" constant="7" id="Ss0-fE-1QW"/>
+                            <constraint firstItem="IZ8-DK-Gpt" firstAttribute="top" secondItem="7Rl-lA-bf1" secondAttribute="top" constant="57" id="aXH-Dw-epp"/>
+                            <constraint firstItem="7Rl-lA-bf1" firstAttribute="bottom" secondItem="IZ8-DK-Gpt" secondAttribute="bottom" constant="20" id="tDV-YL-1gV"/>
                         </constraints>
                     </view>
                     <size key="freeformSize" width="844" height="267"/>
                     <connections>
-                        <outlet property="contentImageView" destination="Qsh-99-y3k" id="hDu-Xd-d4u"/>
-                        <outlet property="storyLabel" destination="4jF-Tk-RrD" id="cj6-cg-bzH"/>
+                        <outlet property="contentImageView" destination="Qsh-99-y3k" id="G9J-yi-aOy"/>
+                        <outlet property="storyLabel" destination="4jF-Tk-RrD" id="tRN-S8-UJU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hji-gy-W4a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="444" y="-1228"/>
+            <point key="canvasLocation" x="443.60189573459712" y="-1228.4615384615383"/>
         </scene>
         <!--Story View Controller-->
         <scene sceneID="Hlj-Yx-bFp">
@@ -75,6 +75,7 @@
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zo0-9t-3yo">
                                 <rect key="frame" x="0.0" y="0.0" width="844" height="267"/>
+                                <color key="backgroundColor" red="0.96819895509999998" green="0.94583100080000004" blue="0.90587693449999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
                                     <segue destination="Psf-b0-8aX" kind="embed" id="gCP-sh-yOM"/>
                                 </connections>
@@ -97,6 +98,9 @@
                                                     <constraint firstAttribute="width" constant="156" id="sB8-7m-ZZU"/>
                                                 </constraints>
                                                 <state key="normal" image="nextButton"/>
+                                                <connections>
+                                                    <action selector="nextButtonTappedWithSender:" destination="BGn-Pd-osV" eventType="touchUpInside" id="vnY-qQ-EOg"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -113,6 +117,9 @@
                                         <state key="normal" title="Skip">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="skipButtonTappedWithSender:" destination="BGn-Pd-osV" eventType="touchUpInside" id="2Ju-Z9-FGo"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.96819895509999998" green="0.94583100080000004" blue="0.90587693449999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -326,9 +333,6 @@
         <image name="story4" width="1351" height="1436"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

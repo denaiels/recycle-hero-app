@@ -1,5 +1,5 @@
 //
-//  StoryPageContentViewController.swift
+//  StoryContentViewController.swift
 //  recycle-hero-app
 //
 //  Created by Daniel Santoso on 13/04/21.
@@ -7,8 +7,8 @@
 
 import UIKit
 
-class StoryPageContentViewController: UIViewController {
-    
+class StoryContentViewController: UIViewController {
+
     // MARK: - Outlets
     
     @IBOutlet var storyLabel: UILabel! {

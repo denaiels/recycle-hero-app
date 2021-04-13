@@ -7,7 +7,7 @@
 
 import UIKit
 
-class StoryViewController: UIViewController {
+class StoryViewController: UIViewController, StoryPageViewControllerDelegate {
 
     // MARK: - Outlets
     
@@ -17,8 +17,57 @@ class StoryViewController: UIViewController {
             nextButton.layer.masksToBounds = true
         }
     }
-    @IBOutlet var skipButton: UIButton
+    @IBOutlet var skipButton: UIButton!
     
+    // MARK: - Properties
+    
+    var storyPageViewController: StoryPageViewController?
+    
+    
+    // MARK: - Actions
+    
+    @IBAction func skipButtonTapped(sender: UIButton) {
+        UserDefaults.standard.set(true, forKey: "hasViewedStory")
+        dismiss(animated: true, completion: nil)
+    }
+    @IBAction func nextButtonTapped(sender: UIButton) {
+        if let index = storyPageViewController?.currentIndex {
+            switch index {
+            case 0...2:
+                storyPageViewController?.forwardPage()
+            case 3:
+                UserDefaults.standard.set(true, forKey: "hasViewedStory")
+                dismiss(animated: true, completion: nil)
+            default:
+                break
+            }
+        }
+        
+        updateUI()
+    }
+    
+    func updateUI() {
+        if let index = storyPageViewController?.currentIndex {
+            switch index {
+            case 0...2:
+                nextButton.setTitle("NEXT", for: .normal)
+                skipButton.isHidden = false
+            case 3:
+                nextButton.setTitle("GET STARTED", for: .normal)
+                skipButton.isHidden = true
+            default:
+                break
+            }
+            
+            pageControl.currentPage = index
+        }
+    }
+    
+    func didUpdatePageIndex(currentIndex: Int) {
+        updateUI()
+    }
+    
+    // MARK: - View controller life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,14 +76,17 @@ class StoryViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let destination = segue.destination
+        if let pageViewController = destination as? StoryPageViewController {
+            storyPageViewController = pageViewController
+            storyPageViewController?.storyDelegate = self
+        }
     }
-    */
+    
 
 }
