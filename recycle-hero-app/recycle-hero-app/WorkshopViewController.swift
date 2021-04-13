@@ -14,6 +14,8 @@ class WorkshopViewController: UIViewController, UICollectionViewDelegate, UIColl
     @IBOutlet weak var collectionView: UICollectionView!
     var items = [Item]()
 
+    @IBOutlet weak var valueTestLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -27,14 +29,14 @@ class WorkshopViewController: UIViewController, UICollectionViewDelegate, UIColl
     }
     
     func initDataItems(){
-        for index in 1...3{
+        for index in 1...10{
             let num = index-1
             items.append(RecycledItem(name: recycledItemNames[num], itemStage: recycledItemStage[num], image: recycledItemIconColor[num], description: "lol", itemFound: true, ingredient1Id: recycledItemIngredient1[num], ingredient2Id: recycledItemIngredient2[num], link: recycledItemLink[num]))
         }
         
         items.append(RecycledItem(name: "shit", itemStage: 1, image: recycledItemIconColor[10], description: "this is shit", itemFound: false, ingredient1Id: recycledItemIngredient1[10], ingredient2Id: recycledItemIngredient2[11], link: "https://www.google.com"))
         
-        for index in 1...3{
+        for index in 1...20{
             let num = index-1
             items.append(Item(name: normalItemNames[num], itemStage: 1, image: normalItemIconColor[num], description: normalItemDescription[num], itemFound: true))
         }
@@ -46,9 +48,25 @@ class WorkshopViewController: UIViewController, UICollectionViewDelegate, UIColl
     //MARK: Mengatur view cell
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
-            var cell = collectionView.dequeueReusableCell(withReuseIdentifier: "viewCellItem", for: indexPath) as! RecycleCollectionViewCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "viewCellItem", for: indexPath) as! RecycleCollectionViewCell
            
+            
+//            //Apply rounded corners
+//            cell.contentView.layer.cornerRadius = 2.0;
+//            cell.contentView.layer.borderWidth = 1.0;
+//            cell.contentView.layer.borderColor = UIColor.clear.cgColor
+//            cell.contentView.layer.masksToBounds = true;
+//
+//            cell.layer.shadowColor = UIColor.black.cgColor;
+//            cell.layer.shadowOffset = CGSizeMake(0, 2.0);
+//            cell.layer.shadowRadius = 2.0;
+//            cell.layer.shadowOpacity = 0.5;
+//            cell.layer.masksToBounds = false;
+//            cell.layer.shadowPath = [UIBezierPath bezierPathWithRoundedRect:cell.bounds cornerRadius:cell.contentView.layer.cornerRadius].CGPath;
+            cell.layer.cornerRadius = 10
+            cell.layer.masksToBounds = true
             cell.backgroundColor = UIColor.red
+//
             // set nilai ke view dalam cell
             let item = items[indexPath.row]
             
@@ -73,15 +91,28 @@ class WorkshopViewController: UIViewController, UICollectionViewDelegate, UIColl
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
 
             //Lebar dan tinggi cell(ini 1 cell 1 row)
-            //return CGSize(width: collectionView.frame.width, height: 120)
-            
-            return CGSize(width: 250 , height: 150)
+              print("this function is called")
+              return CGSize(width: collectionView.frame.width, height: 120)
+//
+//            return CGSize(width: 150 , height: 150)
+//            let numberOfItemsPerRow:CGFloat = 4
+//            let spacingBetweenCells:CGFloat = 16
+//
+//            let totalSpacing = (2 * 100.0) + ((numberOfItemsPerRow - 1) * spacingBetweenCells) //Amount of total spacing in a row
+//
+//            if let collection = self.collectionView{
+//                let width = (collection.bounds.width - totalSpacing)/numberOfItemsPerRow
+//                return CGSize(width: width, height: width)
+//            }else{
+//                return CGSize(width: 0, height: 0)
+//            }
         }
-    
+
+        //MARK: untuk mengatur "margin"
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        
-        
-        return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+
+
+            return UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 20)
         }
         
         func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

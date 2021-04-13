@@ -46,6 +46,10 @@ class ItemDetailViewController: UIViewController {
         }
     }
     
+    @IBAction func backToWorkshop(_ sender: Any) {
+        
+        self.dismiss(animated: true, completion: nil)
+    }
     
 
     /*
