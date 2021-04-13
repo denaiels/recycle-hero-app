@@ -8,8 +8,8 @@
 import Foundation
 
 var normalItemsCountStage1 = 6
-var normalItemNames = ["Food Scrap", "Newspaper", "Light Bulb", "Used Clothes", "Scissors", "Plastic Bottle", "Small Plant", "Paint Can", "Ribbon", "Milk Jug", "Needle", "Banana Peels", "Water", "Plastic Water Sprayer", "Stryofoam", "Saw", "Fallen Branches", "Piles of Water Bottles", "Tape", "Plastic Straw"]
-var normalItemIconColor = ["foodScrap", "newspaper", "lightBulb", "usedClothes", "scissors", "plasticBottle", "smallPlant", "paintCan", "ribbon", "milkJug", "needle", "bananaPeels", "water", "plasticWaterSprayer", "styrofoam", "saw", "branches", "pilesOfWaterBottles", "tape", "plasticStraw"]
+var normalItemNames = ["Food Scrap", "Newspaper", "Light Bulb", "Used Cloth", "Scissors", "Plastic Bottle", "Small Plant", "Paint Can", "Ribbon", "Milk Jug", "Needle", "Banana Peels", "Water", "Plastic Water Sprayer", "Stryofoam", "Saw", "Fallen Branches", "Piles of Water Bottles", "Tape", "Plastic Straw"]
+var normalItemIconColor = ["foodScrap", "newspaper", "lightBulb", "usedCloth", "scissors", "bottle", "smallPlant", "paintCan", "ribbon", "milkJug", "needle", "bananaPeels", "water", "plasticWaterSprayer", "styrofoam", "saw", "branches", "pilesOfWaterBottles", "tape", "plasticStraw"]
 var normalItemDescription =
     ["Food waste or food loss that is not eaten.",
      "A newspaper is a publication printed on paper and issued regularly, usually once a day or once a week.",
