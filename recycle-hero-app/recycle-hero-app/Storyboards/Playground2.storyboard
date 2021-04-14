@@ -157,7 +157,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="backButton"/>
                                 <connections>
-                                    <segue destination="rZu-Ej-bCs" kind="show" id="deg-hy-fsl"/>
+                                    <segue destination="rZu-Ej-bCs" kind="custom" customClass="SegueFromLeft" customModule="recycle_hero_app" customModuleProvider="target" id="deg-hy-fsl"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Anywhere to Continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JCa-NU-YlR" userLabel="Popup Close Label">
