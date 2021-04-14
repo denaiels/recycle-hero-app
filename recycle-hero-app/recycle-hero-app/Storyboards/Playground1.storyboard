@@ -410,12 +410,13 @@
                         <outlet property="usedClothButton" destination="AtU-iW-OPj" id="ZhC-6n-Z9U"/>
                         <outlet property="woolFiber" destination="Kc3-oj-oiO" id="EHh-Eg-lS3"/>
                         <outlet property="workshopButton" destination="SV8-oc-4jy" id="AKc-Mx-kAo"/>
+                        <segue destination="1qv-RL-hhH" kind="show" identifier="finishStage" id="MoK-of-wea"/>
                     </connections>
                 </viewController>
                 <exit id="asw-0G-3oc" userLabel="Exit" sceneMemberID="exit"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CD9-Bt-iNv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="959.71563981042652" y="-43.076923076923073"/>
+            <point key="canvasLocation" x="953" y="-100"/>
         </scene>
         <!--ItemDetailViewController-->
         <scene sceneID="QhZ-Rm-YWp">
@@ -448,6 +449,9 @@
             <point key="canvasLocation" x="991" y="543"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="MoK-of-wea"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Scissors-angle" width="43" height="40"/>
         <image name="backButton" width="50" height="50"/>

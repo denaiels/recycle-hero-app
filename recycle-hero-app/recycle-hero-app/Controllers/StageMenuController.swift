@@ -9,7 +9,6 @@ import UIKit
 
 
 class StageMenuController: UIViewController {
-    static var currentStage : Int? = 1
 
     // MARK: - Outlets
     
@@ -29,15 +28,16 @@ class StageMenuController: UIViewController {
         
         if let stage = defaults.string(forKey: "stage") {
             
-            if stage.isEmpty{
-                defaults.setValue("1", forKey: "stage")
-                gardenLabel.isHidden = true
-                beachLabel.isHidden = true
-                gardenMask.isHidden = false
-                beachMask.isHidden = false
-            }
+//            if stage.isEmpty{
+//                defaults.setValue("1", forKey: "stage")
+//                gardenLabel.isHidden = true
+//                beachLabel.isHidden = true
+//                gardenMask.isHidden = false
+//                beachMask.isHidden = false
+//            }
             
-            else if stage=="1"{
+            if stage=="1"{
+                print("stage 1 unlocked")
                 gardenLabel.isHidden = true
                 beachLabel.isHidden = true
                 gardenMask.isHidden = false
@@ -45,37 +45,26 @@ class StageMenuController: UIViewController {
             }
             
             else if stage=="2"{
+                print("stage 2 unlocked")
                 gardenLabel.isHidden = false
                 gardenMask.isHidden = true
+                beachLabel.isHidden = true
+                print("beach label is hidden: \(beachLabel.isHidden)")
             }
             
             else if stage=="3"{
+                print("stage 3 unlocked")
                 beachLabel.isHidden = false
                 beachMask.isHidden = true
             }
+        }else{
+            defaults.set("1", forKey: "stage")
+            gardenLabel.isHidden = true
+            beachLabel.isHidden = true
+            gardenMask.isHidden = false
+            beachMask.isHidden = false
+            print("else called")
         }
-        
-        
-        
-        if let stage = StageMenuController.currentStage{
-            if stage==1{
-                gardenLabel.isHidden = true
-                beachLabel.isHidden = true
-                gardenMask.isHidden = false
-                beachMask.isHidden = false
-            }
-            
-            if stage==2{
-                gardenLabel.isHidden = false
-                gardenMask.isHidden = true
-            }
-            
-            if stage==3{
-                beachLabel.isHidden = false
-                beachMask.isHidden = true
-            }
-        }
-        
         // Do any additional setup after loading the view.
     }
     

@@ -100,7 +100,7 @@
                         <color key="backgroundColor" red="1" green="0.82745098039215681" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <connections>
-                        <outlet property="beachLabel" destination="hPI-Ks-JaR" id="c14-Eh-x0B"/>
+                        <outlet property="beachLabel" destination="hPI-Ks-JaR" id="lNk-ew-9y1"/>
                         <outlet property="beachMask" destination="Twe-lY-qnF" id="KWf-L2-bqJ"/>
                         <outlet property="chooseStageLabel" destination="4wy-2M-AT9" id="Akv-Jc-Pqh"/>
                         <outlet property="gardenLabel" destination="nSR-XH-64A" id="Ayz-KR-K5A"/>

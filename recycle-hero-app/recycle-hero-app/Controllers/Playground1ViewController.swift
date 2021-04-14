@@ -204,6 +204,8 @@ class Playground1ViewController: UIViewController {
         } else if allItemsRecycled == true && itemCountRecycled == 3 && playground1Finished == false {
             bedroomIntro5.isHidden = false
             playground1Finished = true
+            UserDefaults.standard.set("2", forKey: "stage")
+            performSegue(withIdentifier: "finishStage", sender: self)
         }
     }
 
@@ -447,10 +449,6 @@ class Playground1ViewController: UIViewController {
         
         if let destinationVC = segue.destination as? ItemDetailViewController {
             destinationVC.item = recycledItems[itemToSendToWorkshopId]
-        }
-        
-        if let destinationVC = segue.destination as? StageMenuController {
-//            destinationVC.item = recycledItems[itemToSendToWorkshopId]
         }
     }
     
