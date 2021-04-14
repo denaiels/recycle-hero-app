@@ -108,7 +108,6 @@
                                 <state key="normal" image="backButton"/>
                                 <connections>
                                     <action selector="clickBackButton:" destination="Tfl-7w-pus" eventType="touchUpInside" id="Nvi-kz-6Wn"/>
-                                    <segue destination="1qv-RL-hhH" kind="show" id="ZIr-SX-Iz1"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gsw-N5-mDe" userLabel="recycleBin1">
@@ -196,8 +195,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome Recycle Heros! Let’s begin by finding waste" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYM-r9-1tM" userLabel="intro1Label">
-                                        <rect key="frame" x="144" y="157" width="556" height="75"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome Recycle Hero! First we will recycle the trash in your bedroom into more useful things!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYM-r9-1tM" userLabel="intro1Label">
+                                        <rect key="frame" x="137" y="150" width="570" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.99731510879999996" green="0.83288848400000004" blue="0.4312754869" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
@@ -314,8 +313,8 @@
                                         <rect key="frame" x="547" y="217" width="192" height="192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="materials and place it into the Recycling Machine!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bmn-80-9NQ" userLabel="intro2Label">
-                                        <rect key="frame" x="144" y="157" width="556" height="75"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Find and tap 2 trash items to put it into the Recycling Machine and see if you can use all the correct materials!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bmn-80-9NQ" userLabel="intro2Label">
+                                        <rect key="frame" x="137" y="150" width="570" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.99731510879999996" green="0.83288848400000004" blue="0.4312754869" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
@@ -449,9 +448,6 @@
             <point key="canvasLocation" x="991" y="543"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="MoK-of-wea"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Scissors-angle" width="43" height="40"/>
         <image name="backButton" width="50" height="50"/>

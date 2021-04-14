@@ -86,7 +86,7 @@
                                 <state key="normal" image="backButton"/>
                                 <connections>
                                     <action selector="clickBackButton:" destination="FsE-49-lvO" eventType="touchUpInside" id="YaW-zf-0Ei"/>
-                                    <segue destination="5BO-hJ-IJe" kind="show" identifier="FinishStage3" id="p9j-0m-BEY"/>
+                                    <segue destination="5BO-hJ-IJe" kind="custom" identifier="finishStage" customClass="SegueFromLeft" customModule="recycle_hero_app" customModuleProvider="target" id="p9j-0m-BEY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwn-yC-qRT" userLabel="sawButton">

@@ -111,13 +111,8 @@
 				5FBD6DDB261DB26A00EB0322 /* ViewController.swift */,
 				60184858261E0319008F6063 /* StageMenuController.swift */,
 				5FE3D9E326256FEE005C9C07 /* Story */,
-				5F0A8971261EF69E001E3FF2 /* Playground1ViewController.swift */,
-				5F0BC47626242233005F9416 /* Playground2ViewController.swift */,
-				5F0BC47E26242276005F9416 /* Playground3ViewController.swift */,
-				5F6C363B2625F8890081DB74 /* WorkshopViewController.swift */,
-				5F6C36352625F87E0081DB74 /* ItemDetailViewController.swift */,
-				5F6C363A2625F8890081DB74 /* NormalItemDetailViewController.swift */,
-				5F6C36382625F8890081DB74 /* RecycleCollectionViewCell.swift */,
+				5F6336DD2627732300D72786 /* Playground */,
+				5F6336DE2627733500D72786 /* Workshop */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -134,6 +129,27 @@
 				5F6C36392625F8890081DB74 /* Workshop.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5F6336DD2627732300D72786 /* Playground */ = {
+			isa = PBXGroup;
+			children = (
+				5F0A8971261EF69E001E3FF2 /* Playground1ViewController.swift */,
+				5F0BC47626242233005F9416 /* Playground2ViewController.swift */,
+				5F0BC47E26242276005F9416 /* Playground3ViewController.swift */,
+			);
+			path = Playground;
+			sourceTree = "<group>";
+		};
+		5F6336DE2627733500D72786 /* Workshop */ = {
+			isa = PBXGroup;
+			children = (
+				5F6C363B2625F8890081DB74 /* WorkshopViewController.swift */,
+				5F6C36352625F87E0081DB74 /* ItemDetailViewController.swift */,
+				5F6C363A2625F8890081DB74 /* NormalItemDetailViewController.swift */,
+				5F6C36382625F8890081DB74 /* RecycleCollectionViewCell.swift */,
+			);
+			path = Workshop;
 			sourceTree = "<group>";
 		};
 		5F6C36472626045C0081DB74 /* Custom Segue */ = {

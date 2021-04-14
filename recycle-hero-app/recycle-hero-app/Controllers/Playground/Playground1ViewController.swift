@@ -98,7 +98,7 @@ class Playground1ViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func clickBackButton(_ sender: UIButton) {
-        
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func clickWorkshopButton(_ sender: UIButton) {
@@ -318,25 +318,25 @@ class Playground1ViewController: UIViewController {
         guard let location = touch?.location(in: self.view) else { return }
         if !popupView.frame.contains(location) {
             if introAt == 1{
-                print("intro1")
+                print("popupView -> intro1")
                 introAt = 2
                 bedroomIntro1.isHidden = true
                 bedroomIntro2.isHidden = false
             } else if introAt == 2 && bedroomIntro2.isHidden != true{
-                print("intro2")
+                print("popupView -> intro2")
                 introAt = 3
                 bedroomIntro2.isHidden = true
             } else if introAt == 3 && bedroomIntro3.isHidden != true{
-                print("intro3")
+                print("popupView -> intro3")
                 introAt = 4
                 bedroomIntro3.isHidden = true
                 bedroomIntro4.isHidden = false
             } else if introAt == 4 && bedroomIntro4.isHidden != true{
-                print("intro4")
+                print("popupView -> intro4")
                 introAt = 5
                 bedroomIntro4.isHidden = true
             } else if introAt == 5 && bedroomIntro5.isHidden != true{
-                print("intro5")
+                print("popupView -> intro5")
                 introAt = 0
                 bedroomIntro5.isHidden = true
                 UserDefaults.standard.set("2", forKey: "stage")
@@ -352,31 +352,57 @@ class Playground1ViewController: UIViewController {
             checkItemProgress()
         } else if bedroomIntro1.frame.contains(location){
             if introAt == 1{
-                print("intro1")
+                print("intro1 -> intro1")
                 introAt = 2
                 bedroomIntro1.isHidden = true
                 bedroomIntro2.isHidden = false
             } else if introAt == 2 && bedroomIntro2.isHidden != true{
-                print("intro2")
+                print("intro1 -> intro2")
                 introAt = 3
                 bedroomIntro2.isHidden = true
             } else if introAt == 3 && bedroomIntro3.isHidden != true{
-                print("intro3")
+                print("intro1 -> intro3")
                 introAt = 4
                 bedroomIntro3.isHidden = true
                 bedroomIntro4.isHidden = false
             } else if introAt == 4 && bedroomIntro4.isHidden != true{
-                print("intro4")
+                print("intro1 -> intro4")
                 introAt = 5
                 bedroomIntro4.isHidden = true
             } else if introAt == 5 && bedroomIntro5.isHidden != true{
-                print("intro5")
+                print("intro1 -> intro5")
                 introAt = 0
                 bedroomIntro5.isHidden = true
                 UserDefaults.standard.set("2", forKey: "stage")
                 performSegue(withIdentifier: "finishStage", sender: self)
             }
-        }else {
+        }else if bedroomIntro1.frame.contains(location){
+            if introAt == 1{
+                print("intro1 -> intro1")
+                introAt = 2
+                bedroomIntro1.isHidden = true
+                bedroomIntro2.isHidden = false
+            } else if introAt == 2 && bedroomIntro2.isHidden != true{
+                print("intro1 -> intro2")
+                introAt = 3
+                bedroomIntro2.isHidden = true
+            } else if introAt == 3 && bedroomIntro3.isHidden != true{
+                print("intro1 -> intro3")
+                introAt = 4
+                bedroomIntro3.isHidden = true
+                bedroomIntro4.isHidden = false
+            } else if introAt == 4 && bedroomIntro4.isHidden != true{
+                print("intro1 -> intro4")
+                introAt = 5
+                bedroomIntro4.isHidden = true
+            } else if introAt == 5 && bedroomIntro5.isHidden != true{
+                print("intro1 -> intro5")
+                introAt = 0
+                bedroomIntro5.isHidden = true
+                UserDefaults.standard.set("2", forKey: "stage")
+                performSegue(withIdentifier: "finishStage", sender: self)
+            }
+        } else {
             print("Tapped inside the view")
         }
         print(introAt)

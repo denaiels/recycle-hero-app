@@ -109,7 +109,7 @@ class Playground2ViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func clickBackButton(_ sender: UIButton) {
-        
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func clickWorkshopButton(_ sender: UIButton) {
@@ -437,6 +437,8 @@ class Playground2ViewController: UIViewController {
                 print("intro3")
                 introAt = 4
                 gardenIntro3.isHidden = true
+                UserDefaults.standard.set("3", forKey: "stage")
+                performSegue(withIdentifier: "finishStage", sender: self)
             }
             backButton.isHidden = false
             workshopButton.isHidden = false

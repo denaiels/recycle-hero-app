@@ -229,7 +229,7 @@ class Playground3ViewController: UIViewController {
 
     func checkItemProgress() {
         if allItemsRecycled == true && itemCountRecycled == 5 && playground3Finished == false {
-            beachIntro2.isHidden = false
+            beachIntro3.isHidden = false
             playground3Finished = true
         }
     }
@@ -413,9 +413,10 @@ class Playground3ViewController: UIViewController {
                 print("popUpView -> intro3")
                 introAt = 0
                 beachIntro3.isHidden = true
-                performSegue(withIdentifier: "FinishStage3", sender: self)
+                performSegue(withIdentifier: "finishStage", sender: self)
             }
-            print("Tapped outside the view")
+            print("popupView -> Tapped outside the view")
+            print("beachIntro3 isHidden = \(beachIntro3.isHidden)")
             backButton.isHidden = false
             workshopButton.isHidden = false
             popupView.isHidden = true
@@ -439,8 +440,15 @@ class Playground3ViewController: UIViewController {
                 print("intro1 -> intro3")
                 introAt = 0
                 beachIntro3.isHidden = true
-                performSegue(withIdentifier: "FinishStage3", sender: self)
+                performSegue(withIdentifier: "finishStage", sender: self)
             }
+            print("intro1 -> Tapped outside the view")
+            backButton.isHidden = false
+            workshopButton.isHidden = false
+            popupView.isHidden = true
+            logoMascot.isHidden = true
+            popupCloseLabel.isHidden = true
+            checkItemProgress()
         } else if !beachIntro2.frame.contains(location){
             if introAt == 1{
                 print("intro2 -> intro1")
@@ -458,8 +466,15 @@ class Playground3ViewController: UIViewController {
                 print("intro2 -> intro3")
                 introAt = 0
                 beachIntro3.isHidden = true
-                performSegue(withIdentifier: "FinishStage3", sender: self)
+                performSegue(withIdentifier: "finishStage", sender: self)
             }
+            print("intro2 -> Tapped outside the view")
+            backButton.isHidden = false
+            workshopButton.isHidden = false
+            popupView.isHidden = true
+            logoMascot.isHidden = true
+            popupCloseLabel.isHidden = true
+            checkItemProgress()
         } else {
             print("Tapped inside the view")
         }

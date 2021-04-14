@@ -101,14 +101,15 @@ class StageMenuController: UIViewController {
     
     @IBAction func goToBeach(_ sender: Any) {
         
-        if let stage = defaults.string(forKey: "stage"){
-            
-            if stage.isEmpty{
-                return
-            }else if stage == "3"{
-                performSegue(withIdentifier: "showBeach", sender: self)
-            }
-        }
+//        if let stage = defaults.string(forKey: "stage"){
+//
+//            if stage.isEmpty{
+//                return
+//            }else if stage == "3"{
+//                performSegue(withIdentifier: "showBeach", sender: self)
+//            }
+//        }
+        performSegue(withIdentifier: "showBeach", sender: self)
     }
     
     

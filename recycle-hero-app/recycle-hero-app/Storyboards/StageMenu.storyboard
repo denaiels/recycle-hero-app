@@ -36,13 +36,6 @@
                                     </label>
                                 </subviews>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose Your Stage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wy-2M-AT9">
-                                <rect key="frame" x="60" y="338" width="724" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sPA-e9-8Gk">
                                 <rect key="frame" x="308" y="20" width="228.99999999999997" height="310.00000000000006"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -95,6 +88,13 @@
                                     </imageView>
                                 </subviews>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose Your Stage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wy-2M-AT9">
+                                <rect key="frame" x="60" y="336" width="724" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="T5M-Jf-Mzr"/>
                         <color key="backgroundColor" red="1" green="0.82745098039215681" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -105,9 +105,9 @@
                         <outlet property="chooseStageLabel" destination="4wy-2M-AT9" id="Akv-Jc-Pqh"/>
                         <outlet property="gardenLabel" destination="nSR-XH-64A" id="Ayz-KR-K5A"/>
                         <outlet property="gardenMask" destination="xol-Vb-evL" id="4yk-W6-mAw"/>
-                        <segue destination="bhE-Fn-xDn" kind="custom" identifier="showBedroom" customClass="SlideRightStoryboardSegue" customModule="recycle_hero_app" customModuleProvider="target" id="o29-Bi-4qb"/>
-                        <segue destination="Mwv-jR-IHL" kind="custom" identifier="showGarden" customClass="SlideRightStoryboardSegue" customModule="recycle_hero_app" customModuleProvider="target" id="h6N-Ox-oRx"/>
-                        <segue destination="CyC-Gx-e3M" kind="show" identifier="showBeach" id="TBt-FJ-P6B"/>
+                        <segue destination="bhE-Fn-xDn" kind="custom" identifier="showBedroom" customClass="SegueFromLeft" customModule="recycle_hero_app" customModuleProvider="target" id="o29-Bi-4qb"/>
+                        <segue destination="Mwv-jR-IHL" kind="custom" identifier="showGarden" customClass="SegueFromLeft" customModule="recycle_hero_app" customModuleProvider="target" id="h6N-Ox-oRx"/>
+                        <segue destination="CyC-Gx-e3M" kind="show" identifier="showBeach" customClass="SegueFromLeft" customModule="recycle_hero_app" customModuleProvider="target" id="TBt-FJ-P6B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XTx-eu-44q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

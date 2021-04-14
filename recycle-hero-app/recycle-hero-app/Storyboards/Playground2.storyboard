@@ -94,7 +94,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="backButton"/>
                                 <connections>
-                                    <segue destination="H6B-gr-OCq" kind="show" id="nUJ-zT-136"/>
+                                    <action selector="clickBackButton:" destination="MHe-tg-bDm" eventType="touchUpInside" id="eMF-cv-XC2"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LIO-O0-iGp" userLabel="recycleBin1">
@@ -157,6 +157,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="backButton"/>
                                 <connections>
+                                    <action selector="clickWorkshopButton:" destination="MHe-tg-bDm" eventType="touchUpInside" id="ecZ-4i-Mzl"/>
                                     <segue destination="rZu-Ej-bCs" kind="custom" customClass="SegueFromLeft" customModule="recycle_hero_app" customModuleProvider="target" id="deg-hy-fsl"/>
                                 </connections>
                             </button>
@@ -407,7 +408,7 @@
                         <outlet property="waterButton" destination="KHf-8N-eXe" id="3EK-JB-OB0"/>
                         <outlet property="wateringJug" destination="OrK-8x-2gq" id="C90-at-jai"/>
                         <outlet property="workshopButton" destination="e7t-bc-toh" id="6dg-g6-sAa"/>
-                        <segue destination="H6B-gr-OCq" kind="custom" identifier="finishStage" customClass="SlideLeftSegue" customModule="recycle_hero_app" customModuleProvider="target" id="A7q-Se-egZ"/>
+                        <segue destination="H6B-gr-OCq" kind="custom" identifier="finishStage" customClass="SegueFromLeft" customModule="recycle_hero_app" customModuleProvider="target" id="A7q-Se-egZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C4b-nM-4cL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -445,9 +446,6 @@
             <point key="canvasLocation" x="-420" y="784"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="A7q-Se-egZ"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="backButton" width="50" height="50"/>
         <image name="banana" width="2048" height="2048"/>
