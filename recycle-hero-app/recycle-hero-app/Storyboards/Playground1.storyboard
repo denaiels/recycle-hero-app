@@ -99,6 +99,7 @@
                                 <state key="normal" image="backButton"/>
                                 <connections>
                                     <action selector="clickWorkshopButton:" destination="Tfl-7w-pus" eventType="touchUpInside" id="1dE-cb-Hrn"/>
+                                    <segue destination="H8B-Jb-oR2" kind="show" id="58U-mh-9H1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCB-Lx-cc2" userLabel="backButton">
@@ -148,6 +149,10 @@
                                         <rect key="frame" x="57" y="172" width="160" height="46"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="openWorkshop"/>
+                                        <connections>
+                                            <action selector="openInWorkshopDidTap:" destination="Tfl-7w-pus" eventType="touchUpInside" id="zDd-wl-gff"/>
+                                            <segue destination="aq2-DO-4Sh" kind="show" id="gLd-Rd-qjY"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.99731510879999996" green="0.83288848400000004" blue="0.4312754869" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -411,6 +416,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CD9-Bt-iNv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="959.71563981042652" y="-43.076923076923073"/>
+        </scene>
+        <!--ItemDetailViewController-->
+        <scene sceneID="QhZ-Rm-YWp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Workshop" referencedIdentifier="ItemDetailViewController" id="aq2-DO-4Sh" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="9YO-n9-dDU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YfY-sL-Vic" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1388" y="322"/>
+        </scene>
+        <!--Workshop-->
+        <scene sceneID="Cbd-3Y-CR2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Workshop" id="H8B-Jb-oR2" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="4Ly-Km-2PU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ufc-hG-hDf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="991" y="543"/>
         </scene>
         <!--StageMenu-->
         <scene sceneID="8nr-xP-PSU">

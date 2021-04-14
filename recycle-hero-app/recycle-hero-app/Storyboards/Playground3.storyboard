@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FsE-49-lvO">
     <device id="retina6_0" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -15,16 +15,122 @@
                     <view key="view" contentMode="scaleToFill" id="BK0-rB-uuT">
                         <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="beachStage3" translatesAutoresizingMaskIntoConstraints="NO" id="ey0-u5-5ry">
+                                <rect key="frame" x="-7" y="0.0" width="851" height="396"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFk-7Z-MPN" userLabel="waterSprayerButton">
+                                <rect key="frame" x="240" y="239" width="18" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="waterSprayer"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldV-dn-4qD" userLabel="branchesButton">
+                                <rect key="frame" x="696" y="325" width="66" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="branches"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BC2-OS-3da" userLabel="pilesOfWaterBottleButton">
+                                <rect key="frame" x="77" y="252" width="50" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="pilesOfWaterBottles"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQG-OL-6ql" userLabel="tapeButton">
+                                <rect key="frame" x="305" y="250" width="30" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="tape"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cuu-jg-IRj" userLabel="strawButton">
+                                <rect key="frame" x="572" y="297" width="22" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="straw"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bL-ZW-UGP" userLabel="backButton">
+                                <rect key="frame" x="32" y="20" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="backButton"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KW-tb-GXJ" userLabel="styrofoamButton">
+                                <rect key="frame" x="584" y="165" width="178" height="127"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="styrofoam"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWm-9w-EvZ">
+                                <rect key="frame" x="340" y="182" width="157" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="recycleBin"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFZ-qg-gfQ" userLabel="sawButton">
+                                <rect key="frame" x="254" y="325" width="49" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="saw"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="owX-1A-IvR" userLabel="recycleBin1">
+                                <rect key="frame" x="360" y="234" width="37" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="awm-bC-NBH" userLabel="recycleBin2">
+                                <rect key="frame" x="426" y="234" width="37" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="itemDeckStage3" translatesAutoresizingMaskIntoConstraints="NO" id="GmE-3Q-h9U">
+                                <rect key="frame" x="482" y="18" width="322" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="In9-UZ-66f"/>
+                                    <constraint firstAttribute="width" constant="322" id="hRD-UW-BUE"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paperWindmillBlack" translatesAutoresizingMaskIntoConstraints="NO" id="HNA-U8-J7Y">
+                                <rect key="frame" x="511" y="38" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bottleWaterGunBlack" translatesAutoresizingMaskIntoConstraints="NO" id="Z0J-3W-trN">
+                                <rect key="frame" x="569" y="38" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="newspaperKiteBlack" translatesAutoresizingMaskIntoConstraints="NO" id="gkw-q3-HZf">
+                                <rect key="frame" x="627" y="38" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bottleBoatBlack" translatesAutoresizingMaskIntoConstraints="NO" id="09O-Dg-Bsz">
+                                <rect key="frame" x="686" y="38" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="surfboardBlack" translatesAutoresizingMaskIntoConstraints="NO" id="vkD-0G-Y9y">
+                                <rect key="frame" x="744" y="38" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="O0e-tV-Pup"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GmE-3Q-h9U" firstAttribute="top" secondItem="O0e-tV-Pup" secondAttribute="top" constant="18" id="Lw8-Kz-E5q"/>
+                            <constraint firstAttribute="trailing" secondItem="GmE-3Q-h9U" secondAttribute="trailing" constant="40" id="aBe-zX-eaF"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EMn-kQ-3cV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="161" y="91"/>
+            <point key="canvasLocation" x="160.66350710900474" y="90.769230769230759"/>
         </scene>
     </scenes>
     <resources>
+        <image name="backButton" width="50" height="50"/>
+        <image name="beachStage3" width="2532" height="1170"/>
+        <image name="bottleBoatBlack" width="1574" height="1292"/>
+        <image name="bottleWaterGunBlack" width="1474" height="698"/>
+        <image name="branches" width="1713" height="550"/>
+        <image name="itemDeckStage3" width="1263" height="284"/>
+        <image name="newspaperKiteBlack" width="1074" height="1484"/>
+        <image name="paperWindmillBlack" width="998" height="1594"/>
+        <image name="pilesOfWaterBottles" width="1575" height="1310"/>
+        <image name="recycleBin" width="2048" height="2048"/>
+        <image name="saw" width="1819" height="500"/>
+        <image name="straw" width="1166" height="1284"/>
+        <image name="styrofoam" width="2048" height="2048"/>
+        <image name="surfboardBlack" width="2048" height="2048"/>
+        <image name="tape" width="861" height="517"/>
+        <image name="waterSprayer" width="709" height="1473"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

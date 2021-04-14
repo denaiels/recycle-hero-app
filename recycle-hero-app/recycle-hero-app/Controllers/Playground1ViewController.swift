@@ -17,6 +17,7 @@ class Playground1ViewController: UIViewController {
     var workshopItems = [Item]()
     var tempItemButton:[UIButton] = [UIButton]()
     var stageProgress = 1
+    var itemToSendToWorkshopId: Int = 0
 
     var itemCountRecycled = 0
     var firstItemRecycled = false
@@ -148,6 +149,12 @@ class Playground1ViewController: UIViewController {
        //itemToBin()
     }
     
+    // Open In Workshop Action
+    @IBAction func openInWorkshopDidTap(_ sender: UIButton) {
+        popupView.isHidden = true
+        logoMascot.isHidden = true
+        popupCloseLabel.isHidden = true
+    }
     
     // MARK: - Helper Functions
     
@@ -204,6 +211,7 @@ class Playground1ViewController: UIViewController {
         if item_list[0].name == "Food Scrap" && item_list[1].name == "Newspaper"
             || item_list[0].name == "Newspaper" && item_list[1].name == "Food Scrap" {
             
+            itemToSendToWorkshopId = 0
             print("Success! Compost is found")
             itemCountRecycled += 1
             
@@ -231,6 +239,8 @@ class Playground1ViewController: UIViewController {
             foodScrapButton.isHidden = true
             newsPaperButton.isHidden = true
         } else if item_list[0].name == "Plastic Bottle" && item_list[1].name == "Light Bulb" || item_list[0].name == "Light Bulb" && item_list[1].name == "Plastic Bottle"{ print("Succeess! Bottle Lamp is found")
+            
+            itemToSendToWorkshopId = 1
             itemCountRecycled += 1
             // Change `2.0` to the desired number of seconds.
             // Code you want to be delayed
@@ -256,6 +266,8 @@ class Playground1ViewController: UIViewController {
             lightBulbButton.isHidden = true
            
         } else if item_list[0].name == "Used Cloth" && item_list[1].name == "Scissors" || item_list[0].name == "Scissors" &&    item_list[1].name == "Used Cloth"{ print("Succeess! Wool Fiber is found")
+            
+            itemToSendToWorkshopId = 2
             itemCountRecycled += 1
             // Change `2.0` to the desired number of seconds.
             // Code you want to be delayed
@@ -386,11 +398,11 @@ class Playground1ViewController: UIViewController {
        
        
         for i in 0...normalItemNames.count-1 {
-            normalItems.append(Item(name: normalItemNames[i], itemStage: 1, image: "\(normalItemIconColor[i]).png", description: normalItemDescription[i], itemFound: normalItemFound[i]))
+            normalItems.append(Item(name: normalItemNames[i], itemStage: 1, image: normalItemIconColor[i], description: normalItemDescription[i], itemFound: normalItemFound[i]))
         }
 
         for i in 0...recycledItemNames.count-1 {
-            recycledItems.append(RecycledItem(name:  recycledItemNames[i], itemStage: recycledItemStage[i], image: "\(recycledItemIconColor[i]).png", description: recycledItemDescription[i], itemFound: recycledItemFound[i], ingredient1Id: recycledItemIngredient1[i], ingredient2Id: recycledItemIngredient2[i], link: recycledItemLink[i]))
+            recycledItems.append(RecycledItem(name:  recycledItemNames[i], itemStage: recycledItemStage[i], image: recycledItemIconColor[i], description: recycledItemDescription[i], itemFound: recycledItemFound[i], ingredient1Id: recycledItemIngredient1[i], ingredient2Id: recycledItemIngredient2[i], link: recycledItemLink[i]))
         }
         
         workshopItems.append(contentsOf: normalItems)
@@ -422,14 +434,20 @@ class Playground1ViewController: UIViewController {
         }
     }
     
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let destinationVC = segue.destination as? WorkshopViewController {
+            destinationVC.items = workshopItems
+            destinationVC.message = "Ini dari Playground 1"
+        }
+        
+        if let destinationVC = segue.destination as? ItemDetailViewController {
+            destinationVC.item = recycledItems[itemToSendToWorkshopId]
+        }
     }
-    */
+    
 
 }
