@@ -56,11 +56,12 @@ class Playground3ViewController: UIViewController {
     @IBOutlet weak var itemDeck5: UIImageView!
     
     // Recycled item image
-    @IBOutlet weak var bottleLamp1: UIImageView!
-    @IBOutlet weak var bottleLamp2: UIImageView!
-    @IBOutlet weak var woolFiber: UIImageView!
-    @IBOutlet weak var compost: UIImageView!
-
+    @IBOutlet weak var bottleWaterGun: UIImageView!
+    @IBOutlet weak var surfboard: UIImageView!
+    @IBOutlet weak var newspaperKite: UIImageView!
+    @IBOutlet weak var bottleBoat: UIImageView!
+    @IBOutlet weak var paperWindmill: UIImageView!
+    
     // Popup
     @IBOutlet weak var logoMascot: UIImageView!
     @IBOutlet weak var popupView: UIView!
