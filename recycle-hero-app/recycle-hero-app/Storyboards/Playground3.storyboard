@@ -21,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bottleWaterGun" translatesAutoresizingMaskIntoConstraints="NO" id="N8i-p0-boT">
-                                <rect key="frame" x="450" y="236" width="120" height="119"/>
+                                <rect key="frame" x="430" y="290" width="120" height="119"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="surfboard" translatesAutoresizingMaskIntoConstraints="NO" id="ESa-kU-ACY">
@@ -86,6 +86,7 @@
                                 <state key="normal" image="backButton"/>
                                 <connections>
                                     <action selector="clickBackButton:" destination="FsE-49-lvO" eventType="touchUpInside" id="YaW-zf-0Ei"/>
+                                    <segue destination="5BO-hJ-IJe" kind="show" identifier="FinishStage3" id="p9j-0m-BEY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwn-yC-qRT" userLabel="sawButton">
@@ -128,6 +129,14 @@
                                     <action selector="clickRecycleBin:" destination="FsE-49-lvO" eventType="touchUpInside" id="86A-sy-xk6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Cn-k5-pFS" userLabel="strawButton">
+                                <rect key="frame" x="486" y="258" width="66" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="straw-angled"/>
+                                <connections>
+                                    <action selector="clickStrawButton:" destination="FsE-49-lvO" eventType="touchUpInside" id="qpy-XN-0qt"/>
+                                </connections>
+                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="owX-1A-IvR" userLabel="recycleBin1">
                                 <rect key="frame" x="231" y="262" width="37" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -163,14 +172,6 @@
                                 <rect key="frame" x="301" y="262" width="37" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Cn-k5-pFS" userLabel="strawButton">
-                                <rect key="frame" x="486" y="258" width="66" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="straw-angled"/>
-                                <connections>
-                                    <action selector="clickStrawButton:" destination="FsE-49-lvO" eventType="touchUpInside" id="qpy-XN-0qt"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="kG1-Nt-pWi" userLabel="Logo Mascot">
                                 <rect key="frame" x="199" y="-16" width="436" height="273"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -441,6 +442,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jal-XE-41x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="350" y="762"/>
+        </scene>
+        <!--StageMenu-->
+        <scene sceneID="0kY-L3-cSF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="StageMenu" id="5BO-hJ-IJe" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Gdf-r9-dKC"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v8z-Du-CRo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-314" y="623"/>
         </scene>
         <!--Workshop-->
         <scene sceneID="w56-en-1qc">

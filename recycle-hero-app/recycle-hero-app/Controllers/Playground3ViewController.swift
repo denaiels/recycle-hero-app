@@ -228,7 +228,7 @@ class Playground3ViewController: UIViewController {
     }
 
     func checkItemProgress() {
-        if allItemsRecycled == true && itemCountRecycled == 3 && playground3Finished == false {
+        if allItemsRecycled == true && itemCountRecycled == 5 && playground3Finished == false {
             beachIntro2.isHidden = false
             playground3Finished = true
         }
@@ -239,7 +239,7 @@ class Playground3ViewController: UIViewController {
         if item_list[0].name == "Plastic Bottle" && item_list[1].name == "Plastic Water Sprayer"
             || item_list[0].name == "Plastic Water Sprayer" && item_list[1].name == "Plastic Bottle" {
             
-            itemToSendToWorkshopId = 0
+            itemToSendToWorkshopId = 7
             print("Success! Bottle Water Gun is found")
             itemCountRecycled += 1
             
@@ -269,7 +269,7 @@ class Playground3ViewController: UIViewController {
         } else if item_list[0].name == "Styrofoam" && item_list[1].name == "Saw" || item_list[0].name == "Saw" && item_list[1].name == "Styrofoam"{
             
             print("Success! Surfboard is found")
-            itemToSendToWorkshopId = 1
+            itemToSendToWorkshopId = 8
             itemCountRecycled += 1
             // Change `2.0` to the desired number of seconds.
             // Code you want to be delayed
@@ -296,7 +296,7 @@ class Playground3ViewController: UIViewController {
         } else if item_list[0].name == "Newspaper" && item_list[1].name == "Fallen Branches" || item_list[0].name == "Fallen Branches" && item_list[1].name == "Newspaper"{
             
             print("Success! Newspaper Kite is found")
-            itemToSendToWorkshopId = 2
+            itemToSendToWorkshopId = 9
             itemCountRecycled += 1
             // Change `2.0` to the desired number of seconds.
             // Code you want to be delayed
@@ -323,7 +323,7 @@ class Playground3ViewController: UIViewController {
         } else if item_list[0].name == "Piles of Water Bottles" && item_list[1].name == "Tape" || item_list[0].name == "Tape" && item_list[1].name == "Piles of Water Bottles"{
             
             print("Success! Bottle Boat is found")
-            itemToSendToWorkshopId = 2
+            itemToSendToWorkshopId = 10
             itemCountRecycled += 1
             // Change `2.0` to the desired number of seconds.
             // Code you want to be delayed
@@ -350,7 +350,7 @@ class Playground3ViewController: UIViewController {
         } else if item_list[0].name == "Plastic Straw" && item_list[1].name == "Newspaper" || item_list[0].name == "Newspaper" && item_list[1].name == "Plastic Straw"{
             
             print("Success! Paper Windmill is found")
-            itemToSendToWorkshopId = 2
+            itemToSendToWorkshopId = 11
             itemCountRecycled += 1
             // Change `2.0` to the desired number of seconds.
             // Code you want to be delayed
@@ -361,7 +361,7 @@ class Playground3ViewController: UIViewController {
                     self.recycledItems[11].itemFound = true
                     
                     self.newspaperKite.isHidden = false
-                    self.itemDeck3.image = UIImage(named: self.recycledItems[11].image)
+                    self.itemDeck5.image = UIImage(named: self.recycledItems[11].image)
                     self.backButton.isHidden = true
                     self.workshopButton.isHidden = true
                     self.itemNameLabel.text = self.recycledItems[11].name
@@ -398,7 +398,7 @@ class Playground3ViewController: UIViewController {
         guard let location = touch?.location(in: self.view) else { return }
         if !popupView.frame.contains(location) {
             if introAt == 1{
-                print("intro1")
+                print("popUpView -> intro1")
                 introAt = 2
                 beachIntro1.isHidden = true
                 beachIntro1PartyHat.isHidden = true
@@ -406,13 +406,14 @@ class Playground3ViewController: UIViewController {
                 beachIntro1CloseLabel.isHidden = true
                 beachIntro2.isHidden = false
             } else if introAt == 2 && beachIntro2.isHidden != true{
-                print("intro2")
+                print("popUpView -> intro2")
                 introAt = 3
                 beachIntro2.isHidden = true
             } else if introAt == 3 && beachIntro3.isHidden != true{
-                print("intro3")
+                print("popUpView -> intro3")
                 introAt = 0
                 beachIntro3.isHidden = true
+                performSegue(withIdentifier: "FinishStage3", sender: self)
             }
             print("Tapped outside the view")
             backButton.isHidden = false
@@ -423,20 +424,43 @@ class Playground3ViewController: UIViewController {
             checkItemProgress()
         } else if beachIntro1.frame.contains(location){
             if introAt == 1{
-                print("intro1")
+                print("intro1 -> intro1")
                 introAt = 2
                 beachIntro1.isHidden = true
+                beachIntro1PartyHat.isHidden = true
+                beachIntro1LogoMascot.isHidden = true
+                beachIntro1CloseLabel.isHidden = true
                 beachIntro2.isHidden = false
             } else if introAt == 2 && beachIntro2.isHidden != true{
-                print("intro2")
+                print("intro1 -> intro2")
                 introAt = 3
                 beachIntro2.isHidden = true
             } else if introAt == 3 && beachIntro3.isHidden != true{
-                print("intro3")
+                print("intro1 -> intro3")
                 introAt = 0
                 beachIntro3.isHidden = true
+                performSegue(withIdentifier: "FinishStage3", sender: self)
             }
-        }else {
+        } else if !beachIntro2.frame.contains(location){
+            if introAt == 1{
+                print("intro2 -> intro1")
+                introAt = 2
+                beachIntro1.isHidden = true
+                beachIntro1PartyHat.isHidden = true
+                beachIntro1LogoMascot.isHidden = true
+                beachIntro1CloseLabel.isHidden = true
+                beachIntro2.isHidden = false
+            } else if introAt == 2 && beachIntro2.isHidden != true{
+                print("intro2 -> intro2")
+                introAt = 3
+                beachIntro2.isHidden = true
+            } else if introAt == 3 && beachIntro3.isHidden != true{
+                print("intro2 -> intro3")
+                introAt = 0
+                beachIntro3.isHidden = true
+                performSegue(withIdentifier: "FinishStage3", sender: self)
+            }
+        } else {
             print("Tapped inside the view")
         }
         print(introAt)
@@ -512,7 +536,7 @@ class Playground3ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destinationVC = segue.destination as? WorkshopViewController {
             destinationVC.items = workshopItems
-            destinationVC.message = "Ini dari Playground 1"
+            destinationVC.message = "Ini dari Playground 3"
 //            destinationVC.stage = stageProgress
         }
         
