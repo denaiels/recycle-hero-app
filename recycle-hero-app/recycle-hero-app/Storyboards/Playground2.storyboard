@@ -24,6 +24,9 @@
                                 <rect key="frame" x="77" y="227" width="42" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="plastic bottles" image="pilesOfWaterBottles"/>
+                                <connections>
+                                    <action selector="clickPilesOfWaterBottles:" destination="MHe-tg-bDm" eventType="touchUpInside" id="0mv-ha-kVg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xa3-FV-yf7" userLabel="recycleBinButton">
                                 <rect key="frame" x="118" y="170" width="157" height="147"/>
@@ -34,41 +37,65 @@
                                 <rect key="frame" x="50" y="318" width="50" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Paint Can" image="paintCan"/>
+                                <connections>
+                                    <action selector="clickPaintCan:" destination="MHe-tg-bDm" eventType="touchUpInside" id="1ut-kk-FOC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8e-3F-NZX" userLabel="bananaButton">
                                 <rect key="frame" x="252" y="292" width="57" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="banana"/>
+                                <connections>
+                                    <action selector="clickBanana:" destination="MHe-tg-bDm" eventType="touchUpInside" id="UHO-9v-h03"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFu-XY-g59" userLabel="smallPlantButton">
                                 <rect key="frame" x="369" y="205" width="107" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="small plant" image="smallPlant"/>
+                                <connections>
+                                    <action selector="clickSmallPlant:" destination="MHe-tg-bDm" eventType="touchUpInside" id="qkg-HU-zmO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyn-jm-K73" userLabel="milkJugButton">
                                 <rect key="frame" x="350" y="308" width="30" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="milk jug" image="milkJug"/>
+                                <connections>
+                                    <action selector="clickMilkJug:" destination="MHe-tg-bDm" eventType="touchUpInside" id="ta3-qw-9fM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MI0-ci-Qnb" userLabel="needleButton">
                                 <rect key="frame" x="473" y="312" width="28" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="needle" image="needle"/>
+                                <connections>
+                                    <action selector="clickNeedle:" destination="MHe-tg-bDm" eventType="touchUpInside" id="lri-wX-uF3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qu-LM-yZh" userLabel="ribbonButton">
                                 <rect key="frame" x="493" y="188" width="55" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="ribbon" image="ribbon"/>
+                                <connections>
+                                    <action selector="clickRibbon:" destination="MHe-tg-bDm" eventType="touchUpInside" id="MP9-DY-kiJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHf-8N-eXe" userLabel="waterButton">
                                 <rect key="frame" x="572" y="286" width="130" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="water" image="water"/>
+                                <connections>
+                                    <action selector="clickWater:" destination="MHe-tg-bDm" eventType="touchUpInside" id="QLr-Fc-X2y"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EyG-zb-a5u" userLabel="backButton">
                                 <rect key="frame" x="30" y="20" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="backButton"/>
+                                <connections>
+                                    <segue destination="H6B-gr-OCq" kind="show" id="nUJ-zT-136"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LIO-O0-iGp" userLabel="recycleBin1">
                                 <rect key="frame" x="138" y="222" width="37" height="43"/>
@@ -101,6 +128,243 @@
                                 <rect key="frame" x="203" y="222" width="37" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plantBottle" translatesAutoresizingMaskIntoConstraints="NO" id="Mr9-fx-Dbz" userLabel="plantBottle">
+                                <rect key="frame" x="219" y="170" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plantBottle" translatesAutoresizingMaskIntoConstraints="NO" id="V32-Dx-gKn" userLabel="plantBottle2">
+                                <rect key="frame" x="362" y="264" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plantBottle" translatesAutoresizingMaskIntoConstraints="NO" id="EIT-u9-qbG" userLabel="plantBottle3">
+                                <rect key="frame" x="542" y="140" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wateringJug" translatesAutoresizingMaskIntoConstraints="NO" id="OrK-8x-2gq" userLabel="wateringJug">
+                                <rect key="frame" x="542" y="74" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="birdhouseCanPaint" translatesAutoresizingMaskIntoConstraints="NO" id="CMZ-zD-eOh" userLabel="birdHouse">
+                                <rect key="frame" x="698" y="88" width="94" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fertilizer" translatesAutoresizingMaskIntoConstraints="NO" id="LF0-hV-jlH" userLabel="fertilizer">
+                                <rect key="frame" x="643" y="329" width="72" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="e7t-bc-toh" userLabel="workshopButton">
+                                <rect key="frame" x="810" y="153" width="55" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <segue destination="rZu-Ej-bCs" kind="show" id="deg-hy-fsl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Anywhere to Continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JCa-NU-YlR" userLabel="Popup Close Label">
+                                <rect key="frame" x="280" y="346" width="275" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.84706455469999997" green="0.84704858059999999" blue="0.84705942869999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" id="54B-Xj-nP6" userLabel="Logo Mascot">
+                                <rect key="frame" x="199" y="-16" width="436" height="273"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="qyQ-F2-18v" userLabel="PopupView">
+                                <rect key="frame" x="280" y="109" width="275" height="229"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New Item Found!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sf2-qi-OkW">
+                                        <rect key="frame" x="19" y="8" width="236" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sob-qC-8uW" userLabel="itemView">
+                                        <rect key="frame" x="17" y="52" width="240" height="91"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Gn-EH-pzH" userLabel="itemName">
+                                        <rect key="frame" x="19" y="144" width="236" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryY-pD-my7" userLabel="workshopButton">
+                                        <rect key="frame" x="57" y="172" width="160" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="openWorkshop"/>
+                                        <connections>
+                                            <action selector="openInWorkshopDidTap:" destination="MHe-tg-bDm" eventType="touchUpInside" id="ZFv-YC-X4f"/>
+                                            <segue destination="wzW-6s-VCk" kind="show" id="ULw-2w-xAi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="sSx-sX-1rc"/>
+                                <color key="backgroundColor" red="0.99731510879999996" green="0.83288848400000004" blue="0.4312754869" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" id="kr6-Ve-d9x" userLabel="gardenIntro2">
+                                <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome Recycle Heros! Let’s begin by finding waste" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rty-3G-Gk0" userLabel="intro2Label">
+                                        <rect key="frame" x="144" y="157" width="556" height="75"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.99731510879999996" green="0.83288848400000004" blue="0.4312754869" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="9"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="tNu-0c-Ix4" userLabel="intro2LogoMascot">
+                                        <rect key="frame" x="65" y="219" width="192" height="192"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap Anywhere to Continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0I2-Di-SNl" userLabel="intro2CloseLabel">
+                                        <rect key="frame" x="280" y="346" width="275" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84706455469999997" green="0.84704858059999999" blue="0.84705942869999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="9"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="wzU-ts-gGf"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="APU-XG-doF" userLabel="gardenIntro3">
+                                <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Tjg-7i-xRN" userLabel="intro3LogoMascot">
+                                        <rect key="frame" x="220" y="219" width="192" height="192"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WOW! Great Job. Now it’s all clean and recycled! " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sI-9y-WR4" userLabel="intro3Label">
+                                        <rect key="frame" x="144" y="157" width="556" height="75"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.99731510879999996" green="0.83288848400000004" blue="0.4312754869" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="9"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap Anywhere to Continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7PR-el-Eea" userLabel="intro3CloseLabel">
+                                        <rect key="frame" x="280" y="346" width="275" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84706455469999997" green="0.84704858059999999" blue="0.84705942869999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="9"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="eMF-24-q7N"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="gU8-TW-yPe" userLabel="gardenIntro1">
+                                <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEv-S6-7aF" userLabel="intro1square">
+                                        <rect key="frame" x="272" y="111" width="300" height="192"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.99731510879999996" green="0.83288848400000004" blue="0.4312754869" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="9"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You've reached" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dD-Vu-WRO" userLabel="stageReached">
+                                        <rect key="frame" x="308" y="179" width="228" height="84"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.99731510879999996" green="0.83288848400000004" blue="0.4312754869" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Congratulation!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywt-HO-wZw" userLabel="Congratulations">
+                                        <rect key="frame" x="301" y="135" width="249" height="82"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Garden" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chd-aA-r8C" userLabel="stageName">
+                                        <rect key="frame" x="291" y="224" width="269" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="49"/>
+                                        <color key="textColor" red="0.99696117640000004" green="0.3633524179" blue="0.2430745363" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="f3H-FH-l07"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" id="HcH-97-gyl" userLabel="intro1LogoMascot">
+                                <rect key="frame" x="368" y="60" width="108" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="partyHat" translatesAutoresizingMaskIntoConstraints="NO" id="Lte-A0-1KK" userLabel="intro1PartyHat">
+                                <rect key="frame" x="368" y="13" width="98" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Anywhere to Continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fYI-oV-ppy" userLabel="intro1CloseAnywhere">
+                                <rect key="frame" x="280" y="346" width="275" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.84706455469999997" green="0.84704858059999999" blue="0.84705942869999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2zJ-uS-lMZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -109,28 +373,100 @@
                             <constraint firstAttribute="trailing" secondItem="jj7-ME-qf4" secondAttribute="trailing" constant="40" id="x4Y-N8-Gh1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backButton" destination="EyG-zb-a5u" id="hKb-kR-mdW"/>
+                        <outlet property="bananaButton" destination="v8e-3F-NZX" id="O8e-9m-RZq"/>
+                        <outlet property="birdHouse" destination="CMZ-zD-eOh" id="Wsc-ND-oX1"/>
+                        <outlet property="fertilizer" destination="LF0-hV-jlH" id="lZW-iF-Rfb"/>
+                        <outlet property="gardenIntro1" destination="gU8-TW-yPe" id="3ku-mq-GGO"/>
+                        <outlet property="gardenIntro2" destination="kr6-Ve-d9x" id="uV2-qR-cFG"/>
+                        <outlet property="gardenIntro3" destination="APU-XG-doF" id="ObU-lC-IVN"/>
+                        <outlet property="image0" destination="LIO-O0-iGp" id="dSJ-uT-lzV"/>
+                        <outlet property="image1" destination="ERt-1V-vYj" id="GoF-C3-f9a"/>
+                        <outlet property="intro1CloseAnywhere" destination="fYI-oV-ppy" id="PVX-D7-PxJ"/>
+                        <outlet property="intro1LogoMascot" destination="HcH-97-gyl" id="8g4-ez-ZAC"/>
+                        <outlet property="intro1PartyHat" destination="Lte-A0-1KK" id="PMV-MF-jcS"/>
+                        <outlet property="itemDeck1" destination="160-5e-fsT" id="8kN-fx-Dzn"/>
+                        <outlet property="itemDeck2" destination="vCD-88-icB" id="7yb-ph-0Ju"/>
+                        <outlet property="itemDeck3" destination="t7A-mH-X4b" id="gxE-1e-MYI"/>
+                        <outlet property="itemDeck4" destination="4dg-q7-hP7" id="vso-6R-CTq"/>
+                        <outlet property="itemImage" destination="Sob-qC-8uW" id="5Zm-ln-Lyt"/>
+                        <outlet property="itemNameLabel" destination="0Gn-EH-pzH" id="K1W-Rb-kGw"/>
+                        <outlet property="logoMascot" destination="54B-Xj-nP6" id="9SM-44-ViW"/>
+                        <outlet property="milkJugButton" destination="gyn-jm-K73" id="k42-7V-QJL"/>
+                        <outlet property="needleButton" destination="MI0-ci-Qnb" id="RrY-p4-zvp"/>
+                        <outlet property="paintCanButton" destination="3Ph-2x-0vh" id="YcV-Zl-UGu"/>
+                        <outlet property="pilesOfWaterBottlesButton" destination="58v-qh-h2g" id="H6V-oC-hDk"/>
+                        <outlet property="plantBottle1" destination="Mr9-fx-Dbz" id="4j8-FV-OzA"/>
+                        <outlet property="plantBottle2" destination="V32-Dx-gKn" id="Nel-Ef-VWc"/>
+                        <outlet property="plantBottle3" destination="EIT-u9-qbG" id="oJr-sg-MXH"/>
+                        <outlet property="popupCloseLabel" destination="JCa-NU-YlR" id="plj-wW-JMq"/>
+                        <outlet property="popupView" destination="qyQ-F2-18v" id="FzF-bO-h4u"/>
+                        <outlet property="ribbonButton" destination="1qu-LM-yZh" id="35U-Bx-6Uw"/>
+                        <outlet property="smallPlantButton" destination="MFu-XY-g59" id="2jA-z8-Uwt"/>
+                        <outlet property="waterButton" destination="KHf-8N-eXe" id="3EK-JB-OB0"/>
+                        <outlet property="wateringJug" destination="OrK-8x-2gq" id="C90-at-jai"/>
+                        <outlet property="workshopButton" destination="e7t-bc-toh" id="6dg-g6-sAa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C4b-nM-4cL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-209.00473933649289" y="173.84615384615384"/>
         </scene>
+        <!--ItemDetailViewController-->
+        <scene sceneID="TQI-eq-EAt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Workshop" referencedIdentifier="ItemDetailViewController" id="wzW-6s-VCk" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="AgH-4q-3pB"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Y0-Ko-tcp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-22" y="745"/>
+        </scene>
+        <!--Workshop-->
+        <scene sceneID="7K5-3u-T1T">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Workshop" id="rZu-Ej-bCs" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Uqb-Pj-2cP"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t38-TB-6H2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-209" y="768"/>
+        </scene>
+        <!--StageMenu-->
+        <scene sceneID="jow-ND-9fc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="StageMenu" id="H6B-gr-OCq" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="H5D-bc-O0G"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EIh-D5-gPm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-420" y="784"/>
+        </scene>
     </scenes>
     <resources>
         <image name="backButton" width="50" height="50"/>
         <image name="banana" width="2048" height="2048"/>
+        <image name="birdhouseCanPaint" width="2048" height="2048"/>
         <image name="birdhouseCanPaintBlack" width="1210" height="1730"/>
+        <image name="fertilizer" width="2048" height="2048"/>
         <image name="fertilizerBlack" width="1194" height="1549"/>
         <image name="gardenStage2" width="2532" height="1170"/>
         <image name="itemDeckStage2" width="1035" height="284"/>
+        <image name="logo" width="2048" height="2048"/>
         <image name="milkJug" width="787" height="1347"/>
         <image name="needle" width="966" height="1442"/>
+        <image name="openWorkshop" width="160" height="46"/>
         <image name="paintCan" width="2048" height="2048"/>
+        <image name="partyHat" width="2048" height="2048"/>
         <image name="pilesOfWaterBottles" width="1575" height="1310"/>
+        <image name="plantBottle" width="2048" height="2048"/>
         <image name="plantBottleBlack" width="813" height="1609"/>
         <image name="recycleBin" width="2048" height="2048"/>
         <image name="ribbon" width="2048" height="2048"/>
         <image name="smallPlant" width="2048" height="2048"/>
         <image name="water" width="1681" height="606"/>
+        <image name="wateringJug" width="2048" height="2048"/>
         <image name="wateringJugBlack" width="1469" height="1046"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
