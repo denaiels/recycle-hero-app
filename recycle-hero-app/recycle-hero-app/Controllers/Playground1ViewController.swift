@@ -399,7 +399,7 @@ class Playground1ViewController: UIViewController {
        
        
         for i in 0...normalItemNames.count-1 {
-            normalItems.append(Item(name: normalItemNames[i], itemStage: 1, image: normalItemIconColor[i], description: normalItemDescription[i], itemFound: normalItemFound[i]))
+            normalItems.append(Item(name: normalItemNames[i], itemStage: normalItemStage[i], image: normalItemIconColor[i], description: normalItemDescription[i], itemFound: normalItemFound[i]))
         }
 
         for i in 0...recycledItemNames.count-1 {

@@ -22,7 +22,7 @@ class Playground3ViewController: UIViewController {
     var itemCountRecycled = 0
     var firstItemRecycled = false
     var allItemsRecycled = false
-    var playground1Finished = false
+    var playground3Finished = false
 
     var userTouchBool = false
     var counter = 0
@@ -37,16 +37,10 @@ class Playground3ViewController: UIViewController {
     
     // MARK: - Outlets
     
-    //intro 1
-    @IBOutlet weak var bedroomIntro1: UIView!
-    //intro 2
-    @IBOutlet weak var bedroomIntro2: UIView!
-    //intro 3
-    @IBOutlet weak var bedroomIntro3: UIView!
-    //intro 4
-    @IBOutlet weak var bedroomIntro4: UIView!
-    //intro 5
-    @IBOutlet weak var bedroomIntro5: UIView!
+    // Intro 1
+    @IBOutlet weak var beachIntro1: UIView!
+    // Intro 2
+    @IBOutlet weak var beachIntro2: UIView!
 
     // Item in deck
     @IBOutlet weak var itemDeck1: UIImageView!
@@ -114,64 +108,66 @@ class Playground3ViewController: UIViewController {
 
     // Action for each item button
     @IBAction func clickBottleButton(_ sender: UIButton) {
+        item_list[counter] = normalItems[5]
+        tempItemButton[counter] = bottleButton
+        userTouchBool = true
+        itemToBin()
     }
     @IBAction func clickWaterSprayerButton(_ sender: UIButton) {
+        item_list[counter] = normalItems[13]
+        tempItemButton[counter] = waterSprayerButton
+        userTouchBool = true
+        itemToBin()
     }
     @IBAction func clickStyrofoamButton(_ sender: UIButton) {
+        item_list[counter] = normalItems[14]
+        tempItemButton[counter] = styrofoamButton
+        userTouchBool = true
+        itemToBin()
     }
     @IBAction func clickSawButton(_ sender: UIButton) {
+        item_list[counter] = normalItems[15]
+        tempItemButton[counter] = sawButton
+        userTouchBool = true
+        itemToBin()
     }
     @IBAction func clickNewspaperButton1(_ sender: UIButton) {
+        item_list[counter] = normalItems[1]
+        tempItemButton[counter] = newspaperButton1
+        userTouchBool = true
+        itemToBin()
     }
     @IBAction func clickBranchesButton(_ sender: UIButton) {
+        item_list[counter] = normalItems[16]
+        tempItemButton[counter] = branchesButton
+        userTouchBool = true
+        itemToBin()
     }
     @IBAction func clickPilesOfWaterBottleButton(_ sender: UIButton) {
+        item_list[counter] = normalItems[17]
+        tempItemButton[counter] = pilesOfWaterBottleButton
+        userTouchBool = true
+        itemToBin()
     }
     @IBAction func clickTapeButton(_ sender: UIButton) {
+        item_list[counter] = normalItems[18]
+        tempItemButton[counter] = tapeButton
+        userTouchBool = true
+        itemToBin()
     }
     @IBAction func clickStrawButton(_ sender: UIButton) {
+        item_list[counter] = normalItems[19]
+        tempItemButton[counter] = strawButton
+        userTouchBool = true
+        itemToBin()
     }
     @IBAction func clickNewspaperButton2(_ sender: UIButton) {
-    }
-    
-    
-    @IBAction func clickFoodScrap(_ sender: UIButton) {
-       item_list[counter] = normalItems[0]
-       tempItemButton[counter] = foodScrapButton
-       userTouchBool = true
-        itemToBin()
-    }
-    @IBAction func clickNewspaper(_ sender: UIButton) {
-       item_list[counter] = normalItems[1]
-       tempItemButton[counter] = newsPaperButton
-       userTouchBool = true
-        itemToBin()
-    }
-    @IBAction func clickLightBulb(_ sender: UIButton) {
-       item_list[counter] = normalItems[2]
-       tempItemButton[counter] = lightBulbButton
-       userTouchBool = true
-        itemToBin()
-    }
-    @IBAction func clickUsedCloth(_ sender: UIButton) {
-       item_list[counter] = normalItems[3]
-       tempItemButton[counter] = usedClothButton
-       userTouchBool = true
+        item_list[counter] = normalItems[1]
+        tempItemButton[counter] = newspaperButton2
+        userTouchBool = true
         itemToBin()
     }
     
-    @IBAction func clickScissors(_ sender: UIButton) {
-       item_list[counter] = normalItems[4]
-       tempItemButton[counter] = scissorsButton
-       userTouchBool = true
-        itemToBin()
-    }
-    @IBAction func clickPlasticBottle(_ sender: UIButton) {
-       item_list[counter] = normalItems[5]
-       tempItemButton[counter] = plasticBottleButton
-       userTouchBool = true
-        itemToBin()
-    }
 
     // Recycle bin evaluator
     @IBAction func clickRecycleBin(_ sender: UIButton) {
@@ -196,7 +192,7 @@ class Playground3ViewController: UIViewController {
                     print("image_0 is" + item_list[0].name)
                     tempItemButton[counter].isHidden = true
                     counter+=1
-                     userTouchBool = false
+                    userTouchBool = false
                      
                 } else if counter == 1 {
                     image1.image = UIImage(named: item_list[1].image)
@@ -227,22 +223,19 @@ class Playground3ViewController: UIViewController {
     }
 
     func checkItemProgress() {
-        if firstItemRecycled == false && itemCountRecycled == 1{
-            bedroomIntro3.isHidden = false
-            firstItemRecycled = true
-        } else if allItemsRecycled == true && itemCountRecycled == 3 && playground1Finished == false {
-            bedroomIntro5.isHidden = false
-            playground1Finished = true
+        if allItemsRecycled == true && itemCountRecycled == 3 && playground3Finished == false {
+            beachIntro2.isHidden = false
+            playground3Finished = true
         }
     }
 
     // Check if item suitable for recycling
     func compute_item() {
-        if item_list[0].name == "Food Scrap" && item_list[1].name == "Newspaper"
-            || item_list[0].name == "Newspaper" && item_list[1].name == "Food Scrap" {
+        if item_list[0].name == "Plastic Bottle" && item_list[1].name == "Plastic Water Sprayer"
+            || item_list[0].name == "Plastic Water Sprayer" && item_list[1].name == "Plastic Bottle" {
             
             itemToSendToWorkshopId = 0
-            print("Success! Compost is found")
+            print("Success! Bottle Water Gun is found")
             itemCountRecycled += 1
             
             // Change `2.0` to the desired number of seconds.
@@ -251,14 +244,14 @@ class Playground3ViewController: UIViewController {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                     //set true if item is found
                     //to be used for workshop
-                    self.recycledItems[0].itemFound = true
+                    self.recycledItems[7].itemFound = true
                     
-                    self.compost.isHidden = false
-                    self.itemDeck2.image = UIImage(named: self.recycledItems[0].image)
+                    self.bottleWaterGun.isHidden = false
+                    self.itemDeck1.image = UIImage(named: self.recycledItems[7].image)
                     self.backButton.isHidden = true
                     self.workshopButton.isHidden = true
-                    self.itemNameLabel.text = self.recycledItems[0].name
-                    self.itemImage.image = UIImage(named: self.recycledItems[0].image)
+                    self.itemNameLabel.text = self.recycledItems[7].name
+                    self.itemImage.image = UIImage(named: self.recycledItems[7].image)
                     self.popupView.isHidden = false
                     self.logoMascot.isHidden = false
                     self.popupCloseLabel.isHidden = false
@@ -266,10 +259,11 @@ class Playground3ViewController: UIViewController {
             }
         
            
-            foodScrapButton.isHidden = true
-            newsPaperButton.isHidden = true
-        } else if item_list[0].name == "Plastic Bottle" && item_list[1].name == "Light Bulb" || item_list[0].name == "Light Bulb" && item_list[1].name == "Plastic Bottle"{ print("Succeess! Bottle Lamp is found")
+            bottleButton.isHidden = true
+            waterSprayerButton.isHidden = true
+        } else if item_list[0].name == "Styrofoam" && item_list[1].name == "Saw" || item_list[0].name == "Saw" && item_list[1].name == "Styrofoam"{
             
+            print("Success! Surfboard is found")
             itemToSendToWorkshopId = 1
             itemCountRecycled += 1
             // Change `2.0` to the desired number of seconds.
@@ -278,25 +272,25 @@ class Playground3ViewController: UIViewController {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                     //set true if item is found
                     //to be used for workshop
-                    self.recycledItems[1].itemFound = true
+                    self.recycledItems[8].itemFound = true
                     
-                    self.bottleLamp1.isHidden = false
-                    self.bottleLamp2.isHidden = false
-                    self.itemDeck1.image = UIImage(named: self.recycledItems[1].image)
+                    self.surfboard.isHidden = false
+                    self.itemDeck2.image = UIImage(named: self.recycledItems[8].image)
                     self.backButton.isHidden = true
                     self.workshopButton.isHidden = true
-                    self.itemNameLabel.text = self.recycledItems[1].name
-                    self.itemImage.image = UIImage(named: self.recycledItems[1].image)
+                    self.itemNameLabel.text = self.recycledItems[8].name
+                    self.itemImage.image = UIImage(named: self.recycledItems[8].image)
                     self.popupView.isHidden = false
                     self.logoMascot.isHidden = false
                     self.popupCloseLabel.isHidden = false
                 }
             }
-            plasticBottleButton.isHidden = true
-            lightBulbButton.isHidden = true
+            styrofoamButton.isHidden = true
+            sawButton.isHidden = true
            
-        } else if item_list[0].name == "Used Cloth" && item_list[1].name == "Scissors" || item_list[0].name == "Scissors" &&    item_list[1].name == "Used Cloth"{ print("Succeess! Wool Fiber is found")
+        } else if item_list[0].name == "Newspaper" && item_list[1].name == "Fallen Branches" || item_list[0].name == "Fallen Branches" && item_list[1].name == "Newspaper"{
             
+            print("Success! Newspaper Kite is found")
             itemToSendToWorkshopId = 2
             itemCountRecycled += 1
             // Change `2.0` to the desired number of seconds.
@@ -305,21 +299,75 @@ class Playground3ViewController: UIViewController {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                     //set true if item is found
                     //to be used for workshop
-                    self.recycledItems[2].itemFound = true
+                    self.recycledItems[9].itemFound = true
                     
-                    self.woolFiber.isHidden = false
-                    self.itemDeck3.image = UIImage(named: self.recycledItems[2].image)
+                    self.newspaperKite.isHidden = false
+                    self.itemDeck3.image = UIImage(named: self.recycledItems[9].image)
                     self.backButton.isHidden = true
                     self.workshopButton.isHidden = true
-                    self.itemNameLabel.text = self.recycledItems[2].name
-                    self.itemImage.image = UIImage(named: self.recycledItems[2].image)
+                    self.itemNameLabel.text = self.recycledItems[9].name
+                    self.itemImage.image = UIImage(named: self.recycledItems[9].image)
                     self.popupView.isHidden = false
                     self.logoMascot.isHidden = false
                     self.popupCloseLabel.isHidden = false
             }
         }
-            usedClothButton.isHidden = true
-            scissorsButton.isHidden = true
+            tempItemButton[0].isHidden = true
+            tempItemButton[1].isHidden = true
+           
+        } else if item_list[0].name == "Piles of Water Bottles" && item_list[1].name == "Tape" || item_list[0].name == "Tape" && item_list[1].name == "Piles of Water Bottles"{
+            
+            print("Success! Bottle Boat is found")
+            itemToSendToWorkshopId = 2
+            itemCountRecycled += 1
+            // Change `2.0` to the desired number of seconds.
+            // Code you want to be delayed
+            do {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                    //set true if item is found
+                    //to be used for workshop
+                    self.recycledItems[10].itemFound = true
+                    
+                    self.bottleBoat.isHidden = false
+                    self.itemDeck4.image = UIImage(named: self.recycledItems[10].image)
+                    self.backButton.isHidden = true
+                    self.workshopButton.isHidden = true
+                    self.itemNameLabel.text = self.recycledItems[10].name
+                    self.itemImage.image = UIImage(named: self.recycledItems[10].image)
+                    self.popupView.isHidden = false
+                    self.logoMascot.isHidden = false
+                    self.popupCloseLabel.isHidden = false
+            }
+        }
+            pilesOfWaterBottleButton.isHidden = true
+            tapeButton.isHidden = true
+           
+        } else if item_list[0].name == "Plastic Straw" && item_list[1].name == "Newspaper" || item_list[0].name == "Newspaper" && item_list[1].name == "Plastic Straw"{
+            
+            print("Success! Paper Windmill is found")
+            itemToSendToWorkshopId = 2
+            itemCountRecycled += 1
+            // Change `2.0` to the desired number of seconds.
+            // Code you want to be delayed
+            do {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                    //set true if item is found
+                    //to be used for workshop
+                    self.recycledItems[11].itemFound = true
+                    
+                    self.newspaperKite.isHidden = false
+                    self.itemDeck3.image = UIImage(named: self.recycledItems[11].image)
+                    self.backButton.isHidden = true
+                    self.workshopButton.isHidden = true
+                    self.itemNameLabel.text = self.recycledItems[11].name
+                    self.itemImage.image = UIImage(named: self.recycledItems[11].image)
+                    self.popupView.isHidden = false
+                    self.logoMascot.isHidden = false
+                    self.popupCloseLabel.isHidden = false
+            }
+        }
+            tempItemButton[0].isHidden = true
+            tempItemButton[1].isHidden = true
            
         } else {
             print("failed to recycle try again")
@@ -332,7 +380,7 @@ class Playground3ViewController: UIViewController {
             return
         }
         
-        if itemCountRecycled == 3{
+        if itemCountRecycled == 5{
             allItemsRecycled = true
         }
     }
@@ -418,21 +466,26 @@ class Playground3ViewController: UIViewController {
         bedroomIntro5.isHidden = true
        
         //hide recycled item
-        bottleLamp1.isHidden = true
-        bottleLamp2.isHidden = true
-        compost.isHidden = true
-        woolFiber.isHidden = true
+        bottleWaterGun.isHidden = true
+        surfboard.isHidden = true
+        newspaperKite.isHidden = true
+        bottleBoat.isHidden = true
+        paperWindmill.isHidden = true
        
         //placeholder for button object in array
-        tempItemButton = [foodScrapButton,newsPaperButton]
+        tempItemButton = [bottleButton, waterSprayerButton]
        
        
         for i in 0...normalItemNames.count-1 {
-            normalItems.append(Item(name: normalItemNames[i], itemStage: 1, image: normalItemIconColor[i], description: normalItemDescription[i], itemFound: normalItemFound[i]))
+            normalItems.append(Item(name: normalItemNames[i], itemStage: normalItemStage[i], image: normalItemIconColor[i], description: normalItemDescription[i], itemFound: true))
         }
 
         for i in 0...recycledItemNames.count-1 {
-            recycledItems.append(RecycledItem(name:  recycledItemNames[i], itemStage: recycledItemStage[i], image: recycledItemIconColor[i], description: recycledItemDescription[i], itemFound: recycledItemFound[i], ingredient1Id: recycledItemIngredient1[i], ingredient2Id: recycledItemIngredient2[i], link: recycledItemLink[i]))
+            if i < 7 {
+                recycledItems.append(RecycledItem(name:  recycledItemNames[i], itemStage: recycledItemStage[i], image: recycledItemIconColor[i], description: recycledItemDescription[i], itemFound: true, ingredient1Id: recycledItemIngredient1[i], ingredient2Id: recycledItemIngredient2[i], link: recycledItemLink[i]))
+            } else {
+                recycledItems.append(RecycledItem(name:  recycledItemNames[i], itemStage: recycledItemStage[i], image: recycledItemIconColor[i], description: recycledItemDescription[i], itemFound: recycledItemFound[i], ingredient1Id: recycledItemIngredient1[i], ingredient2Id: recycledItemIngredient2[i], link: recycledItemLink[i]))
+            }
         }
         
         workshopItems.append(contentsOf: normalItems)

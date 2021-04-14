@@ -124,6 +124,9 @@
                                 <rect key="frame" x="208" y="202" width="167" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="recycleBin"/>
+                                <connections>
+                                    <action selector="clickRecycleBin:" destination="FsE-49-lvO" eventType="touchUpInside" id="86A-sy-xk6"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="owX-1A-IvR" userLabel="recycleBin1">
                                 <rect key="frame" x="231" y="262" width="37" height="43"/>
@@ -136,11 +139,11 @@
                                     <constraint firstAttribute="width" constant="322" id="hRD-UW-BUE"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paperWindmillBlack" translatesAutoresizingMaskIntoConstraints="NO" id="HNA-U8-J7Y" userLabel="itemDeck1">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bottleWaterGunBlack" translatesAutoresizingMaskIntoConstraints="NO" id="HNA-U8-J7Y" userLabel="itemDeck1">
                                 <rect key="frame" x="511" y="38" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bottleWaterGunBlack" translatesAutoresizingMaskIntoConstraints="NO" id="Z0J-3W-trN" userLabel="itemDeck2">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="surfboardBlack" translatesAutoresizingMaskIntoConstraints="NO" id="Z0J-3W-trN" userLabel="itemDeck2">
                                 <rect key="frame" x="569" y="38" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -152,7 +155,7 @@
                                 <rect key="frame" x="686" y="38" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="surfboardBlack" translatesAutoresizingMaskIntoConstraints="NO" id="vkD-0G-Y9y" userLabel="itemDeck5">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paperWindmillBlack" translatesAutoresizingMaskIntoConstraints="NO" id="vkD-0G-Y9y" userLabel="itemDeck5">
                                 <rect key="frame" x="744" y="38" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -168,6 +171,138 @@
                                     <action selector="clickStrawButton:" destination="FsE-49-lvO" eventType="touchUpInside" id="qpy-XN-0qt"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dcO-18-Yeh" userLabel="beachIntro1">
+                                <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WOW! You’re so good at this. Now let’s save the sea turtles by recycling trash in the beach!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttZ-L8-7r0" userLabel="intro1Label">
+                                        <rect key="frame" x="144" y="157" width="556" height="75"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.99731510879999996" green="0.83288848400000004" blue="0.4312754869" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="9"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Sdv-qI-caN" userLabel="intro1LogoMascot">
+                                        <rect key="frame" x="65" y="219" width="192" height="192"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap Anywhere to Continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOv-4R-N42" userLabel="intro1CloseLabel">
+                                        <rect key="frame" x="280" y="346" width="275" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84706455469999997" green="0.84704858059999999" blue="0.84705942869999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="9"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rv5-fK-JZE" userLabel="beachIntro2">
+                                <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GREAT! You did well. You are truly a Recycle Hero!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Axv-tg-fWj" userLabel="intro2Label">
+                                        <rect key="frame" x="144" y="157" width="556" height="75"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.99731510879999996" green="0.83288848400000004" blue="0.4312754869" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="9"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="3Gr-iF-h4o" userLabel="intro2LogoMascot">
+                                        <rect key="frame" x="547" y="217" width="192" height="192"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap Anywhere to Continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sD-OC-WaA" userLabel="intro2CloseLabel">
+                                        <rect key="frame" x="280" y="346" width="275" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84706455469999997" green="0.84704858059999999" blue="0.84705942869999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="9"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="kG1-Nt-pWi" userLabel="Logo Mascot">
+                                <rect key="frame" x="199" y="-16" width="436" height="273"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rFG-yf-gwV" userLabel="PopupView">
+                                <rect key="frame" x="280" y="109" width="275" height="229"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New Item Found!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCW-NX-utl">
+                                        <rect key="frame" x="19" y="8" width="236" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C5n-vK-mQG" userLabel="itemView">
+                                        <rect key="frame" x="17" y="52" width="240" height="91"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L85-Sg-g6j" userLabel="itemName">
+                                        <rect key="frame" x="19" y="144" width="236" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qV-sk-wJP" userLabel="workshopButton">
+                                        <rect key="frame" x="57" y="172" width="160" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="openWorkshop"/>
+                                        <connections>
+                                            <action selector="openInWorkshopDidTap:" destination="FsE-49-lvO" eventType="touchUpInside" id="yn0-gI-hyM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99731510879999996" green="0.83288848400000004" blue="0.4312754869" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap Anywhere to Continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00g-7t-Qrs" userLabel="Popup Close Label">
+                                <rect key="frame" x="280" y="346" width="275" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.84706455469999997" green="0.84704858059999999" blue="0.84705942869999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tE-h3-S4C">
                                 <rect key="frame" x="801" y="153" width="55" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -186,6 +321,8 @@
                     </view>
                     <connections>
                         <outlet property="backButton" destination="3bL-ZW-UGP" id="99n-Zg-Nt9"/>
+                        <outlet property="beachIntro1" destination="dcO-18-Yeh" id="4sl-m3-w9k"/>
+                        <outlet property="beachIntro2" destination="rv5-fK-JZE" id="3ZQ-CK-CAL"/>
                         <outlet property="bottleBoat" destination="g6h-ra-s55" id="kop-2r-j4P"/>
                         <outlet property="bottleButton" destination="0Zp-Qx-tuC" id="M9b-f6-PIc"/>
                         <outlet property="bottleWaterGun" destination="N8i-p0-boT" id="nbI-B1-nLP"/>
@@ -197,11 +334,16 @@
                         <outlet property="itemDeck3" destination="gkw-q3-HZf" id="mDe-jA-Eqv"/>
                         <outlet property="itemDeck4" destination="09O-Dg-Bsz" id="bJj-Kv-uxE"/>
                         <outlet property="itemDeck5" destination="vkD-0G-Y9y" id="2tY-Um-5wT"/>
+                        <outlet property="itemImage" destination="C5n-vK-mQG" id="hXm-1h-0Gr"/>
+                        <outlet property="itemNameLabel" destination="L85-Sg-g6j" id="gWX-zs-Odz"/>
+                        <outlet property="logoMascot" destination="kG1-Nt-pWi" id="tpc-er-zl1"/>
                         <outlet property="newspaperButton1" destination="kXu-eX-RXa" id="ke6-EJ-v4B"/>
                         <outlet property="newspaperButton2" destination="ZTv-Ab-yjv" id="2lG-Pt-yt9"/>
                         <outlet property="newspaperKite" destination="KLO-qK-JOv" id="A2c-0A-kvk"/>
                         <outlet property="paperWindmill" destination="vn5-1E-M7t" id="X9d-S6-ABL"/>
                         <outlet property="pilesOfWaterBottleButton" destination="BC2-OS-3da" id="dax-l9-q7g"/>
+                        <outlet property="popupCloseLabel" destination="00g-7t-Qrs" id="7pG-l9-RPU"/>
+                        <outlet property="popupView" destination="rFG-yf-gwV" id="W1O-Cb-qSq"/>
                         <outlet property="sawButton" destination="jwn-yC-qRT" id="Ape-Y4-7BK"/>
                         <outlet property="strawButton" destination="2Cn-k5-pFS" id="LxB-bq-jGu"/>
                         <outlet property="styrofoamButton" destination="8KW-tb-GXJ" id="CEK-zC-sje"/>
@@ -226,9 +368,11 @@
         <image name="bottleWaterGunBlack" width="1474" height="698"/>
         <image name="branches" width="1713" height="550"/>
         <image name="itemDeckStage3" width="1263" height="284"/>
+        <image name="logo" width="2048" height="2048"/>
         <image name="newspaper" width="6589" height="5546"/>
         <image name="newspaperKite-angled" width="136" height="136"/>
         <image name="newspaperKiteBlack" width="1074" height="1484"/>
+        <image name="openWorkshop" width="160" height="46"/>
         <image name="paperWindmill" width="2048" height="2048"/>
         <image name="paperWindmillBlack" width="998" height="1594"/>
         <image name="pilesOfWaterBottles" width="1575" height="1310"/>
