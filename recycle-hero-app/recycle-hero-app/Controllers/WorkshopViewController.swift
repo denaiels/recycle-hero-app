@@ -78,10 +78,26 @@ class WorkshopViewController: UIViewController, UICollectionViewDelegate, UIColl
 //            cell.layer.shadowPath = [UIBezierPath bezierPathWithRoundedRect:cell.bounds cornerRadius:cell.contentView.layer.cornerRadius].CGPath;
             cell.layer.cornerRadius = 10
             cell.layer.masksToBounds = true
-            cell.backgroundColor = UIColor.red
+            
 //
             // set nilai ke view dalam cell
             let item = items[indexPath.row]
+            if item.type == "recycled"{
+                cell.layer.borderWidth = 3.0
+                cell.layer.borderColor = #colorLiteral(red: 0.07058823529, green: 0.6235294118, blue: 0.1960784314, alpha: 1)
+            }
+            
+            if item.itemStage == 1{
+                cell.backgroundColor = #colorLiteral(red: 0.9803921569, green: 0.2823529412, blue: 0.1529411765, alpha: 1)
+            }
+            
+            if item.itemStage == 2{
+                cell.backgroundColor = #colorLiteral(red: 0.9803921569, green: 0.5254901961, blue: 0.2392156863, alpha: 1)
+            }
+            
+            if item.itemStage == 3{
+                cell.backgroundColor = #colorLiteral(red: 0.5019607843, green: 0.8078431373, blue: 0.8823529412, alpha: 1)
+            }
             
             if item.itemFound{
                 let itemImageName = item.image
