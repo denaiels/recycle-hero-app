@@ -16,7 +16,7 @@ class Playground3ViewController: UIViewController {
 //    var userProgress = UserProgress()
     var workshopItems = [Item]()
     var tempItemButton:[UIButton] = [UIButton]()
-    var stageProgress = 1
+    var stageProgress = 3
     var itemToSendToWorkshopId: Int = 0
 
     var itemCountRecycled = 0
@@ -39,9 +39,14 @@ class Playground3ViewController: UIViewController {
     
     // Intro 1
     @IBOutlet weak var beachIntro1: UIView!
+    @IBOutlet weak var beachIntro1LogoMascot: UIImageView!
+    @IBOutlet weak var beachIntro1PartyHat: UIImageView!
+    @IBOutlet weak var beachIntro1CloseLabel: UILabel!
     // Intro 2
     @IBOutlet weak var beachIntro2: UIView!
-
+    // Intro 3
+    @IBOutlet weak var beachIntro3: UIView!
+    
     // Item in deck
     @IBOutlet weak var itemDeck1: UIImageView!
     @IBOutlet weak var itemDeck2: UIImageView!
@@ -99,7 +104,7 @@ class Playground3ViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func clickBackButton(_ sender: UIButton) {
-        
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func clickWorkshopButton(_ sender: UIButton) {
@@ -395,25 +400,19 @@ class Playground3ViewController: UIViewController {
             if introAt == 1{
                 print("intro1")
                 introAt = 2
-                bedroomIntro1.isHidden = true
-                bedroomIntro2.isHidden = false
-            } else if introAt == 2 && bedroomIntro2.isHidden != true{
+                beachIntro1.isHidden = true
+                beachIntro1PartyHat.isHidden = true
+                beachIntro1LogoMascot.isHidden = true
+                beachIntro1CloseLabel.isHidden = true
+                beachIntro2.isHidden = false
+            } else if introAt == 2 && beachIntro2.isHidden != true{
                 print("intro2")
                 introAt = 3
-                bedroomIntro2.isHidden = true
-            } else if introAt == 3 && bedroomIntro3.isHidden != true{
+                beachIntro2.isHidden = true
+            } else if introAt == 3 && beachIntro3.isHidden != true{
                 print("intro3")
-                introAt = 4
-                bedroomIntro3.isHidden = true
-                bedroomIntro4.isHidden = false
-            } else if introAt == 4 && bedroomIntro4.isHidden != true{
-                print("intro4")
-                introAt = 5
-                bedroomIntro4.isHidden = true
-            } else if introAt == 5 && bedroomIntro5.isHidden != true{
-                print("intro5")
                 introAt = 0
-                bedroomIntro5.isHidden = true
+                beachIntro3.isHidden = true
             }
             print("Tapped outside the view")
             backButton.isHidden = false
@@ -422,29 +421,20 @@ class Playground3ViewController: UIViewController {
             logoMascot.isHidden = true
             popupCloseLabel.isHidden = true
             checkItemProgress()
-        } else if bedroomIntro1.frame.contains(location){
+        } else if beachIntro1.frame.contains(location){
             if introAt == 1{
                 print("intro1")
                 introAt = 2
-                bedroomIntro1.isHidden = true
-                bedroomIntro2.isHidden = false
-            } else if introAt == 2 && bedroomIntro2.isHidden != true{
+                beachIntro1.isHidden = true
+                beachIntro2.isHidden = false
+            } else if introAt == 2 && beachIntro2.isHidden != true{
                 print("intro2")
                 introAt = 3
-                bedroomIntro2.isHidden = true
-            } else if introAt == 3 && bedroomIntro3.isHidden != true{
+                beachIntro2.isHidden = true
+            } else if introAt == 3 && beachIntro3.isHidden != true{
                 print("intro3")
-                introAt = 4
-                bedroomIntro3.isHidden = true
-                bedroomIntro4.isHidden = false
-            } else if introAt == 4 && bedroomIntro4.isHidden != true{
-                print("intro4")
-                introAt = 5
-                bedroomIntro4.isHidden = true
-            } else if introAt == 5 && bedroomIntro5.isHidden != true{
-                print("intro5")
                 introAt = 0
-                bedroomIntro5.isHidden = true
+                beachIntro3.isHidden = true
             }
         }else {
             print("Tapped inside the view")
@@ -459,11 +449,9 @@ class Playground3ViewController: UIViewController {
         popupView.isHidden = true
         popupCloseLabel.isHidden = true
        
-        //hide intro 2,3,4,5
-        bedroomIntro2.isHidden = true
-        bedroomIntro3.isHidden = true
-        bedroomIntro4.isHidden = true
-        bedroomIntro5.isHidden = true
+        //hide intro 2,3
+        beachIntro2.isHidden = true
+        beachIntro3.isHidden = true
        
         //hide recycled item
         bottleWaterGun.isHidden = true
@@ -525,14 +513,11 @@ class Playground3ViewController: UIViewController {
         if let destinationVC = segue.destination as? WorkshopViewController {
             destinationVC.items = workshopItems
             destinationVC.message = "Ini dari Playground 1"
+//            destinationVC.stage = stageProgress
         }
         
         if let destinationVC = segue.destination as? ItemDetailViewController {
             destinationVC.item = recycledItems[itemToSendToWorkshopId]
-        }
-        
-        if let destinationVC = segue.destination as? StageMenuController {
-//            destinationVC.item = recycledItems[itemToSendToWorkshopId]
         }
     }
 
