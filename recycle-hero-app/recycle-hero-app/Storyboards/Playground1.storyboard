@@ -108,7 +108,7 @@
                                 <state key="normal" image="backButton"/>
                                 <connections>
                                     <action selector="clickBackButton:" destination="Tfl-7w-pus" eventType="touchUpInside" id="Nvi-kz-6Wn"/>
-                                    <segue destination="Jwn-uO-mI6" kind="show" id="lts-7R-Tp5"/>
+                                    <segue destination="1qv-RL-hhH" kind="show" id="ZIr-SX-Iz1"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gsw-N5-mDe" userLabel="recycleBin1">
@@ -427,6 +427,16 @@
             </objects>
             <point key="canvasLocation" x="1388" y="322"/>
         </scene>
+        <!--StageMenu-->
+        <scene sceneID="MPR-KY-6Lz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="StageMenu" id="1qv-RL-hhH" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="lbt-Tp-8ue"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wow-XY-kqY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="652" y="459"/>
+        </scene>
         <!--Workshop-->
         <scene sceneID="Cbd-3Y-CR2">
             <objects>
@@ -436,16 +446,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ufc-hG-hDf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="991" y="543"/>
-        </scene>
-        <!--StageMenu-->
-        <scene sceneID="8nr-xP-PSU">
-            <objects>
-                <viewControllerPlaceholder storyboardName="StageMenu" id="Jwn-uO-mI6" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="zTX-1D-3Xq"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JEa-8Z-PXt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="737" y="553"/>
         </scene>
     </scenes>
     <resources>
