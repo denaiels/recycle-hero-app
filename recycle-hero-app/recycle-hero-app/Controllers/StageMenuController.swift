@@ -97,14 +97,15 @@ class StageMenuController: UIViewController {
     
     @IBAction func goToGarden(_ sender: Any) {
         
-        if let stage = defaults.string(forKey: "stage"){
+       /* if let stage = defaults.string(forKey: "stage"){
             
             if stage.isEmpty{
                 return
             }else if stage == "2"{
                 performSegue(withIdentifier: "showGarden", sender: self)
             }
-        }
+        } */
+        performSegue(withIdentifier: "showGarden", sender: self)
     }
     
     @IBAction func goToBeach(_ sender: Any) {
