@@ -98,7 +98,7 @@ class Playground1ViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func clickBackButton(_ sender: UIButton) {
-       //go back to stage
+        
     }
     
     @IBAction func clickWorkshopButton(_ sender: UIButton) {
@@ -154,6 +154,7 @@ class Playground1ViewController: UIViewController {
         popupView.isHidden = true
         logoMascot.isHidden = true
         popupCloseLabel.isHidden = true
+        checkItemProgress()
     }
     
     // MARK: - Helper Functions
@@ -446,6 +447,10 @@ class Playground1ViewController: UIViewController {
         
         if let destinationVC = segue.destination as? ItemDetailViewController {
             destinationVC.item = recycledItems[itemToSendToWorkshopId]
+        }
+        
+        if let destinationVC = segue.destination as? StageMenuController {
+//            destinationVC.item = recycledItems[itemToSendToWorkshopId]
         }
     }
     
