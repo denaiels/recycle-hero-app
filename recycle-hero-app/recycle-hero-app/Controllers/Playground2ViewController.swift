@@ -538,17 +538,16 @@ class Playground2ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destinationVC = segue.destination as? WorkshopViewController {
             destinationVC.items = workshopItems
-            destinationVC.stage = stageProgress
-            destinationVC.message = "Ini dari Playground 1"
+            destinationVC.message = "Ini dari Playground 2"
         }
         
         if let destinationVC = segue.destination as? ItemDetailViewController {
             destinationVC.item = recycledItems[itemToSendToWorkshopId]
         }
         
-        if let destinationVC = segue.destination as? StageMenuController {
-//            destinationVC.item = recycledItems[itemToSendToWorkshopId]
-        }
+//        if let destinationVC = segue.destination as? StageMenuController {
+////            destinationVC.item = recycledItems[itemToSendToWorkshopId]
+//        }
     }
     
 
