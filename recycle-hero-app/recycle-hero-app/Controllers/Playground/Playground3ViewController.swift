@@ -187,6 +187,8 @@ class Playground3ViewController: UIViewController {
         checkItemProgress()
     }
     
+    
+    
     // MARK: - Helper Functions
     
     func itemToBin() {
@@ -545,14 +547,15 @@ class Playground3ViewController: UIViewController {
     }
     
     
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destinationVC = segue.destination as? WorkshopViewController {
             destinationVC.items = workshopItems
+            destinationVC.stage = stageProgress
             destinationVC.message = "Ini dari Playground 3"
-//            destinationVC.stage = stageProgress
         }
         
         if let destinationVC = segue.destination as? ItemDetailViewController {

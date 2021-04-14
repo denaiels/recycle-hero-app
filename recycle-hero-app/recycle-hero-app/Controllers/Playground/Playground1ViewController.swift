@@ -157,6 +157,8 @@ class Playground1ViewController: UIViewController {
         checkItemProgress()
     }
     
+    
+    
     // MARK: - Helper Functions
     
     func itemToBin() {
@@ -467,6 +469,7 @@ class Playground1ViewController: UIViewController {
             print("--> Item Found: \(recycledItems[i].itemFound)")
         }
     }
+    
     
     
     // MARK: - Navigation

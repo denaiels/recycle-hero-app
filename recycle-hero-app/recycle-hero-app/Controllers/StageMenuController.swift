@@ -9,7 +9,13 @@ import UIKit
 
 
 class StageMenuController: UIViewController {
-
+    
+    // MARK: - Properties
+    
+    let defaults = UserDefaults.standard
+    
+    
+    
     // MARK: - Outlets
     
     @IBOutlet weak var chooseStageLabel: UILabel!
@@ -19,7 +25,8 @@ class StageMenuController: UIViewController {
     @IBOutlet weak var beachMask: UIImageView!
     
     
-    let defaults = UserDefaults.standard
+    
+    // MARK: - ViewDidLoad
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,19 +74,11 @@ class StageMenuController: UIViewController {
             beachMask.isHidden = false
             print("else called")
         }
-        // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
+    // MARK: - Actions
 
     @IBAction func goToBedroom(_ sender: Any) {
         
@@ -112,7 +111,15 @@ class StageMenuController: UIViewController {
         performSegue(withIdentifier: "showBeach", sender: self)
     }
     
-    
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
     
 }
 

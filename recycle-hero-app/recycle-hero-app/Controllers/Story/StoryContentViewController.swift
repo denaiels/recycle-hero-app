@@ -8,7 +8,14 @@
 import UIKit
 
 class StoryContentViewController: UIViewController {
-
+    // MARK: - Properties
+        
+    var index = 0
+    var story = ""
+    var imageFile = ""
+    
+    
+    
     // MARK: - Outlets
     
     @IBOutlet var storyLabel: UILabel! {
@@ -20,11 +27,8 @@ class StoryContentViewController: UIViewController {
     @IBOutlet var contentImageView: UIImageView!
     
     
-    // MARK: - Properties
     
-    var index = 0
-    var story = ""
-    var imageFile = ""
+    // MARK: - ViewDidLoad
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -271,7 +271,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WOW! You’re so good at this. Now let’s save the sea turtles by recycling trash in the beach!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttZ-L8-7r0" userLabel="intro1Label">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WOW! You’re so good at this. Now let’s save the sea turtles by recycling the trash in the beach!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttZ-L8-7r0" userLabel="intro1Label">
                                         <rect key="frame" x="144" y="157" width="556" height="75"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.99731510879999996" green="0.83288848400000004" blue="0.4312754869" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

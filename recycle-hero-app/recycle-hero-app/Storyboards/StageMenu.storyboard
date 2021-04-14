@@ -107,7 +107,7 @@
                         <outlet property="gardenMask" destination="xol-Vb-evL" id="4yk-W6-mAw"/>
                         <segue destination="bhE-Fn-xDn" kind="custom" identifier="showBedroom" customClass="SegueFromLeft" customModule="recycle_hero_app" customModuleProvider="target" id="o29-Bi-4qb"/>
                         <segue destination="Mwv-jR-IHL" kind="custom" identifier="showGarden" customClass="SegueFromLeft" customModule="recycle_hero_app" customModuleProvider="target" id="h6N-Ox-oRx"/>
-                        <segue destination="CyC-Gx-e3M" kind="show" identifier="showBeach" customClass="SegueFromLeft" customModule="recycle_hero_app" customModuleProvider="target" id="TBt-FJ-P6B"/>
+                        <segue destination="CyC-Gx-e3M" kind="custom" identifier="showBeach" customClass="SegueFromLeft" customModule="recycle_hero_app" customModuleProvider="target" id="TBt-FJ-P6B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XTx-eu-44q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

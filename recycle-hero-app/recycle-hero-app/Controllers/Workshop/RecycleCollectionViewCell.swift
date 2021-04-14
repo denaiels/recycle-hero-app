@@ -9,5 +9,7 @@ import UIKit
 
 class RecycleCollectionViewCell: UICollectionViewCell {
     
+    // MARK: - Outlets
+    
     @IBOutlet weak var imageViewItem: UIImageView!
 }

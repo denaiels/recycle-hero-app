@@ -11,14 +11,23 @@ import UIKit
 
 class WorkshopViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
-    @IBOutlet weak var collectionView: UICollectionView!
+    // MARK: - Properties
+    
     var items = [Item]()
     var message = ""
     var stage = 0
-
-    @IBOutlet weak var valueTestLabel: UILabel!
     
+    
+    
+    // MARK: - Outlets
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var valueTestLabel: UILabel!
     @IBOutlet weak var backgroundImage: UIImageView!
+    
+    
+    
+    // MARK: - ViewDidLoad
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +53,10 @@ class WorkshopViewController: UIViewController, UICollectionViewDelegate, UIColl
         backgroundImage.image = UIImage(named: imageName)
     }
     
+    
+    
+    // MARK: - Actions
+    
     @IBAction func backToPlaygroundDidTap(_ sender: UIButton) {
         let transition: CATransition = CATransition()
         transition.duration = 0.5
@@ -53,6 +66,10 @@ class WorkshopViewController: UIViewController, UICollectionViewDelegate, UIColl
         self.view.window!.layer.add(transition, forKey: nil)
         self.dismiss(animated: false, completion: nil)
     }
+    
+    
+    
+    // MARK: - Helper Functions
     
     func initDataItems(){
 //        for index in 1...10{
@@ -177,8 +194,6 @@ class WorkshopViewController: UIViewController, UICollectionViewDelegate, UIColl
         }
     
         
-    
-    
     
     // MARK: - Navigation
 

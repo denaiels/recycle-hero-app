@@ -9,6 +9,14 @@ import UIKit
 
 class ItemDetailViewController: UIViewController {
 
+    // MARK: - Properties
+    var item : RecycledItem? = nil
+    var stage = 0
+
+    
+    
+    // MARK: - Outlets
+    
     @IBOutlet weak var itemName: UILabel!
     @IBOutlet weak var itemDescription: UILabel!
     @IBOutlet weak var itemImage: UIImageView!
@@ -18,8 +26,9 @@ class ItemDetailViewController: UIViewController {
     @IBOutlet weak var ingredient2Label: UILabel!
     @IBOutlet weak var backgroundImage: UIImageView!
     
-    var item : RecycledItem? = nil
-    var stage = 0
+    
+    
+    // MARK: - ViewDidLoad
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +56,11 @@ class ItemDetailViewController: UIViewController {
         backgroundImage.image = UIImage(named: imageName)
     }
     
+    
+    
+    // MARK: - Actions
+    
+    // Watch video
     @IBAction func watchVideo(_ sender: Any) {
         
         if let url = URL(string: item!.link){
@@ -54,6 +68,7 @@ class ItemDetailViewController: UIViewController {
         }
     }
     
+    // Close button
     @IBAction func backToWorkshop(_ sender: Any) {
         
         self.dismiss(animated: true, completion: nil)

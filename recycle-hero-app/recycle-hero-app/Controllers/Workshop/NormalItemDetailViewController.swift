@@ -9,20 +9,23 @@ import UIKit
 
 class NormalItemDetailViewController: UIViewController {
     
+    // MARK: - Properties
     
     var item : Item? = nil
     var stage = 0
     
+    
+    
+    // MARK: - Outlets
+    
     @IBOutlet weak var itemLabel: UILabel!
-    
-    
     @IBOutlet weak var itemDescription: UILabel!
-    
-    
     @IBOutlet weak var itemImage: UIImageView!
-    
     @IBOutlet weak var backgroundImage: UIImageView!
     
+    
+    
+    // MARK: - ViewDidLoad
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,10 +47,15 @@ class NormalItemDetailViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    
+    // MARK: - Actions
+    
     @IBAction func backToWorkshop(_ sender: Any) {
         
         self.dismiss(animated: true, completion: nil)
     }
+    
     /*
     // MARK: - Navigation
 

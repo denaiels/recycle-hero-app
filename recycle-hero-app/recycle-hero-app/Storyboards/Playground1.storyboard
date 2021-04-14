@@ -94,9 +94,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SV8-oc-4jy" userLabel="workshopButton">
-                                <rect key="frame" x="810" y="153" width="55" height="84"/>
+                                <rect key="frame" x="801" y="153" width="55" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="backButton"/>
+                                <state key="normal" image="workshop button"/>
                                 <connections>
                                     <action selector="clickWorkshopButton:" destination="Tfl-7w-pus" eventType="touchUpInside" id="1dE-cb-Hrn"/>
                                     <segue destination="H8B-Jb-oR2" kind="custom" customClass="SegueFromLeft" customModule="recycle_hero_app" customModuleProvider="target" id="58U-mh-9H1"/>
@@ -467,5 +467,6 @@
         <image name="usedCloth" width="2048" height="2048"/>
         <image name="woolFiber" width="1536" height="1536"/>
         <image name="woolFiberBlack" width="1802" height="1127"/>
+        <image name="workshop button" width="55" height="84"/>
     </resources>
 </document>
