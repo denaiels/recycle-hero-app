@@ -17,60 +17,96 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="beachStage3" translatesAutoresizingMaskIntoConstraints="NO" id="ey0-u5-5ry">
-                                <rect key="frame" x="-7" y="0.0" width="851" height="396"/>
+                                <rect key="frame" x="-7" y="-3" width="851" height="396"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFk-7Z-MPN" userLabel="waterSprayerButton">
-                                <rect key="frame" x="240" y="239" width="18" height="38"/>
+                                <rect key="frame" x="458" y="221" width="24" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="waterSprayer"/>
+                                <connections>
+                                    <action selector="clickWaterSprayerButton:" destination="FsE-49-lvO" eventType="touchUpInside" id="CHl-Wy-stA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldV-dn-4qD" userLabel="branchesButton">
-                                <rect key="frame" x="696" y="325" width="66" height="30"/>
+                                <rect key="frame" x="654" y="342" width="115" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="branches"/>
+                                <connections>
+                                    <action selector="clickBranchesButton:" destination="FsE-49-lvO" eventType="touchUpInside" id="k5J-Lq-fZT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BC2-OS-3da" userLabel="pilesOfWaterBottleButton">
-                                <rect key="frame" x="77" y="252" width="50" height="40"/>
+                                <rect key="frame" x="129" y="231" width="50" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="pilesOfWaterBottles"/>
+                                <connections>
+                                    <action selector="clickPilesOfWaterBottleButton:" destination="FsE-49-lvO" eventType="touchUpInside" id="nQX-6g-DUr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQG-OL-6ql" userLabel="tapeButton">
-                                <rect key="frame" x="305" y="250" width="30" height="16"/>
+                                <rect key="frame" x="566" y="328" width="37" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="tape"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cuu-jg-IRj" userLabel="strawButton">
-                                <rect key="frame" x="572" y="297" width="22" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="straw"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bL-ZW-UGP" userLabel="backButton">
-                                <rect key="frame" x="32" y="20" width="38" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <action selector="clickTapeButton:" destination="FsE-49-lvO" eventType="touchUpInside" id="2cO-Nz-nx2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KW-tb-GXJ" userLabel="styrofoamButton">
                                 <rect key="frame" x="584" y="165" width="178" height="127"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="styrofoam"/>
+                                <connections>
+                                    <action selector="clickStyrofoamButton:" destination="FsE-49-lvO" eventType="touchUpInside" id="jLW-Wq-uox"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWm-9w-EvZ">
-                                <rect key="frame" x="340" y="182" width="157" height="147"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bL-ZW-UGP" userLabel="backButton">
+                                <rect key="frame" x="32" y="20" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <action selector="clickBackButton:" destination="FsE-49-lvO" eventType="touchUpInside" id="YaW-zf-0Ei"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwn-yC-qRT" userLabel="sawButton">
+                                <rect key="frame" x="647" y="280" width="91" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="saw-angled"/>
+                                <connections>
+                                    <action selector="clickSawButton:" destination="FsE-49-lvO" eventType="touchUpInside" id="Vol-qK-WDU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Zp-Qx-tuC" userLabel="bottleButton">
+                                <rect key="frame" x="418" y="295" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bottle"/>
+                                <connections>
+                                    <action selector="clickBottleButton:" destination="FsE-49-lvO" eventType="touchUpInside" id="wYz-3c-Vmj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXu-eX-RXa" userLabel="newspaperButton1">
+                                <rect key="frame" x="365" y="247" width="53" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="newspaper"/>
+                                <connections>
+                                    <action selector="clickNewspaperButton1:" destination="FsE-49-lvO" eventType="touchUpInside" id="m8S-9D-D1W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTv-Ab-yjv" userLabel="newspaperButton2">
+                                <rect key="frame" x="396" y="260" width="53" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="newspaper"/>
+                                <connections>
+                                    <action selector="clickNewspaperButton2:" destination="FsE-49-lvO" eventType="touchUpInside" id="1GF-nj-Iw7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWm-9w-EvZ" userLabel="recycleButton">
+                                <rect key="frame" x="208" y="202" width="167" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="recycleBin"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFZ-qg-gfQ" userLabel="sawButton">
-                                <rect key="frame" x="254" y="325" width="49" height="15"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="saw"/>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="owX-1A-IvR" userLabel="recycleBin1">
-                                <rect key="frame" x="360" y="234" width="37" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="awm-bC-NBH" userLabel="recycleBin2">
-                                <rect key="frame" x="426" y="234" width="37" height="43"/>
+                                <rect key="frame" x="231" y="262" width="37" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="itemDeckStage3" translatesAutoresizingMaskIntoConstraints="NO" id="GmE-3Q-h9U">
@@ -80,26 +116,46 @@
                                     <constraint firstAttribute="width" constant="322" id="hRD-UW-BUE"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paperWindmillBlack" translatesAutoresizingMaskIntoConstraints="NO" id="HNA-U8-J7Y">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paperWindmillBlack" translatesAutoresizingMaskIntoConstraints="NO" id="HNA-U8-J7Y" userLabel="itemDeck1">
                                 <rect key="frame" x="511" y="38" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bottleWaterGunBlack" translatesAutoresizingMaskIntoConstraints="NO" id="Z0J-3W-trN">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bottleWaterGunBlack" translatesAutoresizingMaskIntoConstraints="NO" id="Z0J-3W-trN" userLabel="itemDeck2">
                                 <rect key="frame" x="569" y="38" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="newspaperKiteBlack" translatesAutoresizingMaskIntoConstraints="NO" id="gkw-q3-HZf">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="newspaperKiteBlack" translatesAutoresizingMaskIntoConstraints="NO" id="gkw-q3-HZf" userLabel="itemDeck3">
                                 <rect key="frame" x="627" y="38" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bottleBoatBlack" translatesAutoresizingMaskIntoConstraints="NO" id="09O-Dg-Bsz">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bottleBoatBlack" translatesAutoresizingMaskIntoConstraints="NO" id="09O-Dg-Bsz" userLabel="itemDeck4">
                                 <rect key="frame" x="686" y="38" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="surfboardBlack" translatesAutoresizingMaskIntoConstraints="NO" id="vkD-0G-Y9y">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="surfboardBlack" translatesAutoresizingMaskIntoConstraints="NO" id="vkD-0G-Y9y" userLabel="itemDeck5">
                                 <rect key="frame" x="744" y="38" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="awm-bC-NBH" userLabel="recycleBin2">
+                                <rect key="frame" x="301" y="262" width="37" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Cn-k5-pFS" userLabel="strawButton">
+                                <rect key="frame" x="486" y="258" width="66" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="straw-angled"/>
+                                <connections>
+                                    <action selector="clickStrawButton:" destination="FsE-49-lvO" eventType="touchUpInside" id="qpy-XN-0qt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tE-h3-S4C">
+                                <rect key="frame" x="801" y="153" width="55" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="workshop button"/>
+                                <connections>
+                                    <action selector="clickWorkshopButton:" destination="FsE-49-lvO" eventType="touchUpInside" id="38f-WW-qmd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="O0e-tV-Pup"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -108,6 +164,27 @@
                             <constraint firstAttribute="trailing" secondItem="GmE-3Q-h9U" secondAttribute="trailing" constant="40" id="aBe-zX-eaF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backButton" destination="3bL-ZW-UGP" id="99n-Zg-Nt9"/>
+                        <outlet property="bottleButton" destination="0Zp-Qx-tuC" id="M9b-f6-PIc"/>
+                        <outlet property="branchesButton" destination="ldV-dn-4qD" id="rkq-Bt-bS2"/>
+                        <outlet property="image0" destination="owX-1A-IvR" id="j8Y-rK-h4z"/>
+                        <outlet property="image1" destination="awm-bC-NBH" id="qDQ-Ut-dIq"/>
+                        <outlet property="itemDeck1" destination="HNA-U8-J7Y" id="WnM-Sp-Zxk"/>
+                        <outlet property="itemDeck2" destination="Z0J-3W-trN" id="3w1-t0-f6x"/>
+                        <outlet property="itemDeck3" destination="gkw-q3-HZf" id="mDe-jA-Eqv"/>
+                        <outlet property="itemDeck4" destination="09O-Dg-Bsz" id="bJj-Kv-uxE"/>
+                        <outlet property="itemDeck5" destination="vkD-0G-Y9y" id="2tY-Um-5wT"/>
+                        <outlet property="newspaperButton1" destination="kXu-eX-RXa" id="ke6-EJ-v4B"/>
+                        <outlet property="newspaperButton2" destination="ZTv-Ab-yjv" id="2lG-Pt-yt9"/>
+                        <outlet property="pilesOfWaterBottleButton" destination="BC2-OS-3da" id="dax-l9-q7g"/>
+                        <outlet property="sawButton" destination="jwn-yC-qRT" id="Ape-Y4-7BK"/>
+                        <outlet property="strawButton" destination="2Cn-k5-pFS" id="LxB-bq-jGu"/>
+                        <outlet property="styrofoamButton" destination="8KW-tb-GXJ" id="CEK-zC-sje"/>
+                        <outlet property="tapeButton" destination="oQG-OL-6ql" id="Qyj-EA-SIw"/>
+                        <outlet property="waterSprayerButton" destination="fFk-7Z-MPN" id="zSB-Sp-0KQ"/>
+                        <outlet property="workshopButton" destination="0tE-h3-S4C" id="mOT-PL-caN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EMn-kQ-3cV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -117,20 +194,23 @@
     <resources>
         <image name="backButton" width="50" height="50"/>
         <image name="beachStage3" width="2532" height="1170"/>
+        <image name="bottle" width="2048" height="2048"/>
         <image name="bottleBoatBlack" width="1574" height="1292"/>
         <image name="bottleWaterGunBlack" width="1474" height="698"/>
         <image name="branches" width="1713" height="550"/>
         <image name="itemDeckStage3" width="1263" height="284"/>
+        <image name="newspaper" width="6589" height="5546"/>
         <image name="newspaperKiteBlack" width="1074" height="1484"/>
         <image name="paperWindmillBlack" width="998" height="1594"/>
         <image name="pilesOfWaterBottles" width="1575" height="1310"/>
         <image name="recycleBin" width="2048" height="2048"/>
-        <image name="saw" width="1819" height="500"/>
-        <image name="straw" width="1166" height="1284"/>
+        <image name="saw-angled" width="91" height="54"/>
+        <image name="straw-angled" width="66" height="67"/>
         <image name="styrofoam" width="2048" height="2048"/>
         <image name="surfboardBlack" width="2048" height="2048"/>
         <image name="tape" width="861" height="517"/>
         <image name="waterSprayer" width="709" height="1473"/>
+        <image name="workshop button" width="55" height="84"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
