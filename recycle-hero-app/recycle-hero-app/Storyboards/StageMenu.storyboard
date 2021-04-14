@@ -105,14 +105,14 @@
                         <outlet property="chooseStageLabel" destination="4wy-2M-AT9" id="Akv-Jc-Pqh"/>
                         <outlet property="gardenLabel" destination="nSR-XH-64A" id="Ayz-KR-K5A"/>
                         <outlet property="gardenMask" destination="xol-Vb-evL" id="4yk-W6-mAw"/>
-                        <segue destination="bhE-Fn-xDn" kind="show" identifier="showBedroom" id="o29-Bi-4qb"/>
-                        <segue destination="Mwv-jR-IHL" kind="show" identifier="showGarden" id="h6N-Ox-oRx"/>
+                        <segue destination="bhE-Fn-xDn" kind="custom" identifier="showBedroom" customClass="SlideRightStoryboardSegue" customModule="recycle_hero_app" customModuleProvider="target" id="o29-Bi-4qb"/>
+                        <segue destination="Mwv-jR-IHL" kind="custom" identifier="showGarden" customClass="SlideRightStoryboardSegue" customModule="recycle_hero_app" customModuleProvider="target" id="h6N-Ox-oRx"/>
                         <segue destination="CyC-Gx-e3M" kind="show" identifier="showBeach" id="TBt-FJ-P6B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XTx-eu-44q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="14" y="143"/>
+            <point key="canvasLocation" x="12" y="146"/>
         </scene>
         <!--Playground1-->
         <scene sceneID="wSJ-EA-IQe">

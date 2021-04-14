@@ -14,8 +14,11 @@ class WorkshopViewController: UIViewController, UICollectionViewDelegate, UIColl
     @IBOutlet weak var collectionView: UICollectionView!
     var items = [Item]()
     var message = ""
+    var stage = 0
 
     @IBOutlet weak var valueTestLabel: UILabel!
+    
+    @IBOutlet weak var backgroundImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +31,17 @@ class WorkshopViewController: UIViewController, UICollectionViewDelegate, UIColl
 
         //init data items
         initDataItems()
+        
+        var imageName : String
+        
+        if stage==1{
+            imageName="bedroomStage1"
+        }else if stage==2{
+            imageName="gardenStage2"
+        }else{
+            imageName="beachStage3"
+        }
+        backgroundImage.image = UIImage(named: imageName)
     }
     
     @IBAction func backToPlaygroundDIdTap(_ sender: UIButton) {
@@ -174,9 +188,11 @@ class WorkshopViewController: UIViewController, UICollectionViewDelegate, UIColl
         if segue.identifier == "showItemDetail"{
             let destination = segue.destination as! ItemDetailViewController
             destination.item = sender as? RecycledItem
+            destination.stage = stage
         }else{
             let destination = segue.destination as! NormalItemDetailViewController
             destination.item = sender as? Item
+            destination.stage = stage
         }
     }
     

@@ -407,11 +407,12 @@
                         <outlet property="waterButton" destination="KHf-8N-eXe" id="3EK-JB-OB0"/>
                         <outlet property="wateringJug" destination="OrK-8x-2gq" id="C90-at-jai"/>
                         <outlet property="workshopButton" destination="e7t-bc-toh" id="6dg-g6-sAa"/>
+                        <segue destination="H6B-gr-OCq" kind="custom" identifier="finishStage" customClass="SlideLeftSegue" customModule="recycle_hero_app" customModuleProvider="target" id="A7q-Se-egZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C4b-nM-4cL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-209.00473933649289" y="173.84615384615384"/>
+            <point key="canvasLocation" x="-162" y="151"/>
         </scene>
         <!--ItemDetailViewController-->
         <scene sceneID="TQI-eq-EAt">
@@ -444,6 +445,9 @@
             <point key="canvasLocation" x="-420" y="784"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="A7q-Se-egZ"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="backButton" width="50" height="50"/>
         <image name="banana" width="2048" height="2048"/>

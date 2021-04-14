@@ -99,7 +99,7 @@
                                 <state key="normal" image="backButton"/>
                                 <connections>
                                     <action selector="clickWorkshopButton:" destination="Tfl-7w-pus" eventType="touchUpInside" id="1dE-cb-Hrn"/>
-                                    <segue destination="H8B-Jb-oR2" kind="show" id="58U-mh-9H1"/>
+                                    <segue destination="H8B-Jb-oR2" kind="custom" customClass="SlideRightStoryboardSegue" customModule="recycle_hero_app" customModuleProvider="target" id="58U-mh-9H1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCB-Lx-cc2" userLabel="backButton">

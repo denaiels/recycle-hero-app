@@ -16,7 +16,7 @@ class Playground2ViewController: UIViewController {
 //    var userProgress = UserProgress()
     var workshopItems = [Item]()
     var tempItemButton:[UIButton] = [UIButton]()
-    var stageProgress = 1
+    var stageProgress = 2
     var itemToSendToWorkshopId: Int = 0
 
     var itemCountRecycled = 0
@@ -378,6 +378,8 @@ class Playground2ViewController: UIViewController {
                 print("intro3")
                 introAt = 4
                 gardenIntro3.isHidden = true
+                UserDefaults.standard.set("3", forKey: "stage")
+                performSegue(withIdentifier: "finishStage", sender: self)
             }
             print("Tapped outside the view")
             backButton.isHidden = false
@@ -406,6 +408,8 @@ class Playground2ViewController: UIViewController {
                 print("intro3")
                 introAt = 4
                 gardenIntro3.isHidden = true
+                UserDefaults.standard.set("3", forKey: "stage")
+                performSegue(withIdentifier: "finishStage", sender: self)
             }
             backButton.isHidden = false
             workshopButton.isHidden = false
@@ -482,13 +486,20 @@ class Playground2ViewController: UIViewController {
         //placeholder for button object in array
         tempItemButton = [pilesOfWaterBottlesButton,smallPlantButton]
        
-       
         for i in 0...normalItemNames.count-1 {
-            normalItems.append(Item(name: normalItemNames[i], itemStage: 1, image: normalItemIconColor[i], description: normalItemDescription[i], itemFound: normalItemFound[i]))
+            if i<13 {
+                normalItems.append(Item(name: normalItemNames[i], itemStage: normalItemStage[i], image: normalItemIconColor[i], description: normalItemDescription[i], itemFound: true))
+            }else{
+                normalItems.append(Item(name: normalItemNames[i], itemStage: normalItemStage[i], image: normalItemIconColor[i], description: normalItemDescription[i], itemFound: normalItemFound[i]))
+            }
         }
 
         for i in 0...recycledItemNames.count-1 {
-            recycledItems.append(RecycledItem(name:  recycledItemNames[i], itemStage: recycledItemStage[i], image: recycledItemIconColor[i], description: recycledItemDescription[i], itemFound: recycledItemFound[i], ingredient1Id: recycledItemIngredient1[i], ingredient2Id: recycledItemIngredient2[i], link: recycledItemLink[i]))
+            if i<3 {
+                recycledItems.append(RecycledItem(name:  recycledItemNames[i], itemStage: recycledItemStage[i], image: recycledItemIconColor[i], description: recycledItemDescription[i], itemFound: true, ingredient1Id: recycledItemIngredient1[i], ingredient2Id: recycledItemIngredient2[i], link: recycledItemLink[i]))
+            }else{
+                recycledItems.append(RecycledItem(name:  recycledItemNames[i], itemStage: recycledItemStage[i], image: recycledItemIconColor[i], description: recycledItemDescription[i], itemFound: recycledItemFound[i], ingredient1Id: recycledItemIngredient1[i], ingredient2Id: recycledItemIngredient2[i], link: recycledItemLink[i]))
+            }
         }
         
         workshopItems.append(contentsOf: normalItems)
@@ -527,6 +538,7 @@ class Playground2ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destinationVC = segue.destination as? WorkshopViewController {
             destinationVC.items = workshopItems
+            destinationVC.stage = stageProgress
             destinationVC.message = "Ini dari Playground 1"
         }
         

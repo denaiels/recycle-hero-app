@@ -17,6 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PWm-ca-LIs">
+                                <rect key="frame" x="-6" y="-7" width="850" height="397"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle" id="vfp-LV-bq6">
                                 <rect key="frame" x="92" y="0.0" width="752" height="390"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -71,6 +75,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="cJ2-m8-5YB"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="PWm-ca-LIs" id="SPM-86-wuP"/>
                         <outlet property="collectionView" destination="yuO-Kg-wRK" id="jA2-fb-Qrt"/>
                         <segue destination="pv2-Qg-Uaz" kind="show" identifier="showItemDetail" id="4Up-jJ-bmC"/>
                         <segue destination="RX9-jj-iCW" kind="show" identifier="showNormalItemDetail" id="jrO-ef-TYm"/>
@@ -88,6 +93,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y8P-Dp-vBh" userLabel="background">
+                                <rect key="frame" x="-8" y="0.0" width="895" height="390"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="A9X-U0-mUX">
                                 <rect key="frame" x="61" y="-25" width="723" height="441"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -174,6 +183,7 @@
                     <navigationItem key="navigationItem" id="jfx-kW-99p"/>
                     <connections>
                         <outlet property="ItemName" destination="sMm-Yu-FIa" id="CFF-R5-pOl"/>
+                        <outlet property="backgroundImage" destination="Y8P-Dp-vBh" id="eDy-pf-kGW"/>
                         <outlet property="ingredient1Image" destination="J1N-F3-Di8" id="6s9-9M-ASP"/>
                         <outlet property="ingredient1Label" destination="OuB-ve-LlI" id="Wel-kP-Rg3"/>
                         <outlet property="ingredient2Image" destination="CKr-VU-F6F" id="cZs-oD-goX"/>
@@ -194,6 +204,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6nG-eC-TFl" userLabel="background">
+                                <rect key="frame" x="-3" y="-7" width="850" height="404"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Oval" translatesAutoresizingMaskIntoConstraints="NO" id="BOv-TX-dwY" userLabel="Ingredient1 placeholder">
                                 <rect key="frame" x="61" y="201" width="183" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -267,6 +281,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="FHe-7U-3IM"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="6nG-eC-TFl" id="FQk-r6-nv9"/>
                         <outlet property="itemDescription" destination="Yng-se-sK7" id="Pj9-9U-Hge"/>
                         <outlet property="itemImage" destination="Vq1-81-ozb" id="RXg-O3-dxg"/>
                         <outlet property="itemLabel" destination="Byv-FO-7Ka" id="Jn0-pe-fa6"/>
@@ -274,7 +289,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YEu-iE-JSf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="202" y="1209"/>
+            <point key="canvasLocation" x="201.89573459715638" y="1207.6923076923076"/>
         </scene>
     </scenes>
     <resources>

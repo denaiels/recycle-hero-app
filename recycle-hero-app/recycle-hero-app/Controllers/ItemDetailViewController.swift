@@ -16,8 +16,10 @@ class ItemDetailViewController: UIViewController {
     @IBOutlet weak var ingredient2Image: UIImageView!
     @IBOutlet weak var ingredient1Label: UILabel!
     @IBOutlet weak var ingredient2Label: UILabel!
+    @IBOutlet weak var backgroundImage: UIImageView!
     
     var item : RecycledItem? = nil
+    var stage = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +34,17 @@ class ItemDetailViewController: UIViewController {
         
         ingredient1Label.text = normalItemNames[item!.ingredient1Id]
         ingredient2Label.text = normalItemNames[item!.ingredient2Id]
+        
+        var imageName : String
+        
+        if stage==1{
+            imageName="bedroomStage1"
+        }else if stage==2{
+            imageName="gardenStage2"
+        }else{
+            imageName="beachStage3"
+        }
+        backgroundImage.image = UIImage(named: imageName)
     }
     
     @IBAction func watchVideo(_ sender: Any) {

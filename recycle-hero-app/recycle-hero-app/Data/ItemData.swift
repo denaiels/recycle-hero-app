@@ -9,6 +9,11 @@ import Foundation
 
 var normalItemsCountStage1 = 6
 var normalItemNames = ["Food Scrap", "Newspaper", "Light Bulb", "Used Cloth", "Scissors", "Plastic Bottle", "Small Plant", "Paint Can", "Ribbon", "Milk Jug", "Needle", "Banana Peels", "Water", "Plastic Water Sprayer", "Stryofoam", "Saw", "Fallen Branches", "Piles of Water Bottles", "Tape", "Plastic Straw"]
+
+
+
+var normalItemStage = [1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3]
+
 var normalItemIconColor = ["foodScrap", "newspaper", "lightBulb", "usedCloth", "scissors", "bottle", "smallPlant", "paintCan", "ribbon", "milkJug", "needle", "banana", "water", "waterSprayer", "styrofoam", "saw", "branches", "pilesOfWaterBottles", "tape", "straw"]
 var normalItemDescription =
     ["Food waste or food loss that is not eaten.",
@@ -32,3 +37,4 @@ var normalItemDescription =
      "A narrow strip of material, typically used to hold or fasten something.",
      "A thin hollow tube of paper or plastic for sucking drink from a glass or bottle."]
 var normalItemFound = [true, true, true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
+

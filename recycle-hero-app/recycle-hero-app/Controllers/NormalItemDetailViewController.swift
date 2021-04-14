@@ -11,6 +11,7 @@ class NormalItemDetailViewController: UIViewController {
     
     
     var item : Item? = nil
+    var stage = 0
     
     @IBOutlet weak var itemLabel: UILabel!
     
@@ -20,6 +21,7 @@ class NormalItemDetailViewController: UIViewController {
     
     @IBOutlet weak var itemImage: UIImageView!
     
+    @IBOutlet weak var backgroundImage: UIImageView!
     
     
     override func viewDidLoad() {
@@ -28,6 +30,17 @@ class NormalItemDetailViewController: UIViewController {
         itemLabel.text = item!.name
         itemDescription.text = item!.description
         itemImage.image = UIImage(named: "\(item!.image).png")
+        
+        var imageName : String
+        
+        if stage==1{
+            imageName="bedroomStage1"
+        }else if stage==2{
+            imageName="gardenStage2"
+        }else{
+            imageName="beachStage3"
+        }
+        backgroundImage.image = UIImage(named: imageName)
         // Do any additional setup after loading the view.
     }
     

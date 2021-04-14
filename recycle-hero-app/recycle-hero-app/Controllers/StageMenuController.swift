@@ -54,6 +54,8 @@ class StageMenuController: UIViewController {
             
             else if stage=="3"{
                 print("stage 3 unlocked")
+                gardenLabel.isHidden = false
+                gardenMask.isHidden = true
                 beachLabel.isHidden = false
                 beachMask.isHidden = true
             }
