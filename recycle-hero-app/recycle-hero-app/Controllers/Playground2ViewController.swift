@@ -407,14 +407,18 @@ class Playground2ViewController: UIViewController {
                 introAt = 4
                 gardenIntro3.isHidden = true
             }
-            //clearing new stage popup
-            logoMascot.isHidden = true
+            backButton.isHidden = false
+            workshopButton.isHidden = false
             popupView.isHidden = true
+            logoMascot.isHidden = true
+            popupCloseLabel.isHidden = true
+            intro1CloseAnywhere.isHidden = true
+            
+            //clearing new stage popup
             intro1LogoMascot.isHidden = true
             gardenIntro1.isHidden = true
             intro1PartyHat.isHidden = true
-            popupCloseLabel.isHidden = true
-            intro1CloseAnywhere.isHidden = true
+            checkItemProgress()
         } else if !gardenIntro1.frame.contains(location){
             if introAt == 1{
                 print("intro1")
@@ -430,14 +434,18 @@ class Playground2ViewController: UIViewController {
                 introAt = 4
                 gardenIntro3.isHidden = true
             }
-            //clearing new stage popup
-            logoMascot.isHidden = true
+            backButton.isHidden = false
+            workshopButton.isHidden = false
             popupView.isHidden = true
+            logoMascot.isHidden = true
+            popupCloseLabel.isHidden = true
+            intro1CloseAnywhere.isHidden = true
+            
+            //clearing new stage popup
             intro1LogoMascot.isHidden = true
             gardenIntro1.isHidden = true
             intro1PartyHat.isHidden = true
-            popupCloseLabel.isHidden = true
-            intro1CloseAnywhere.isHidden = true
+            checkItemProgress()
         }else {
             popupCloseLabel.isHidden = true
             print("Tapped inside the view")
