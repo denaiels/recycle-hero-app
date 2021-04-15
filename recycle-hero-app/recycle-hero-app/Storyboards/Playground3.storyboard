@@ -380,7 +380,7 @@
                                 <state key="normal" image="workshop button"/>
                                 <connections>
                                     <action selector="clickWorkshopButton:" destination="FsE-49-lvO" eventType="touchUpInside" id="38f-WW-qmd"/>
-                                    <segue destination="Mdp-3d-nXl" kind="show" id="vTa-2M-SR1"/>
+                                    <segue destination="Mdp-3d-nXl" kind="custom" customClass="SegueFromLeft" customModule="recycle_hero_app" customModuleProvider="target" id="vTa-2M-SR1"/>
                                 </connections>
                             </button>
                         </subviews>
