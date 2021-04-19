@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yob-c9-ZmL">
+    <device id="retina6_0" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Stage Menu Controller-->
+        <scene sceneID="2vK-UL-3ds">
+            <objects>
+                <viewController id="yob-c9-ZmL" customClass="StageMenuController" customModule="recycle_hero_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AgO-wf-PW0">
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4pt-HJ-MA8">
+                                <rect key="frame" x="60" y="28" width="229" height="341"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IA7-Vc-3cF">
+                                        <rect key="frame" x="3" y="0.0" width="223" height="305"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="bedroomStageRound"/>
+                                        <connections>
+                                            <action selector="goToBedroom:" destination="yob-c9-ZmL" eventType="touchUpInside" id="tQ2-M7-1p5"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bedroom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ray-9t-m0R">
+                                        <rect key="frame" x="57" y="32" width="111" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sPA-e9-8Gk">
+                                <rect key="frame" x="308" y="20" width="228.99999999999997" height="310.00000000000006"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAe-hs-3Eg">
+                                        <rect key="frame" x="3" y="8" width="223" height="305"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="gardenStageRound"/>
+                                        <connections>
+                                            <action selector="goToGarden:" destination="yob-c9-ZmL" eventType="touchUpInside" id="iYJ-CY-Cev"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Garden" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSR-XH-64A">
+                                        <rect key="frame" x="66" y="41" width="96" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mask" translatesAutoresizingMaskIntoConstraints="NO" id="xol-Vb-evL" userLabel="garden mask">
+                                        <rect key="frame" x="8" y="8" width="213" height="305"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                    </imageView>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0gy-5x-pcQ">
+                                <rect key="frame" x="555" y="31" width="229" height="340"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48Z-P0-ZP7">
+                                        <rect key="frame" x="8" y="13" width="214" height="274"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="beachStageRound"/>
+                                        <connections>
+                                            <action selector="goToBeach:" destination="yob-c9-ZmL" eventType="touchUpInside" id="XQg-mo-I3M"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Beach" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPI-Ks-JaR">
+                                        <rect key="frame" x="76" y="32" width="77" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mask" translatesAutoresizingMaskIntoConstraints="NO" id="Twe-lY-qnF" userLabel="beach mask">
+                                        <rect key="frame" x="5" y="-4" width="220" height="309"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                    </imageView>
+                                </subviews>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose Your Stage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wy-2M-AT9">
+                                <rect key="frame" x="60" y="336" width="724" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="T5M-Jf-Mzr"/>
+                        <color key="backgroundColor" red="1" green="0.82745098039215681" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <connections>
+                        <outlet property="beachLabel" destination="hPI-Ks-JaR" id="lNk-ew-9y1"/>
+                        <outlet property="beachMask" destination="Twe-lY-qnF" id="KWf-L2-bqJ"/>
+                        <outlet property="chooseStageLabel" destination="4wy-2M-AT9" id="Akv-Jc-Pqh"/>
+                        <outlet property="gardenLabel" destination="nSR-XH-64A" id="Ayz-KR-K5A"/>
+                        <outlet property="gardenMask" destination="xol-Vb-evL" id="4yk-W6-mAw"/>
+                        <segue destination="bhE-Fn-xDn" kind="custom" identifier="showBedroom" customClass="SegueFromLeft" customModule="recycle_hero_app" customModuleProvider="target" id="o29-Bi-4qb"/>
+                        <segue destination="Mwv-jR-IHL" kind="custom" identifier="showGarden" customClass="SegueFromLeft" customModule="recycle_hero_app" customModuleProvider="target" id="h6N-Ox-oRx"/>
+                        <segue destination="CyC-Gx-e3M" kind="custom" identifier="showBeach" customClass="SegueFromLeft" customModule="recycle_hero_app" customModuleProvider="target" id="TBt-FJ-P6B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XTx-eu-44q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12" y="146"/>
+        </scene>
+        <!--Playground1-->
+        <scene sceneID="wSJ-EA-IQe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Playground1" id="bhE-Fn-xDn" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dRD-p2-WxL"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8DF-Ni-YGA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-157" y="768"/>
+        </scene>
+        <!--Playground2-->
+        <scene sceneID="0eE-Kg-tZf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Playground2" id="Mwv-jR-IHL" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dT8-kh-83Z"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CdZ-dP-ex5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28" y="780"/>
+        </scene>
+        <!--Playground3-->
+        <scene sceneID="tOE-va-lsI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Playground3" id="CyC-Gx-e3M" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Yn7-H2-hQW"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RrX-jq-Bsd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="213" y="738"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="beachStageRound" width="214" height="274"/>
+        <image name="bedroomStageRound" width="214" height="276"/>
+        <image name="gardenStageRound" width="232" height="292"/>
+        <image name="mask" width="214" height="274"/>
+    </resources>
+</document>

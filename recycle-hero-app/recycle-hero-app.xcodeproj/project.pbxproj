@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F0A896C261EF1F7001E3FF2 /* UserProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0A896B261EF1F7001E3FF2 /* UserProgress.swift */; };
+		5F0A896F261EF610001E3FF2 /* Playground1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F0A896E261EF610001E3FF2 /* Playground1.storyboard */; };
+		5F0A8972261EF69E001E3FF2 /* Playground1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0A8971261EF69E001E3FF2 /* Playground1ViewController.swift */; };
+		5F0BC4742624221F005F9416 /* Playground2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F0BC4732624221F005F9416 /* Playground2.storyboard */; };
+		5F0BC47726242233005F9416 /* Playground2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0BC47626242233005F9416 /* Playground2ViewController.swift */; };
+		5F0BC47C2624225F005F9416 /* Playground3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F0BC47B2624225F005F9416 /* Playground3.storyboard */; };
+		5F0BC47F26242276005F9416 /* Playground3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0BC47E26242276005F9416 /* Playground3ViewController.swift */; };
+		5F0BC48C26242A7C005F9416 /* RecycledItemsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0BC48B26242A7C005F9416 /* RecycledItemsData.swift */; };
+		5F0BC48F26242A85005F9416 /* ItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0BC48E26242A85005F9416 /* ItemData.swift */; };
+		5F6C36362625F87E0081DB74 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6C36352625F87E0081DB74 /* ItemDetailViewController.swift */; };
+		5F6C363C2625F88A0081DB74 /* RecycleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6C36382625F8890081DB74 /* RecycleCollectionViewCell.swift */; };
+		5F6C363D2625F88A0081DB74 /* Workshop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F6C36392625F8890081DB74 /* Workshop.storyboard */; };
+		5F6C363E2625F88A0081DB74 /* NormalItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6C363A2625F8890081DB74 /* NormalItemDetailViewController.swift */; };
+		5F6C363F2625F88A0081DB74 /* WorkshopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6C363B2625F8890081DB74 /* WorkshopViewController.swift */; };
+		5F6C364C262604F40081DB74 /* SlideLeftStoryboardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6C364B262604F40081DB74 /* SlideLeftStoryboardSegue.swift */; };
 		5FBD6DD8261DB26A00EB0322 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBD6DD7261DB26A00EB0322 /* AppDelegate.swift */; };
 		5FBD6DDA261DB26A00EB0322 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBD6DD9261DB26A00EB0322 /* SceneDelegate.swift */; };
 		5FBD6DDC261DB26A00EB0322 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBD6DDB261DB26A00EB0322 /* ViewController.swift */; };
@@ -15,10 +30,32 @@
 		5FBD6DE4261DB26B00EB0322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FBD6DE3261DB26B00EB0322 /* Assets.xcassets */; };
 		5FBD6DE7261DB26B00EB0322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FBD6DE5261DB26B00EB0322 /* LaunchScreen.storyboard */; };
 		5FBD6DF1261DB4FD00EB0322 /* StoryPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FBD6DF0261DB4FD00EB0322 /* StoryPage.storyboard */; };
-		5FBD6DF4261DB68200EB0322 /* RecycledItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBD6DF3261DB68200EB0322 /* RecycledItemsModel.swift */; };
+		5FE3D9D426255B63005C9C07 /* StoryPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE3D9D326255B63005C9C07 /* StoryPageViewController.swift */; };
+		5FE3D9D726255F3C005C9C07 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE3D9D626255F3C005C9C07 /* StoryViewController.swift */; };
+		5FE3D9E026256AA2005C9C07 /* StoryContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE3D9DF26256AA2005C9C07 /* StoryContentViewController.swift */; };
+		6000AC6B2621CFA000698B4A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000AC6A2621CFA000698B4A /* Item.swift */; };
+		6000AC6E2621D67200698B4A /* RecycledItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000AC6D2621D67200698B4A /* RecycledItem.swift */; };
+		60184856261DF010008F6063 /* StageMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60184855261DF010008F6063 /* StageMenu.storyboard */; };
+		60184859261E0319008F6063 /* StageMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60184858261E0319008F6063 /* StageMenuController.swift */; };
+		6031E93026274E2700C92380 /* SlideRightStoryboardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6031E92F26274E2700C92380 /* SlideRightStoryboardSegue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F0A896B261EF1F7001E3FF2 /* UserProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProgress.swift; sourceTree = "<group>"; };
+		5F0A896E261EF610001E3FF2 /* Playground1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Playground1.storyboard; sourceTree = "<group>"; };
+		5F0A8971261EF69E001E3FF2 /* Playground1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playground1ViewController.swift; sourceTree = "<group>"; };
+		5F0BC4732624221F005F9416 /* Playground2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Playground2.storyboard; sourceTree = "<group>"; };
+		5F0BC47626242233005F9416 /* Playground2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playground2ViewController.swift; sourceTree = "<group>"; };
+		5F0BC47B2624225F005F9416 /* Playground3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Playground3.storyboard; sourceTree = "<group>"; };
+		5F0BC47E26242276005F9416 /* Playground3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playground3ViewController.swift; sourceTree = "<group>"; };
+		5F0BC48B26242A7C005F9416 /* RecycledItemsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycledItemsData.swift; sourceTree = "<group>"; };
+		5F0BC48E26242A85005F9416 /* ItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemData.swift; sourceTree = "<group>"; };
+		5F6C36352625F87E0081DB74 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
+		5F6C36382625F8890081DB74 /* RecycleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecycleCollectionViewCell.swift; sourceTree = "<group>"; };
+		5F6C36392625F8890081DB74 /* Workshop.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Workshop.storyboard; sourceTree = "<group>"; };
+		5F6C363A2625F8890081DB74 /* NormalItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalItemDetailViewController.swift; sourceTree = "<group>"; };
+		5F6C363B2625F8890081DB74 /* WorkshopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkshopViewController.swift; sourceTree = "<group>"; };
+		5F6C364B262604F40081DB74 /* SlideLeftStoryboardSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideLeftStoryboardSegue.swift; sourceTree = "<group>"; };
 		5FBD6DD4261DB26A00EB0322 /* recycle-hero-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "recycle-hero-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FBD6DD7261DB26A00EB0322 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FBD6DD9261DB26A00EB0322 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,7 +66,14 @@
 		5FBD6DE6261DB26B00EB0322 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5FBD6DE8261DB26B00EB0322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FBD6DF0261DB4FD00EB0322 /* StoryPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryPage.storyboard; sourceTree = "<group>"; };
-		5FBD6DF3261DB68200EB0322 /* RecycledItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycledItemsModel.swift; sourceTree = "<group>"; };
+		5FE3D9D326255B63005C9C07 /* StoryPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPageViewController.swift; sourceTree = "<group>"; };
+		5FE3D9D626255F3C005C9C07 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
+		5FE3D9DF26256AA2005C9C07 /* StoryContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryContentViewController.swift; sourceTree = "<group>"; };
+		6000AC6A2621CFA000698B4A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		6000AC6D2621D67200698B4A /* RecycledItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycledItem.swift; sourceTree = "<group>"; };
+		60184855261DF010008F6063 /* StageMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StageMenu.storyboard; sourceTree = "<group>"; };
+		60184858261E0319008F6063 /* StageMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageMenuController.swift; sourceTree = "<group>"; };
+		6031E92F26274E2700C92380 /* SlideRightStoryboardSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideRightStoryboardSegue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +87,80 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F0BC49226242AC0005F9416 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6000AC6A2621CFA000698B4A /* Item.swift */,
+				6000AC6D2621D67200698B4A /* RecycledItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5F0BC49326242AD3005F9416 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5F0BC48E26242A85005F9416 /* ItemData.swift */,
+				5F0BC48B26242A7C005F9416 /* RecycledItemsData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5F0BC49526242AF0005F9416 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5FBD6DDB261DB26A00EB0322 /* ViewController.swift */,
+				60184858261E0319008F6063 /* StageMenuController.swift */,
+				5FE3D9E326256FEE005C9C07 /* Story */,
+				5F6336DD2627732300D72786 /* Playground */,
+				5F6336DE2627733500D72786 /* Workshop */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5F0BC49726242B38005F9416 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5FBD6DDD261DB26A00EB0322 /* Main.storyboard */,
+				5FBD6DF0261DB4FD00EB0322 /* StoryPage.storyboard */,
+				60184855261DF010008F6063 /* StageMenu.storyboard */,
+				5F0A896E261EF610001E3FF2 /* Playground1.storyboard */,
+				5F0BC4732624221F005F9416 /* Playground2.storyboard */,
+				5F0BC47B2624225F005F9416 /* Playground3.storyboard */,
+				5F6C36392625F8890081DB74 /* Workshop.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5F6336DD2627732300D72786 /* Playground */ = {
+			isa = PBXGroup;
+			children = (
+				5F0A8971261EF69E001E3FF2 /* Playground1ViewController.swift */,
+				5F0BC47626242233005F9416 /* Playground2ViewController.swift */,
+				5F0BC47E26242276005F9416 /* Playground3ViewController.swift */,
+			);
+			path = Playground;
+			sourceTree = "<group>";
+		};
+		5F6336DE2627733500D72786 /* Workshop */ = {
+			isa = PBXGroup;
+			children = (
+				5F6C363B2625F8890081DB74 /* WorkshopViewController.swift */,
+				5F6C36352625F87E0081DB74 /* ItemDetailViewController.swift */,
+				5F6C363A2625F8890081DB74 /* NormalItemDetailViewController.swift */,
+				5F6C36382625F8890081DB74 /* RecycleCollectionViewCell.swift */,
+			);
+			path = Workshop;
+			sourceTree = "<group>";
+		};
+		5F6C36472626045C0081DB74 /* Custom Segue */ = {
+			isa = PBXGroup;
+			children = (
+				5F6C364B262604F40081DB74 /* SlideLeftStoryboardSegue.swift */,
+				6031E92F26274E2700C92380 /* SlideRightStoryboardSegue.swift */,
+			);
+			path = "Custom Segue";
+			sourceTree = "<group>";
+		};
 		5FBD6DCB261DB26A00EB0322 = {
 			isa = PBXGroup;
 			children = (
@@ -62,18 +180,30 @@
 		5FBD6DD6261DB26A00EB0322 /* recycle-hero-app */ = {
 			isa = PBXGroup;
 			children = (
+				5F6C36472626045C0081DB74 /* Custom Segue */,
+				5F0BC49326242AD3005F9416 /* Data */,
+				5F0BC49226242AC0005F9416 /* Model */,
+				5F0BC49526242AF0005F9416 /* Controllers */,
+				5F0BC49726242B38005F9416 /* Storyboards */,
 				5FBD6DD7261DB26A00EB0322 /* AppDelegate.swift */,
 				5FBD6DD9261DB26A00EB0322 /* SceneDelegate.swift */,
-				5FBD6DDB261DB26A00EB0322 /* ViewController.swift */,
-				5FBD6DF3261DB68200EB0322 /* RecycledItemsModel.swift */,
-				5FBD6DDD261DB26A00EB0322 /* Main.storyboard */,
-				5FBD6DF0261DB4FD00EB0322 /* StoryPage.storyboard */,
+				5F0A896B261EF1F7001E3FF2 /* UserProgress.swift */,
 				5FBD6DE3261DB26B00EB0322 /* Assets.xcassets */,
 				5FBD6DE5261DB26B00EB0322 /* LaunchScreen.storyboard */,
 				5FBD6DE8261DB26B00EB0322 /* Info.plist */,
 				5FBD6DE0261DB26A00EB0322 /* recycle_hero_app.xcdatamodeld */,
 			);
 			path = "recycle-hero-app";
+			sourceTree = "<group>";
+		};
+		5FE3D9E326256FEE005C9C07 /* Story */ = {
+			isa = PBXGroup;
+			children = (
+				5FE3D9D626255F3C005C9C07 /* StoryViewController.swift */,
+				5FE3D9D326255B63005C9C07 /* StoryPageViewController.swift */,
+				5FE3D9DF26256AA2005C9C07 /* StoryContentViewController.swift */,
+			);
+			path = Story;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,10 +263,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F0BC47C2624225F005F9416 /* Playground3.storyboard in Resources */,
 				5FBD6DE7261DB26B00EB0322 /* LaunchScreen.storyboard in Resources */,
+				5F0A896F261EF610001E3FF2 /* Playground1.storyboard in Resources */,
+				5F0BC4742624221F005F9416 /* Playground2.storyboard in Resources */,
 				5FBD6DF1261DB4FD00EB0322 /* StoryPage.storyboard in Resources */,
 				5FBD6DE4261DB26B00EB0322 /* Assets.xcassets in Resources */,
 				5FBD6DDF261DB26A00EB0322 /* Main.storyboard in Resources */,
+				60184856261DF010008F6063 /* StageMenu.storyboard in Resources */,
+				5F6C363D2625F88A0081DB74 /* Workshop.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,11 +282,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F6C363C2625F88A0081DB74 /* RecycleCollectionViewCell.swift in Sources */,
 				5FBD6DDC261DB26A00EB0322 /* ViewController.swift in Sources */,
+				6000AC6B2621CFA000698B4A /* Item.swift in Sources */,
 				5FBD6DE2261DB26A00EB0322 /* recycle_hero_app.xcdatamodeld in Sources */,
-				5FBD6DF4261DB68200EB0322 /* RecycledItemsModel.swift in Sources */,
+				5F6C363E2625F88A0081DB74 /* NormalItemDetailViewController.swift in Sources */,
+				5F6C36362625F87E0081DB74 /* ItemDetailViewController.swift in Sources */,
+				5FE3D9D726255F3C005C9C07 /* StoryViewController.swift in Sources */,
+				5F0BC48C26242A7C005F9416 /* RecycledItemsData.swift in Sources */,
+				5FE3D9E026256AA2005C9C07 /* StoryContentViewController.swift in Sources */,
 				5FBD6DD8261DB26A00EB0322 /* AppDelegate.swift in Sources */,
+				5F6C364C262604F40081DB74 /* SlideLeftStoryboardSegue.swift in Sources */,
+				5F0BC47F26242276005F9416 /* Playground3ViewController.swift in Sources */,
+				5FE3D9D426255B63005C9C07 /* StoryPageViewController.swift in Sources */,
+				5F0BC47726242233005F9416 /* Playground2ViewController.swift in Sources */,
+				5F0A896C261EF1F7001E3FF2 /* UserProgress.swift in Sources */,
+				5F0BC48F26242A85005F9416 /* ItemData.swift in Sources */,
+				6000AC6E2621D67200698B4A /* RecycledItem.swift in Sources */,
 				5FBD6DDA261DB26A00EB0322 /* SceneDelegate.swift in Sources */,
+				60184859261E0319008F6063 /* StageMenuController.swift in Sources */,
+				5F0A8972261EF69E001E3FF2 /* Playground1ViewController.swift in Sources */,
+				5F6C363F2625F88A0081DB74 /* WorkshopViewController.swift in Sources */,
+				6031E93026274E2700C92380 /* SlideRightStoryboardSegue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
