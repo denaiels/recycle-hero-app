@@ -1,4 +1,4 @@
-# recycle-hero-app
+# Recycle Hero! App
 
 Recycle Hero! is a simple mix-and-match game about recycling where kids can learn about recycling and the ingredients to make different kinds of recycling products.
 
